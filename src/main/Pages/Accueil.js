@@ -1,16 +1,34 @@
 import { React, useEffect, useState, Fragment } from 'react';
+import { Link } from "react-router-dom";
 
+import ImageProjectA1 from '../Style/Images/Project/Exterior-1.jpg';
+import ImageProjectA2 from '../Style/Images/Project/Exterior-2.jpg';
+import ImageProjectA3 from '../Style/Images/Project/Exterior-3.jpg';
 
-import ImageProject1 from '../Style/Images/Project/Interior-1-3.jpg';
-import ImageProject2 from '../Style/Images/Project/Pharmacie-4.jpg';
-import ImageProject3 from '../Style/Images/Project/Exterior-1.jpg';
-import ImageProject4 from '../Style/Images/Project/Immeuble-1.jpg';
+import ImageProjectB1 from '../Style/Images/Project/Immeuble-1.jpg';
+import ImageProjectB2 from '../Style/Images/Project/Immeuble-2.jpg';
+
+import ImageProjectC1 from '../Style/Images/Project/Interior-1-1.jpg';
+import ImageProjectC2 from '../Style/Images/Project/Interior-1-2.jpg';
+import ImageProjectC3 from '../Style/Images/Project/Interior-1-3.jpg';
+import ImageProjectC4 from '../Style/Images/Project/Interior-1-4.jpg';
+import ImageProjectC5 from '../Style/Images/Project/Interior-1-5.jpg';
+
+import ImageProjectD1 from '../Style/Images/Project/NFT-1.jpg';
+import ImageProjectD2 from '../Style/Images/Project/NFT-2.jpg';
+import ImageProjectD3 from '../Style/Images/Project/NFT-3.jpg';
+
+import ImageProjectE1 from '../Style/Images/Project/Pharmacie-1.jpg';
+import ImageProjectE2 from '../Style/Images/Project/Pharmacie-2.jpg';
+import ImageProjectE3 from '../Style/Images/Project/Pharmacie-3.jpg';
+import ImageProjectE4 from '../Style/Images/Project/Pharmacie-4.jpg';
+import ImageProjectE5 from '../Style/Images/Project/Pharmacie-5.jpg';
+import ImageProjectE6 from '../Style/Images/Project/Pharmacie-6.jpg';
+
 
 
 function Accueil() {
-
     useEffect(() => {
-
         let AccueilContainer = document.querySelector(".App_container")
         let ThesliderImg = document.querySelectorAll(".slider")
         AccueilContainer.addEventListener('scroll', (event) => {
@@ -19,10 +37,9 @@ function Accueil() {
             let WindowInnerHeight = window.innerHeight;
             let TheScrollTopInP = (TheScrollTop / (TheScrollHeight - WindowInnerHeight)) * 100;
             ThesliderImg.forEach(element => {
-                element.style.backgroundPositionY = `-${TheScrollTopInP * 4}%`;
+                element.style.backgroundPositionY = `-${TheScrollTopInP * 10}%`;
             });
         })
-
     });
 
 
@@ -32,23 +49,25 @@ function Accueil() {
             <div className='archviz_presantation' >
             </div>
             <div className='AccueilBigProjectsSection'>
-                <OneBigProject title={'MIT Student Hub1'} image={ImageProject1}
+                <OneBigProject title={'MIT Student Hub1'} image={ImageProjectA1}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
                     color={'#93A490'} textcolor={'#222'} theKey={1} side={'right'} />
-                <OneBigProject title={'MIT Student Hub'} image={ImageProject2}
+                <OneBigProject title={'MIT Student Hub'} image={ImageProjectC3}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={2} side={'left'} />
-                <OneBigProject title={'MIT Student Hub3'} image={ImageProject3}
+                <OneBigProject title={'MIT Student Hub3'} image={ImageProjectE4}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} />
-                <OneBigProject title={'MIT Student Hub'} image={ImageProject4}
+                <OneBigProject title={'MIT Student Hub'} image={ImageProjectB1}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
                     color={'#182B38'} textcolor={'#f1f1f1'} theKey={4} side={'left'} />
-
             </div>
+            <div className='galerie_presantation' >
+            </div>
+            <TheGallery />
+            <div className='the_footer'></div>
         </div >
     );
-
 }
 
 function AccueilSlider() {
@@ -80,16 +99,13 @@ function AccueilSlider() {
     }
 
     useEffect(() => {
-
         let sliderBtnContainer = document.querySelector(".slider_btn_container")
         let AllDot = sliderBtnContainer.childNodes
         AllDot.forEach(element => {
             element.addEventListener("click", onClickOnDot);
         });
         AllDot[0].classList.add('ativeDot')
-
         let theCourentSlide = 0
-
         const interval = setInterval(function () {
             AllDot[theCourentSlide].click()
             theCourentSlide++
@@ -99,9 +115,11 @@ function AccueilSlider() {
             console.log(theCourentSlide);
         }, 15000);
 
-    });
+        return () => {
+            clearInterval(interval);
+        }
 
-
+    }, [])
     const CreateSliderBtn = (theSlider) => {
         let sliderBtnContainer = document.querySelector(".slider_btn_container")
         let OneDot = document.createElement("div")
@@ -122,17 +140,11 @@ function AccueilSlider() {
             <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={' Juin 03 , 2022'} title={<p>4Summerfest <dr />
                 Pavilion Color <dr /> Studies</p>} />
             <div className='slider_btn_container'>
+
             </div>
         </div>
     );
 }
-
-//!###############################################################
-//!###############################################################
-//!###############################################################
-
-
-
 
 function Slider({ giveSliderKey, title, date, theKey }) {
 
@@ -149,11 +161,14 @@ function Slider({ giveSliderKey, title, date, theKey }) {
             <div className='slider_date'>
                 {date}
             </div>
+
         </div>
     );
 }
 
-function OneBigProject({ color, title, date, description, side, textcolor, theKey, image }) {
+//!###############################################################
+
+function OneBigProject({ color, title, description, side, textcolor, theKey, image }) {
     const [TheSide, setTheSide] = useState('');
 
     useEffect(() => {
@@ -163,11 +178,7 @@ function OneBigProject({ color, title, date, description, side, textcolor, theKe
         TheSidedProject[theKey - 1].style.border = `.5em solid ${color}`;
     });
 
-
-
     return (
-
-
         <Fragment>
             {TheSide === "right" ? (
                 <div className="One_Project_In_Home right">
@@ -240,4 +251,58 @@ function OneBigProject({ color, title, date, description, side, textcolor, theKe
     );
 }
 
-export default Accueil;
+//!###############################################################
+
+function TheGallery({
+
+}) {
+    return (
+        <div className="the_galerie_container">
+            <OneGalerieElement image={ImageProjectC1} title={'Color Studies'} date={'Juin 09, 2022'} />
+            <OneGalerieElement image={ImageProjectB2} title={'Color Studies2'} date={'Juin 09, 2022'} />
+            <OneGalerieElement image={ImageProjectD1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+            <OneGalerieElement image={ImageProjectE1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+            <OneGalerieElement image={ImageProjectE4} title={'Color Studies2'} date={'Juin 09, 2022'} />
+            <OneGalerieElement image={ImageProjectE5} title={'Color Studies2'} date={'Juin 09, 2022'} />
+            <OneGalerieElement image={ImageProjectA1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+            <OneGalerieElement image={ImageProjectB1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+            <OneGalerieElement image={ImageProjectC4} title={'Color Studies2'} date={'Juin 09, 2022'} />
+        </div>
+    );
+
+}
+
+//!###############################################################
+function OneGalerieElement({ title, theKey, image, date }) {
+
+
+
+    return (
+        <div className='one_galerie_element'>
+            <img src={image} width='100%' />
+            <div className='one_galerie_element_hover'>
+                <div className='iner_container' >
+                    <Link to={'/Gallery'}>
+                        <div className='Icon-to-click-on '>
+                            <ion-icon name="add-circle">
+                            </ion-icon>
+                        </div>
+                    </Link >
+                    <p className='titre'>
+                        {title}
+                    </p>
+                    <p className='date'>
+                        {date}
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
+
+}
+
+
+
+
+// export default Accueil;
+export { Accueil, TheGallery };

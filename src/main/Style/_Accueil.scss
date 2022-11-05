@@ -6,19 +6,17 @@
 
 #Accueil {
     width: 100%;
-    height: 532em;
-    // height: auto;
-    // background-color: salmon;
+    height: auto;
     z-index: 1;
-
 
     .Accueil_Slider {
         width: 100%;
-        height: calc(100vh);
+        height: 70vw;
         @include cent();
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        overflow: hidden;
 
         .slider {
             background-position: inherit;
@@ -61,35 +59,29 @@
         }
 
         .slider:nth-child(1) {
-            background-image: url(./Images/Image.png);
+            background-image: url(./Images/Project/Exterior-4.jpg);
             z-index: 3;
             opacity: 1;
         }
 
         .slider:nth-child(2) {
-            background-image: url(./Images/Image0017.png);
-            // z-index: 2;
+            background-image: url(./Images/Project/NFT-3.jpg);
         }
 
         .slider:nth-child(3) {
-            background-image: url(./Images/Image-11_Pur.png);
-            // z-index: 2;
+            background-image: url(./Images/Project/Interior-1-2.jpg);
         }
 
         .slider:nth-child(4) {
-            background-image: url(./Images/Image0017.png);
-            // z-index: 2;
+            background-image: url(./Images/Project/Pharmacie-1.jpg);
         }
 
         .slider_btn_container {
-            // width: 5em;
             z-index: 10;
-            // background-color: aqua;
             position: absolute;
-            bottom: 10%;
+            bottom: 5%;
             left: 50%;
             transform: translate(-50%);
-
             @include cent();
 
             .dot {
@@ -114,7 +106,6 @@
                 }
             }
 
-
             .ativeDot {
                 background-color: var(--color0);
                 opacity: 1;
@@ -123,12 +114,14 @@
 
     }
 
-
+    //!#####################################################################
     .archviz_presantation {
         height: 25em;
         width: 100%;
+        // background-color: aqua;
     }
 
+    //!#####################################################################
     .AccueilBigProjectsSection {
         width: 100%;
         min-height: 50em;
@@ -232,5 +225,116 @@
 
 
 
+    }
+
+    //!#####################################################################
+    .galerie_presantation {
+        height: 25em;
+        width: 100%;
+        background-color: red;
+    }
+
+    .the_galerie_container {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        .one_galerie_element {
+            width: 100%;
+            @include cent();
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+            img {
+                grid-column: 1 / 1;
+                grid-row: 1 / 1;
+            }
+
+            &:hover {
+                .one_galerie_element_hover {
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.7);
+
+                    .iner_container {
+                        top: 0%;
+                    }
+                }
+
+            }
+
+            .one_galerie_element_hover {
+                grid-column: 1 / 1;
+                grid-row: 1 / 1;
+                width: 100%;
+                height: 0%;
+                overflow: hidden;
+                @include cent();
+                flex-wrap: wrap;
+                background-color: rgba(255, 255, 255, 0);
+                transition-duration: 0s, 1s;
+                transition-property: height, background-color;
+
+
+                .iner_container {
+                    width: 100%;
+                    height: auto;
+                    @include cent();
+                    flex-wrap: wrap;
+                    top: 6%;
+                    transition-duration: .3s;
+
+                    .Icon-to-click-on {
+                        width: 1.5em;
+                        height: 1.5em;
+                        border-radius: 50%;
+                        color: rgba(0, 0, 0, .51);
+                        @include cent();
+                        font-size: 2.3em;
+                        cursor: pointer;
+
+                        transform: scale(1);
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+
+                        &:active {
+                            transform: scale(1);
+                        }
+
+                    }
+
+                    .titre {
+                        width: 100%;
+                        height: 1em;
+                        @include cent();
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 600;
+                        font-size: 1.2em;
+                    }
+
+                    .date {
+                        width: 100%;
+                        height: 1em;
+                        @include cent();
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: .7em;
+                        font-weight: 100;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    //!#####################################################################
+    .the_footer {
+        width: 100%;
+        height: 40em;
+        background-color: black;
     }
 }

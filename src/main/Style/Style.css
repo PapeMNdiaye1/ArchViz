@@ -317,13 +317,13 @@
 
 #Accueil {
   width: 100%;
-  height: 532em;
+  height: auto;
   z-index: 1;
 }
 
 #Accueil .Accueil_Slider {
   width: 100%;
-  height: calc(100vh);
+  height: 70vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,6 +339,7 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  overflow: hidden;
 }
 
 #Accueil .Accueil_Slider .slider {
@@ -423,27 +424,27 @@
 }
 
 #Accueil .Accueil_Slider .slider:nth-child(1) {
-  background-image: url(./Images/Image.png);
+  background-image: url(./Images/Project/Exterior-4.jpg);
   z-index: 3;
   opacity: 1;
 }
 
 #Accueil .Accueil_Slider .slider:nth-child(2) {
-  background-image: url(./Images/Image0017.png);
+  background-image: url(./Images/Project/NFT-3.jpg);
 }
 
 #Accueil .Accueil_Slider .slider:nth-child(3) {
-  background-image: url(./Images/Image-11_Pur.png);
+  background-image: url(./Images/Project/Interior-1-2.jpg);
 }
 
 #Accueil .Accueil_Slider .slider:nth-child(4) {
-  background-image: url(./Images/Image0017.png);
+  background-image: url(./Images/Project/Pharmacie-1.jpg);
 }
 
 #Accueil .Accueil_Slider .slider_btn_container {
   z-index: 10;
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -636,6 +637,173 @@
   grid-column: 3 / 3;
   -ms-grid-row: 1;
   grid-row: 1 / 1;
+}
+
+#Accueil .galerie_presantation {
+  height: 25em;
+  width: 100%;
+  background-color: red;
+}
+
+#Accueil .the_galerie_container {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+}
+
+#Accueil .the_galerie_container .one_galerie_element {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+#Accueil .the_galerie_container .one_galerie_element img {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+}
+
+#Accueil .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#Accueil .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover .iner_container {
+  top: 0%;
+}
+
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition-duration: 0s, 1s;
+          transition-duration: 0s, 1s;
+  -webkit-transition-property: height, background-color;
+  transition-property: height, background-color;
+}
+
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  top: 6%;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.51);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.3em;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre {
+  width: 100%;
+  height: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .date {
+  width: 100%;
+  height: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7em;
+  font-weight: 100;
+}
+
+#Accueil .the_footer {
+  width: 100%;
+  height: 40em;
+  background-color: black;
 }
 
 #Traveaux {

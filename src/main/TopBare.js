@@ -92,7 +92,7 @@ function TopBare({ onChangeTab }) {
         </Fragment>
     );
 }
-let Linck = 2
+
 
 
 //!###################################################
@@ -172,7 +172,6 @@ function OneSection({ title, parentCallback }) {
                     </div>
                 </div>
             </Link >
-
         </Fragment>
     );
 }
