@@ -253,28 +253,58 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
 
 //!###############################################################
 
-function TheGallery({
+function TheGallery({ }) {
 
-}) {
+    const [TheImage, setTheImage] = useState('');
+    const [TheTitle, setTheTitle] = useState('');
+    const [TheDate, setTheDate] = useState('');
+
+    const onClickOnImage = (theimage, title, date) => {
+        setTheImage(theimage);
+        setTheTitle(title);
+        setTheDate(date);
+    }
+
+    useEffect(() => {
+        onClickOnImage()
+    });
+
+
+
     return (
-        <div className="the_galerie_container">
-            <OneGalerieElement image={ImageProjectC1} title={'Color Studies'} date={'Juin 09, 2022'} />
-            <OneGalerieElement image={ImageProjectB2} title={'Color Studies2'} date={'Juin 09, 2022'} />
-            <OneGalerieElement image={ImageProjectD1} title={'Color Studies2'} date={'Juin 09, 2022'} />
-            <OneGalerieElement image={ImageProjectE1} title={'Color Studies2'} date={'Juin 09, 2022'} />
-            <OneGalerieElement image={ImageProjectE4} title={'Color Studies2'} date={'Juin 09, 2022'} />
-            <OneGalerieElement image={ImageProjectE5} title={'Color Studies2'} date={'Juin 09, 2022'} />
-            <OneGalerieElement image={ImageProjectA1} title={'Color Studies2'} date={'Juin 09, 2022'} />
-            <OneGalerieElement image={ImageProjectB1} title={'Color Studies2'} date={'Juin 09, 2022'} />
-            <OneGalerieElement image={ImageProjectC4} title={'Color Studies2'} date={'Juin 09, 2022'} />
-        </div>
+        <Fragment>
+            <div className='the_galerie_presantation_container'>
+                <img src={TheImage} width='80%' />
+                <div className='the_title'>
+                    {TheTitle}
+                </div>
+                <div className='the_date'>
+                    {TheDate}
+                </div>
+            </div>
+            <div className="the_galerie_container">
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC1} title={'Color Studies'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectB2} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectD1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE4} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE5} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectB1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC4} title={'Color Studies2'} date={'Juin 09, 2022'} />
+            </div>
+        </Fragment>
     );
 
 }
 
 //!###############################################################
-function OneGalerieElement({ title, theKey, image, date }) {
+function OneGalerieElement({ giveImageId, title, theKey, image, date }) {
 
+
+    const clickOnImage = (e) => {
+        giveImageId(image, title, date)
+    }
 
 
     return (
@@ -282,7 +312,7 @@ function OneGalerieElement({ title, theKey, image, date }) {
             <img src={image} width='100%' />
             <div className='one_galerie_element_hover'>
                 <div className='iner_container' >
-                    <Link to={'/Gallery'}>
+                    <Link onClick={clickOnImage} to={'/Gallery'}>
                         <div className='Icon-to-click-on '>
                             <ion-icon name="add-circle">
                             </ion-icon>
@@ -302,7 +332,4 @@ function OneGalerieElement({ title, theKey, image, date }) {
 }
 
 
-
-
-// export default Accueil;
 export { Accueil, TheGallery };

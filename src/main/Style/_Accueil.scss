@@ -229,9 +229,11 @@
 
     //!#####################################################################
     .galerie_presantation {
-        height: 25em;
-        width: 100%;
-        background-color: red;
+        height: 15em;
+    }
+
+    .the_galerie_presantation_container {
+        display: none;
     }
 
     .the_galerie_container {

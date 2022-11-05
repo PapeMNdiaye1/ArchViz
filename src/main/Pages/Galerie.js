@@ -7,7 +7,6 @@ function Gallery() {
 
     return (
         <div id="Gallery">
-            Gallery
             <TheGallery />
         </div>
     );
