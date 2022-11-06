@@ -1,6 +1,133 @@
 #Traveaux {
     width: 100%;
-    height: 532em;
-    background-color: seagreen;
+    height: auto;
     z-index: 1;
+
+    .Traveaux-Header {
+        width: 100%;
+        height: 20em;
+        @include cent();
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .visualization-projects {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.3em;
+            font-weight: 900;
+            width: 40%;
+            // background-color: aqua;
+            padding-bottom: 1em;
+        }
+
+        .visualization-projects-description {
+            width: 40%;
+            // background-color: antiquewhite;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            font-weight: 800;
+        }
+    }
+
+    .AccueilBigProjectsSection {
+        width: 100%;
+        min-height: 50em;
+        background-color: salmon;
+
+
+        .One_Project_In_Home {
+            min-height: 65em;
+            display: grid;
+            grid-gap: .5em;
+
+            .image_container {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .info_container {
+                width: 100%;
+                height: 100%;
+                grid-column: 1 / 1;
+                grid-row: 1 / 1;
+                @include cent();
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 40% 60%;
+
+                .title {
+                    margin: auto;
+                    @include cent();
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    width: 70%;
+                    height: 70%;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 2em;
+                    font-weight: 900;
+
+                    .bar {
+                        height: .1em;
+                        width: 5em;
+                        position: absolute;
+                        bottom: -1em;
+                        left: 0%;
+
+                    }
+
+                }
+
+                .description {
+                    margin: auto;
+                    margin-top: 4em;
+                    width: 70%;
+                    @include cent();
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.2em;
+                    font-weight: 800;
+                }
+
+            }
+
+        }
+
+        .right {
+            grid-template-columns: 30em repeat(2, 1fr);
+            grid-template-rows: 1fr;
+
+            .image_container {
+                grid-column: 2 / 4;
+                grid-row: 1 / 1;
+            }
+
+            .info_container {
+
+                grid-column: 1 / 1;
+                grid-row: 1 / 1;
+            }
+
+        }
+
+        .left {
+            grid-template-columns: repeat(2, 1fr) 30em;
+            grid-template-rows: 1fr;
+
+            .image_container {
+                grid-column: 1 / 3;
+                grid-row: 1 / 1;
+            }
+
+            .info_container {
+                grid-column: 3 / 3;
+                grid-row: 1 / 1;
+            }
+        }
+
+
+
+    }
 }

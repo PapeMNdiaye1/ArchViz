@@ -1,7 +1,6 @@
 import { React, useEffect, useState, Fragment } from 'react';
 import { Link } from "react-router-dom";
 
-
 import ImageProjectA1 from '../Style/Images/Project/Exterior-1.jpg';
 import ImageProjectA2 from '../Style/Images/Project/Exterior-2.jpg';
 import ImageProjectA3 from '../Style/Images/Project/Exterior-3.jpg';
@@ -116,7 +115,7 @@ function Accueil({ GetImageToApp }) {
                 </div>
             </div>
             <TheGallery GetImageOnAccueil={GetImageOnApp} />
-            <div className='the_footer'></div>
+            <TheFooter />
         </div >
     );
 }
@@ -317,32 +316,35 @@ function TheGallery({ GetImageOnAccueil }) {
     return (
         <Fragment>
             <div className="the_galerie_container">
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC3} title={'Color Studies'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC3} title={'Interior Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectB3} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE4} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE4} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA1} title={'Small House'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE5} title={'Color Studies2'} date={'Juin 09, 2022'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectD1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectD1} title={'Collection "Morceaux du Sénégal"'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE1} title={'Color Studies2'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectB2} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC4} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC4} title={'Interior Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectF1} title={'Color Studies2'} date={'Juin 09, 2022'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA5} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA2} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC2} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC7} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC5} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA4} title={'Small House'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA2} title={'Small House'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC2} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC7} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC5} title={'Interior Design'} date={'Juin 09, 2022'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE7} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE9} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE2} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE3} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE6} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE7} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE9} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE2} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE3} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE6} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectF3} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectD3} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectD2} title={'Collection "Morceaux du Sénégal"'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC6} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA5} title={'Small House'} date={'Juin 09, 2022'} />
             </div>
         </Fragment>
     );
@@ -383,6 +385,27 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date }) {
     );
 
 }
+//!###############################################################
+function TheFooter({ }) {
 
 
-export { Accueil, TheGallery };
+    return (
+        <div className='the_footer'>
+            <div className='logo-container'>
+            </div>
+            <div className='titles'>Categories</div>
+            <div className='titles'>Contacts</div>
+            <div>3</div>
+            <div className='archviz_description'>
+                The Student Hub design
+                preserves the historic framework of the MIT
+            </div>
+        </div>
+    );
+
+}
+
+
+
+
+export { Accueil, TheGallery, OneBigProject };
