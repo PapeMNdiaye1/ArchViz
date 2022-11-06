@@ -34,7 +34,6 @@
 
             .slider_title {
                 width: 50%;
-                font-family: 'Montserrat', sans-serif;
                 font-size: 6.5em;
                 color: var(--color0);
                 text-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -42,6 +41,7 @@
                 align-items: flex-start;
                 line-height: .9em;
                 flex-direction: column;
+                font-family: 'Montserrat', sans-serif;
                 font-weight: 900;
             }
 
@@ -118,7 +118,54 @@
     .archviz_presantation {
         height: 25em;
         width: 100%;
-        // background-color: aqua;
+        @include cent();
+        flex-wrap: wrap;
+
+        .qui_somme_nous {
+            width: 80%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 2em;
+        }
+
+        p {
+            width: 30%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .network_container {
+            font-size: .9em;
+            width: 80%;
+            @include cent();
+            justify-content: flex-end;
+            flex-direction: row;
+            color: var(--colorX);
+
+            a {
+                color: var(--colorX);
+
+                &:hover {
+                    transform: scale(1.5);
+                    color: #000;
+                }
+
+                &:active {
+                    transform: scale(0.9);
+                }
+
+                .network {
+                    width: 1.5em;
+                    height: 1.5em;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 2em;
+                    cursor: pointer;
+                }
+            }
+        }
+
     }
 
     //!#####################################################################
@@ -230,18 +277,57 @@
     //!#####################################################################
     .galerie_presantation {
         height: 15em;
+        width: 100%;
+        @include cent();
+        flex-wrap: wrap;
+
+        .visualisation_maquette {
+            width: 80%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 2em;
+        }
     }
 
+    //!#####################################################################
     .the_galerie_presantation_container {
-        display: none;
+        width: 100%;
+        height: auto;
+        @include cent();
+        flex-wrap: wrap;
+        background-color: aqua;
+
+        img {
+            width: 60%;
+            margin-top: 10em;
+        }
+
+        .the_title {
+            width: 60%;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5em;
+            color: var(--colorX);
+            font-weight: 700;
+            margin: 1em 0em 0em 0em;
+        }
+
+        .the_date {
+            width: 60%;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            color: var(--colorX);
+            font-weight: 100;
+            margin: 1em 0em 5em 0em;
+        }
     }
 
+    //!#####################################################################
     .the_galerie_container {
         width: 100%;
         height: auto;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
 
         .one_galerie_element {
             width: 100%;
@@ -332,6 +418,7 @@
             }
         }
     }
+
 
     //!#####################################################################
     .the_footer {

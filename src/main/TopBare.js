@@ -56,7 +56,6 @@ function TopBare({ onChangeTab }) {
                 <div className='Menu-container'>
                     <div onClick={onClickOnMenu} className='Menu'>
                     </div>
-
                 </div>
             </div>
             <div id='Top-bare-slider-container'>

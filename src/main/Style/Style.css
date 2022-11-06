@@ -54,6 +54,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 #Top-Bare .logo-container {
@@ -374,7 +376,6 @@
 
 #Accueil .Accueil_Slider .slider .slider_title {
   width: 50%;
-  font-family: 'Montserrat', sans-serif;
   font-size: 6.5em;
   color: var(--color0);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -395,6 +396,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
 
@@ -492,6 +494,77 @@
 #Accueil .archviz_presantation {
   height: 25em;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#Accueil .archviz_presantation .qui_somme_nous {
+  width: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+#Accueil .archviz_presantation p {
+  width: 30%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+#Accueil .archviz_presantation .network_container {
+  font-size: .9em;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: var(--colorX);
+}
+
+#Accueil .archviz_presantation .network_container a {
+  color: var(--colorX);
+}
+
+#Accueil .archviz_presantation .network_container a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #000;
+}
+
+#Accueil .archviz_presantation .network_container a:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#Accueil .archviz_presantation .network_container a .network {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
 }
 
 #Accueil .AccueilBigProjectsSection {
@@ -641,10 +714,65 @@
 
 #Accueil .galerie_presantation {
   height: 15em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#Accueil .galerie_presantation .visualisation_maquette {
+  width: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2em;
 }
 
 #Accueil .the_galerie_presantation_container {
-  display: none;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: aqua;
+}
+
+#Accueil .the_galerie_presantation_container img {
+  width: 60%;
+  margin-top: 10em;
+}
+
+#Accueil .the_galerie_presantation_container .the_title {
+  width: 60%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  color: var(--colorX);
+  font-weight: 700;
+  margin: 1em 0em 0em 0em;
+}
+
+#Accueil .the_galerie_presantation_container .the_date {
+  width: 60%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: var(--colorX);
+  font-weight: 100;
+  margin: 1em 0em 5em 0em;
 }
 
 #Accueil .the_galerie_container {
@@ -654,8 +782,8 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
 }
 
 #Accueil .the_galerie_container .one_galerie_element {
@@ -841,7 +969,6 @@
 
 #Gallery {
   width: 100%;
-  height: 500em;
   position: absolute;
   z-index: 1;
 }
@@ -860,12 +987,11 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: aqua;
 }
 
 #Gallery .the_galerie_presantation_container img {
   width: 60%;
-  margin-top: 10em;
+  margin-top: 2em;
 }
 
 #Gallery .the_galerie_presantation_container .the_title {
@@ -1039,6 +1165,89 @@
   font-family: 'Montserrat', sans-serif;
   font-size: .7em;
   font-weight: 100;
+}
+
+#Gallery .display_image_container {
+  position: fixed;
+  top: 5em;
+  width: 100vw;
+  min-height: calc(100vh - 5em);
+  background-color: rgba(255, 255, 255, 0.515);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 110;
+}
+
+#Gallery .display_image_container div {
+  width: 67%;
+  background-color: var(--colorX);
+  border: 0.5em solid var(--colorX);
+  border-bottom: 1.6em solid var(--colorX);
+  border-radius: .2em;
+}
+
+#Gallery .display_image_container div .close_image_container {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  z-index: 5;
+  right: 0%;
+  top: 0%;
+  margin: .5em;
+  border: 0em solid var(--colorX);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#Gallery .display_image_container div .close_image_container::before {
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: calc(50% - .1em);
+  left: 25%;
+  width: 50%;
+  height: .15em;
+  background-color: var(--color0);
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+#Gallery .display_image_container div .close_image_container::after {
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: calc(50% - .1em);
+  left: 25%;
+  width: 50%;
+  height: .15em;
+  background-color: var(--color0);
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+#Gallery .display_image_container div .close_image_container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#Gallery .display_image_container div .close_image_container:active {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media all and (max-width: 1000px) {

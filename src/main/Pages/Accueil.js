@@ -1,18 +1,24 @@
 import { React, useEffect, useState, Fragment } from 'react';
 import { Link } from "react-router-dom";
 
+
 import ImageProjectA1 from '../Style/Images/Project/Exterior-1.jpg';
 import ImageProjectA2 from '../Style/Images/Project/Exterior-2.jpg';
 import ImageProjectA3 from '../Style/Images/Project/Exterior-3.jpg';
+import ImageProjectA4 from '../Style/Images/Project/Exterior-4.jpg';
+import ImageProjectA5 from '../Style/Images/Project/Exterior-5.jpg';
 
 import ImageProjectB1 from '../Style/Images/Project/Immeuble-1.jpg';
 import ImageProjectB2 from '../Style/Images/Project/Immeuble-2.jpg';
+import ImageProjectB3 from '../Style/Images/Project/Immeuble-3.jpg';
 
 import ImageProjectC1 from '../Style/Images/Project/Interior-1-1.jpg';
 import ImageProjectC2 from '../Style/Images/Project/Interior-1-2.jpg';
 import ImageProjectC3 from '../Style/Images/Project/Interior-1-3.jpg';
 import ImageProjectC4 from '../Style/Images/Project/Interior-1-4.jpg';
 import ImageProjectC5 from '../Style/Images/Project/Interior-1-5.jpg';
+import ImageProjectC6 from '../Style/Images/Project/Interior-1-6.jpg';
+import ImageProjectC7 from '../Style/Images/Project/Interior-1-7.jpg';
 
 import ImageProjectD1 from '../Style/Images/Project/NFT-1.jpg';
 import ImageProjectD2 from '../Style/Images/Project/NFT-2.jpg';
@@ -24,10 +30,18 @@ import ImageProjectE3 from '../Style/Images/Project/Pharmacie-3.jpg';
 import ImageProjectE4 from '../Style/Images/Project/Pharmacie-4.jpg';
 import ImageProjectE5 from '../Style/Images/Project/Pharmacie-5.jpg';
 import ImageProjectE6 from '../Style/Images/Project/Pharmacie-6.jpg';
+import ImageProjectE7 from '../Style/Images/Project/Pharmacie-7.jpg';
+import ImageProjectE8 from '../Style/Images/Project/Pharmacie-8.jpg';
+import ImageProjectE9 from '../Style/Images/Project/Pharmacie-9.jpg';
+
+import ImageProjectF1 from '../Style/Images/Project/Hangar-1.jpg';
+import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
+import ImageProjectF3 from '../Style/Images/Project/Hangar-3.jpg';
 
 
 
-function Accueil() {
+function Accueil({ GetImageToApp }) {
+
     useEffect(() => {
         let AccueilContainer = document.querySelector(".App_container")
         let ThesliderImg = document.querySelectorAll(".slider")
@@ -42,11 +56,45 @@ function Accueil() {
         })
     });
 
+    const GetImageOnApp = (theimage, title, date) => {
+        GetImageToApp(theimage, title, date);
+        console.log(theimage, title, date);
+        console.log('#Accueil');
+    }
+
 
     return (
         <div id="Accueil">
             <AccueilSlider />
             <div className='archviz_presantation' >
+                <div className='qui_somme_nous' >
+                    Qui somme Nous
+                </div>
+                <p>
+                    The Student Hub design
+                    preserves the historic framework of the MIT
+                    campus by recycling facades and maintaining
+                    existing building footprints. Modern forms are inserted
+                </p>
+                <div className='network_container'>
+                    <a href="https://www.instagram.com/pape_momar_ndiaye/" target="_blank">
+                        <div className="network">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pape-momar-ndiaye-37b862199/" target="_blank">
+                        <div className="network">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </div>
+                    </a>
+
+                    <a href="https://www.behance.net/papendiay" target="_blank">
+                        <div className="network">
+                            <ion-icon name="logo-behance"></ion-icon>
+                        </div>
+                    </a>
+
+                </div>
             </div>
             <div className='AccueilBigProjectsSection'>
                 <OneBigProject title={'MIT Student Hub1'} image={ImageProjectA1}
@@ -62,9 +110,12 @@ function Accueil() {
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
                     color={'#182B38'} textcolor={'#f1f1f1'} theKey={4} side={'left'} />
             </div>
-            <div className='galerie_presantation' >
+            <div className='galerie_presantation'>
+                <div className='visualisation_maquette' >
+                    Visualisation & Maquette
+                </div>
             </div>
-            <TheGallery />
+            <TheGallery GetImageOnAccueil={GetImageOnApp} />
             <div className='the_footer'></div>
         </div >
     );
@@ -145,6 +196,9 @@ function AccueilSlider() {
         </div>
     );
 }
+
+//!###############################################################
+
 
 function Slider({ giveSliderKey, title, date, theKey }) {
 
@@ -253,45 +307,42 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
 
 //!###############################################################
 
-function TheGallery({ }) {
-
-    const [TheImage, setTheImage] = useState('');
-    const [TheTitle, setTheTitle] = useState('');
-    const [TheDate, setTheDate] = useState('');
+function TheGallery({ GetImageOnAccueil }) {
 
     const onClickOnImage = (theimage, title, date) => {
-        setTheImage(theimage);
-        setTheTitle(title);
-        setTheDate(date);
+        console.log(theimage, title, date);
+        GetImageOnAccueil(theimage, title, date);
     }
-
-    useEffect(() => {
-        onClickOnImage()
-    });
-
-
 
     return (
         <Fragment>
-            <div className='the_galerie_presantation_container'>
-                <img src={TheImage} width='80%' />
-                <div className='the_title'>
-                    {TheTitle}
-                </div>
-                <div className='the_date'>
-                    {TheDate}
-                </div>
-            </div>
             <div className="the_galerie_container">
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC1} title={'Color Studies'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectB2} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC3} title={'Color Studies'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectB3} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE4} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE5} title={'Color Studies2'} date={'Juin 09, 2022'} />
+
                 <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectD1} title={'Color Studies2'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE1} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE4} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE5} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA1} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectB1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectB2} title={'Color Studies2'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC4} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectF1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA5} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectA2} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC2} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC7} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectC5} title={'Color Studies2'} date={'Juin 09, 2022'} />
+
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE7} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE9} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE2} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE3} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectE6} title={'Color Studies2'} date={'Juin 09, 2022'} />
+
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectF3} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} image={ImageProjectD3} title={'Color Studies2'} date={'Juin 09, 2022'} />
             </div>
         </Fragment>
     );
@@ -301,11 +352,12 @@ function TheGallery({ }) {
 //!###############################################################
 function OneGalerieElement({ giveImageId, title, theKey, image, date }) {
 
-
     const clickOnImage = (e) => {
+        let AccueilContainer = document.querySelector(".App_container")
+        AccueilContainer.scrollTop = 0;
+
         giveImageId(image, title, date)
     }
-
 
     return (
         <div className='one_galerie_element'>
@@ -313,7 +365,8 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date }) {
             <div className='one_galerie_element_hover'>
                 <div className='iner_container' >
                     <Link onClick={clickOnImage} to={'/Gallery'}>
-                        <div className='Icon-to-click-on '>
+                        <div
+                            className='Icon-to-click-on '>
                             <ion-icon name="add-circle">
                             </ion-icon>
                         </div>
