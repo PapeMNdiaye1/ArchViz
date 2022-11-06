@@ -1,7 +1,6 @@
 import { React, useEffect, useState, Fragment } from 'react';
 
-import { TheGallery } from './Accueil';
-
+import { TheGallery, TheFooter } from './Accueil';
 
 function Gallery({ TheImageToGallery,
     TheTitleToGallery,
@@ -75,6 +74,10 @@ function Gallery({ TheImageToGallery,
 
                 </div>
                 <TheGallery GetImageOnAccueil={GetImageOnApp} />
+
+
+                <TheFooter />
+
             </div>
 
         </Fragment>

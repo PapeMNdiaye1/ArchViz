@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from 'react';
 
-import { OneBigProject } from './Accueil';
-
+import { OneBigProject, TheFooter } from './Accueil';
 
 
 import ImageProjectA1 from '../Style/Images/Project/Exterior-1.jpg';
@@ -50,6 +49,7 @@ function Traveaux() {
                     color={'#F1F1F1'} textcolor={'#222'} theKey={6} side={'right'} />
 
             </div>
+            <TheFooter />
         </div>
     );
 }

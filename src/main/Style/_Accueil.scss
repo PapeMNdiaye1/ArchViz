@@ -421,45 +421,5 @@
         }
     }
 
-
     //!#####################################################################
-    .the_footer {
-        width: calc(100% - 10em);
-        height: 40em;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(10, 1fr);
-        padding-left: 5em;
-        padding-right: 5em;
-        padding-top: 2em;
-        background-color: rgba(0, 0, 0, 0.148);
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.2em;
-        font-weight: 800;
-
-        .logo-container {
-            width: 5em;
-            height: 100%;
-            margin-left: 1.5em;
-            background-image: url('./Images/SVG/Asset\ 6.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 90%;
-            filter: invert(100%);
-        }
-
-        .archviz_description {
-            margin-left: 1.5em;
-            margin-top: 1.5em;
-            font-size: 1em;
-        }
-
-        .titles {
-            @include cent();
-            justify-content: flex-start;
-            align-items: flex-end;
-            margin-left: 1.5em;
-        }
-
-    }
 }

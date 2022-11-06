@@ -141,6 +141,8 @@ function OneSection({ title, parentCallback }) {
             allMenuSection[i].style.top = ``;
             allMenuSection[i].style.opacity = `0`;
         }
+        let AccueilContainer = document.querySelector(".App_container")
+        AccueilContainer.scrollTop = 0;
     }
 
     const onMouseOverTitle = (e) => {

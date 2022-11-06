@@ -76,7 +76,7 @@ function Accueil({ GetImageToApp }) {
                     existing building footprints. Modern forms are inserted
                 </p>
                 <div className='network_container'>
-                    <a href="https://www.instagram.com/pape_momar_ndiaye/" target="_blank">
+                    <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
@@ -89,7 +89,7 @@ function Accueil({ GetImageToApp }) {
 
                     <a href="https://www.behance.net/papendiay" target="_blank">
                         <div className="network">
-                            <ion-icon name="logo-behance"></ion-icon>
+                            <ion-icon name="logo-facebook"></ion-icon>
                         </div>
                     </a>
 
@@ -388,6 +388,11 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date }) {
 //!###############################################################
 function TheFooter({ }) {
 
+    const onClickOnTab = () => {
+        let AccueilContainer = document.querySelector(".App_container")
+        AccueilContainer.scrollTop = 0;
+    }
+
 
     return (
         <div className='the_footer'>
@@ -395,11 +400,79 @@ function TheFooter({ }) {
             </div>
             <div className='titles'>Categories</div>
             <div className='titles'>Contacts</div>
-            <div>3</div>
+            <div className='titles'>Reseaux</div>
             <div className='archviz_description'>
                 The Student Hub design
                 preserves the historic framework of the MIT
             </div>
+            <div className='menu_elemant_container'>
+                {/* <div className='menu_elemant'> */}
+                <Link className='menu_elemant' to={'/'} onClick={onClickOnTab}>
+                    Accueil
+                </Link>
+                {/* </div> */}
+                {/* <div className='menu_elemant'> */}
+                <Link className='menu_elemant' to={'/Traveaux'} onClick={onClickOnTab}>
+                    Traveaux
+                </Link>
+                {/* </div> */}
+                {/* <div className='menu_elemant'> */}
+                <Link className='menu_elemant' to={'/Services'} onClick={onClickOnTab}>
+                    Services
+                </Link>
+                {/* </div> */}
+                {/* <div className='menu_elemant'> */}
+                <Link className='menu_elemant' to={'/Createur'} onClick={onClickOnTab}>
+                    Createur
+                </Link>
+                {/* </div> */}
+                <div className='menu_elemant'></div>
+            </div>
+            <div className='categories_elemant_container'>
+                <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Exterior Design</div>
+                <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Interior Design</div>
+                <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Creation de Maquet</div>
+                <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Visualisation</div>
+                <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Creation de Visite Web</div>
+                <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Experience de Realite Virtuel</div>
+            </div>
+
+            <div className='contact_elemant_container'>
+                <div className='contact_elemant '>Pmomar44@gmail.com</div>
+                <div className='contact_elemant '>Tel: 77 727 86 55</div>
+            </div>
+
+            <div className='network_container'>
+                <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
+                    <div className="network">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/pape-momar-ndiaye-37b862199/" target="_blank">
+                    <div className="network">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </div>
+                </a>
+
+                <a href="https://www.facebook.com/ARVHVIZ/" target="_blank">
+                    <div className="network">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </div>
+                </a>
+            </div>
+
+            <div className='the_line'>
+            </div>
+
+            <div className='country'>
+                <ion-icon name="globe-outline"></ion-icon>  Sénégal
+            </div>
+            <div className='rights'>
+                © 2022 | Archviz. Tout droit réservé.
+            </div>
+
+
+
         </div>
     );
 
@@ -408,4 +481,4 @@ function TheFooter({ }) {
 
 
 
-export { Accueil, TheGallery, OneBigProject };
+export { Accueil, TheGallery, OneBigProject, TheFooter };
