@@ -2,6 +2,8 @@ import { React, useEffect, useState, Fragment } from 'react';
 
 import { TheGallery, TheFooter } from './Accueil';
 
+import { Link } from "react-router-dom";
+
 function Gallery({ TheImageToGallery,
     TheTitleToGallery,
     TheDateToGallery,
@@ -11,7 +13,8 @@ function Gallery({ TheImageToGallery,
     const [TheImage, setTheImage] = useState('');
     const [TheTitle, setTheTitle] = useState('');
     const [TheDate, setTheDate] = useState('');
-    const [TheLink, setTheLink] = useState('');
+    const [TheLink, setTheLink] = useState('/');
+
     const [TheChangeInGalerie, setTheChangeInGalerie] = useState(false);
     const [TheImageContainer, setTheImageContainer] = useState(false);
 
@@ -30,7 +33,6 @@ function Gallery({ TheImageToGallery,
             setTheDate(TheDate);
             setTheLink(TheLink);
         }
-
         return () => {
             setTheChangeInGalerie(false);
         }
@@ -70,9 +72,11 @@ function Gallery({ TheImageToGallery,
                 }
                 <div className='the_galerie_presantation_container'>
                     <img onClick={displayImage} src={TheImage} width='80%' />
-                    <div className='the_title'>
+                    {/* <div className='the_title'> */}
+                    <Link className='the_title' to={TheLink}>
                         {TheTitle}
-                    </div>
+                    </Link>
+                    {/* </div> */}
                     <div className='the_date'>
                         {TheDate}
                     </div>

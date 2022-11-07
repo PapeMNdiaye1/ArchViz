@@ -57,7 +57,7 @@ function Accueil({ GetImageToApp }) {
 
     const GetImageOnApp = (theimage, title, date, link) => {
         GetImageToApp(theimage, title, date, link);
-        console.log(theimage, title, date);
+        // console.log(theimage, title, date);
         console.log('#Accueil');
     }
 
@@ -316,23 +316,23 @@ function TheGallery({ GetImageOnAccueil }) {
     return (
         <Fragment>
             <div className="the_galerie_container">
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectC3} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC3} title={'Interior Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectB3} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE4} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectE4} title={'Interior Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Small House'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE5} title={'Color Studies2'} date={'Juin 09, 2022'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectD1} title={'Collection "Morceaux du Sénégal"'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE1} title={'Color Studies2'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectB2} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectC4} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC4} title={'Interior Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectF1} title={'Color Studies2'} date={'Juin 09, 2022'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA4} title={'Small House'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA2} title={'Small House'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectC2} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectC7} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectC5} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC2} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC7} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC5} title={'Interior Design'} date={'Juin 09, 2022'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE7} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE9} title={'Pharmacie Design'} date={'Juin 09, 2022'} />

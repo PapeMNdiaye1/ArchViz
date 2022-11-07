@@ -21,7 +21,7 @@ function App() {
   const [TheImage, setTheImage] = useState('');
   const [TheTitle, setTheTitle] = useState('');
   const [TheDate, setTheDate] = useState('');
-  const [TheLink, setTheLink] = useState('');
+  const [TheLink, setTheLink] = useState('/');
 
   const changeTab = (newTab) => {
     console.log(newTab);
