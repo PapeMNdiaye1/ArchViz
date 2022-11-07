@@ -4,27 +4,31 @@ import { TheGallery, TheFooter } from './Accueil';
 
 function Gallery({ TheImageToGallery,
     TheTitleToGallery,
-    TheDateToGallery }) {
+    TheDateToGallery,
+    TheLinkToGallery
+}) {
 
     const [TheImage, setTheImage] = useState('');
     const [TheTitle, setTheTitle] = useState('');
     const [TheDate, setTheDate] = useState('');
+    const [TheLink, setTheLink] = useState('');
     const [TheChangeInGalerie, setTheChangeInGalerie] = useState(false);
     const [TheImageContainer, setTheImageContainer] = useState(false);
 
     useEffect(() => {
-        console.log(TheImageToGallery,
-            TheTitleToGallery,
-            TheDateToGallery);
+
+        console.log(TheLinkToGallery);
         if (!TheChangeInGalerie) {
             setTheImage(TheImageToGallery);
             setTheTitle(TheTitleToGallery);
             setTheDate(TheDateToGallery);
+            setTheLink(TheLinkToGallery);
             setTheChangeInGalerie(true);
         } else {
             setTheImage(TheImage);
             setTheTitle(TheTitle);
             setTheDate(TheDate);
+            setTheLink(TheLink);
         }
 
         return () => {
@@ -33,11 +37,12 @@ function Gallery({ TheImageToGallery,
     }, []);
 
 
-    const GetImageOnApp = (theimage, title, date) => {
-        // console.log(theimage, title, date);
+    const GetImageOnApp = (theimage, title, date, link) => {
         setTheImage(theimage);
         setTheTitle(title);
         setTheDate(date);
+        setTheLink(link);
+        console.log(link);
     }
 
     const displayImage = () => {
@@ -74,12 +79,8 @@ function Gallery({ TheImageToGallery,
 
                 </div>
                 <TheGallery GetImageOnAccueil={GetImageOnApp} />
-
-
                 <TheFooter />
-
             </div>
-
         </Fragment>
 
     );
