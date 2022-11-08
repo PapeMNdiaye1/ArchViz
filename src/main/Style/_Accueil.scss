@@ -34,9 +34,8 @@
             transition-property: opacity, background-position-y;
 
             .slider_title {
-                // background-color: aqua;
                 width: 50%;
-                font-size: 8em;
+                font-size: 6em;
                 color: white;
                 text-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
                 @include cent();
@@ -46,6 +45,7 @@
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 900;
                 margin-left: 10vw;
+                // background-color: aqua;
             }
 
             .slider_date {
@@ -129,7 +129,7 @@
             width: 80%;
             font-family: 'Montserrat', sans-serif;
             font-weight: 900;
-            font-size: 2em;
+            font-size: 1.6em;
         }
 
         p {
@@ -137,10 +137,11 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
             text-align: center;
+            font-size: .9em;
         }
 
         .network_container {
-            font-size: .9em;
+            font-size: .8em;
             width: 80%;
             @include cent();
             justify-content: flex-end;
@@ -180,10 +181,8 @@
 
 
         .One_Project_In_Home {
-            min-height: 65em;
+            min-height: 47em;
             display: grid;
-            // grid-template-columns: 30em repeat(2, 1fr);
-            // grid-template-rows: 1fr;
             grid-gap: .5em;
 
             .image_container {
@@ -212,7 +211,7 @@
                     width: 70%;
                     height: 70%;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 2em;
+                    font-size: 1.5em;
                     font-weight: 900;
 
                     .bar {
@@ -234,8 +233,8 @@
                     justify-content: flex-start;
                     align-items: flex-start;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 1.2em;
-                    font-weight: 800;
+                    font-size: 1em;
+                    font-weight: 700;
                 }
 
             }

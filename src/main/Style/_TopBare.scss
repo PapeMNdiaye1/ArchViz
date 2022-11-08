@@ -21,7 +21,7 @@
         background-image: url('./Images/SVG/Asset\ 6.svg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 90%;
+        background-size: 80%;
     }
 
     .Menu-container {
@@ -104,6 +104,8 @@
         height: 30em;
         @include cent();
         flex-direction: column;
+        // background-color: aqua;
+        transform: scale(.8);
 
         .One-Section {
             height: 3.5em;
@@ -179,7 +181,7 @@
         align-items: center;
         z-index: 3;
         color: var(--colorX);
-        // filter: url(#noise);
+        // background-color: salmon;
 
         a {
             color: var(--colorX);
@@ -194,11 +196,11 @@
             }
 
             .network {
-                width: 1.5em;
-                height: 1.5em;
+                width: 1em;
+                height: 1em;
                 border-radius: 50%;
                 text-align: center;
-                font-size: 2em;
+                font-size: 1.5em;
                 cursor: pointer;
             }
         }

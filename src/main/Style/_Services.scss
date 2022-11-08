@@ -12,7 +12,6 @@
 
     .one_service {
         width: calc(100% - 40vw);
-        // height: 40em;
         background-color: #F4EFE4;
         display: grid;
         grid-template-columns: 1fr;
@@ -48,8 +47,8 @@
             margin-top: 5em;
             width: 100%;
             font-family: 'Montserrat', sans-serif;
-            font-size: 1em;
-            font-weight: 800;
+            font-size: .9em;
+            font-weight: 700;
             @include cent();
             justify-content: flex-end;
 
@@ -144,7 +143,7 @@
 
                 .one_galerie_title {
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 1em;
+                    font-size: .9em;
                     font-weight: 800;
                     width: auto;
                     height: 4em;

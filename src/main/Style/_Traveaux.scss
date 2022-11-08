@@ -12,7 +12,7 @@
 
         .visualization-projects {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2.3em;
+            font-size: 2em;
             font-weight: 900;
             width: 40%;
             // background-color: aqua;
@@ -23,8 +23,8 @@
             width: 40%;
             // background-color: antiquewhite;
             font-family: 'Montserrat', sans-serif;
-            font-size: 1em;
-            font-weight: 800;
+            font-size: .8em;
+            font-weight: 700;
         }
     }
 
@@ -35,7 +35,7 @@
 
 
         .One_Project_In_Home {
-            min-height: 65em;
+            min-height: 47em;
             display: grid;
             grid-gap: .5em;
 
@@ -65,7 +65,7 @@
                     width: 70%;
                     height: 70%;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 2em;
+                    font-size: 1.5em;
                     font-weight: 900;
 
                     .bar {
@@ -87,8 +87,8 @@
                     justify-content: flex-start;
                     align-items: flex-start;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 1.2em;
-                    font-weight: 800;
+                    font-size: 1em;
+                    font-weight: 700;
                 }
 
             }

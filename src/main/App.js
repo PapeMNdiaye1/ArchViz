@@ -1,6 +1,7 @@
 import './Style/Style.css';
-import { Routes, BrowserRouter, Route } from "react-router-dom";
 import { React, useEffect, useState, Fragment } from 'react';
+// import ReactDOM from "react-dom/client";
+import { Routes, BrowserRouter, Route, } from "react-router-dom";
 
 
 import TopBare from './TopBare';
@@ -23,12 +24,14 @@ function App() {
   const [TheDate, setTheDate] = useState('');
   const [TheLink, setTheLink] = useState('/');
 
-  const changeTab = (newTab) => {
-    console.log(newTab);
+  // let history = useNavigate();
+
+  const changeTab = (newTab, link) => {
+    // history.push(link);
+    console.log(newTab, link);
   }
 
   const GetImage = (theimage, title, date, link) => {
-    // console.log(theimage, title, date);
     console.log('#App');
     setTheImage(theimage);
     setTheTitle(title);
@@ -36,6 +39,9 @@ function App() {
     setTheLink(link);
   }
 
+  // const changeHistory = () => {
+
+  // }
 
 
 
@@ -45,22 +51,22 @@ function App() {
         <TopBare onChangeTab={changeTab} />
         <div className='App_container'>
           <Routes>
-            <Route path="/"
+            <Route exact path="/"
               element={<Accueil GetImageToApp={GetImage} />}
             />
-            <Route path="/Traveaux" element={<Traveaux />} />
-            <Route path="/Service" element={<Service />} />
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/Createur" element={<Createur />} />
-            <Route path="/Gallery"
+            <Route exact path="/Traveaux" element={<Traveaux />} />
+            <Route exact path="/Service" element={<Service />} />
+            <Route exact path="/Contact" element={<Contact />} />
+            <Route exact path="/Createur" element={<Createur />} />
+            <Route exact path="/Gallery"
               element={<Gallery
                 TheImageToGallery={TheImage}
                 TheTitleToGallery={TheTitle}
                 TheDateToGallery={TheDate}
                 TheLinkToGallery={TheLink}
               />} />
-            <Route path="/Interior1" element={<Interior1 />} />
-            <Route path="/SmallHouse1" element={<SmallHouse1 />} />
+            <Route exact path="/Interior1" element={<Interior1 />} />
+            <Route exact path="/SmallHouse1" element={<SmallHouse1 />} />
           </Routes>
         </div>
       </div>

@@ -50,7 +50,7 @@
   padding-top: 2em;
   background-color: black;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 800;
   color: var(--color0);
 }
@@ -70,7 +70,8 @@
 .App .App_container .the_footer .archviz_description {
   margin-left: 10%;
   margin-top: 1.5em;
-  font-size: .9em;
+  font-size: .7em;
+  color: #686868;
 }
 
 .App .App_container .the_footer .titles {
@@ -139,7 +140,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-size: .9em;
+  font-size: .7em;
   color: #686868;
   text-decoration: none;
 }
@@ -201,7 +202,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-size: .9em;
+  font-size: .7em;
   color: #686868;
 }
 
@@ -250,12 +251,12 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-size: .9em;
+  font-size: .7em;
   color: #686868;
 }
 
 .App .App_container .the_footer .network_container {
-  font-size: .9em;
+  font-size: .7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,7 +313,7 @@
 .App .App_container .the_footer .the_line {
   width: 100%;
   height: .1em;
-  background-color: var(--color0);
+  background-color: #686868;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1 / 5;
@@ -327,7 +328,7 @@
   -ms-grid-row: 12;
   -ms-grid-row-span: 1;
   grid-row: 12 / 13;
-  font-size: .9em;
+  font-size: .7em;
   color: #686868;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,7 +352,7 @@
   -ms-grid-row: 12;
   -ms-grid-row-span: 1;
   grid-row: 12 / 13;
-  font-size: .9em;
+  font-size: .7em;
   color: #686868;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,7 +398,7 @@
   background-image: url("./Images/SVG/Asset 6.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 90%;
+  background-size: 80%;
 }
 
 #Top-Bare .Menu-container {
@@ -516,6 +517,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 #Top-bare-slider-container .Menu-container .One-Section {
@@ -641,11 +644,11 @@
 }
 
 #Top-bare-slider-container .network_container a .network {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   border-radius: 50%;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   cursor: pointer;
 }
 
@@ -708,7 +711,7 @@
 
 #Accueil .Accueil_Slider .slider .slider_title {
   width: 50%;
-  font-size: 8em;
+  font-size: 6em;
   color: white;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
   display: -webkit-box;
@@ -845,7 +848,7 @@
   width: 80%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 #Accueil .archviz_presantation p {
@@ -853,10 +856,11 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   text-align: center;
+  font-size: .9em;
 }
 
 #Accueil .archviz_presantation .network_container {
-  font-size: .9em;
+  font-size: .8em;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -908,7 +912,7 @@
 }
 
 #Accueil .AccueilBigProjectsSection .One_Project_In_Home {
-  min-height: 65em;
+  min-height: 47em;
   display: -ms-grid;
   display: grid;
   grid-gap: .5em;
@@ -966,7 +970,7 @@
   width: 70%;
   height: 70%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 900;
 }
 
@@ -998,8 +1002,8 @@
       -ms-flex-align: start;
           align-items: flex-start;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2em;
-  font-weight: 800;
+  font-size: 1em;
+  font-weight: 700;
 }
 
 #Accueil .AccueilBigProjectsSection .right {
@@ -1294,7 +1298,7 @@
 
 #Traveaux .Traveaux-Header .visualization-projects {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: 900;
   width: 40%;
   padding-bottom: 1em;
@@ -1303,8 +1307,8 @@
 #Traveaux .Traveaux-Header .visualization-projects-description {
   width: 40%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  font-weight: 800;
+  font-size: .8em;
+  font-weight: 700;
 }
 
 #Traveaux .AccueilBigProjectsSection {
@@ -1314,7 +1318,7 @@
 }
 
 #Traveaux .AccueilBigProjectsSection .One_Project_In_Home {
-  min-height: 65em;
+  min-height: 47em;
   display: -ms-grid;
   display: grid;
   grid-gap: .5em;
@@ -1372,7 +1376,7 @@
   width: 70%;
   height: 70%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 900;
 }
 
@@ -1404,8 +1408,8 @@
       -ms-flex-align: start;
           align-items: flex-start;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2em;
-  font-weight: 800;
+  font-size: 1em;
+  font-weight: 700;
 }
 
 #Traveaux .AccueilBigProjectsSection .right {
@@ -1512,8 +1516,8 @@
   margin-top: 5em;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  font-weight: 800;
+  font-size: .9em;
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1669,7 +1673,7 @@
 
 #Services .one_service .project_container .one_galerie_element_container .one_galerie_title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
+  font-size: .9em;
   font-weight: 800;
   width: auto;
   height: 4em;
@@ -2159,7 +2163,7 @@
 .Interior_1_container .tools {
   margin-top: 7em;
   margin-left: 2em;
-  height: 10em;
+  height: 15em;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (auto)[2];
@@ -2169,6 +2173,7 @@
 }
 
 .Interior_1_container .tools .theToolsTitle {
+  height: 2em;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8em;
   font-weight: 700;
@@ -2182,7 +2187,6 @@
 
 .Interior_1_container .tools .theToolsIcon1 {
   width: 5em;
-  height: 5em;
   -ms-grid-column: 1;
   grid-column: 1/1;
   -ms-grid-row: 2;
@@ -2205,6 +2209,26 @@
   width: 5em;
   -ms-grid-column: 2;
   grid-column: 2/2;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Interior_1_container .tools .theToolsIcon3 {
+  width: 5em;
+  -ms-grid-column: 3;
+  grid-column: 3/3;
   -ms-grid-row: 2;
   grid-row: 2/2;
   display: -webkit-box;

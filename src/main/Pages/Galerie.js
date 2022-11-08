@@ -20,6 +20,8 @@ function Gallery({ TheImageToGallery,
 
     useEffect(() => {
 
+        console.log('##################################');
+        console.log('##################################');
         console.log(TheLinkToGallery);
         if (!TheChangeInGalerie) {
             setTheImage(TheImageToGallery);

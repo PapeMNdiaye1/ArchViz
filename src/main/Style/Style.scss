@@ -45,7 +45,7 @@
       padding-top: 2em;
       background-color: rgba(0, 0, 0, 1);
       font-family: 'Montserrat', sans-serif;
-      font-size: 1.2em;
+      font-size: 1em;
       font-weight: 800;
       color: var(--color0);
 
@@ -58,13 +58,13 @@
         background-repeat: no-repeat;
         background-size: 90%;
         filter: invert(100%);
-        // background-color: aqua;
       }
 
       .archviz_description {
         margin-left: 10%;
         margin-top: 1.5em;
-        font-size: .9em;
+        font-size: .7em;
+        color: rgb(104, 104, 104);
       }
 
       .titles {
@@ -89,7 +89,7 @@
           @include cent();
           justify-content: flex-start;
           align-items: flex-end;
-          font-size: .9em;
+          font-size: .7em;
           color: rgb(104, 104, 104);
           text-decoration: none;
 
@@ -119,7 +119,7 @@
           @include cent();
           justify-content: flex-start;
           align-items: flex-end;
-          font-size: .9em;
+          font-size: .7em;
           color: rgb(104, 104, 104);
           // color: rgb(41, 41, 41);
         }
@@ -134,22 +134,19 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        // background-color: aqua;
 
         .contact_elemant {
           height: calc(100% * 2);
           @include cent();
           justify-content: flex-start;
           align-items: flex-end;
-          font-size: .9em;
+          font-size: .7em;
           color: rgb(104, 104, 104);
-          // color: rgb(41, 41, 41);
         }
       }
 
       .network_container {
-        font-size: .9em;
-        // width: 100%;
+        font-size: .7em;
         @include cent();
         justify-content: flex-start;
         align-items: flex-start;
@@ -158,7 +155,6 @@
         grid-column: 4 / 4;
         grid-row: 3 / 6;
         margin-left: 20%;
-        // background-color: seagreen;
         flex-direction: column;
 
         a {
@@ -180,7 +176,6 @@
             text-align: start;
             font-size: 2em;
             cursor: pointer;
-            // background-color: salmon;
           }
         }
 
@@ -189,7 +184,7 @@
       .the_line {
         width: 100%;
         height: .1em;
-        background-color: var(--color0);
+        background-color: rgb(104, 104, 104);
         grid-column: 1 / 5;
         grid-row: 12 / 12;
       }
@@ -197,7 +192,7 @@
       .country {
         grid-column: 4 / 5;
         grid-row: 12 / 13;
-        font-size: .9em;
+        font-size: .7em;
         color: rgb(104, 104, 104);
         @include cent();
         justify-content: flex-end;
@@ -208,12 +203,11 @@
       .rights {
         grid-column: 1 / 3;
         grid-row: 12 / 13;
-        font-size: .9em;
+        font-size: .7em;
         color: rgb(104, 104, 104);
         @include cent();
         font-weight: 500;
         justify-content: flex-start;
-
       }
     }
   }

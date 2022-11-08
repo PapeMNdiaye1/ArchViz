@@ -14,8 +14,8 @@ function TopBare({ onChangeTab }) {
         }
     });
 
-    const callback = (title) => {
-        onChangeTab(title)
+    const callback = (title, link) => {
+        onChangeTab(title, link)
     }
 
     const onClickOnMenu = (e) => {
@@ -60,11 +60,11 @@ function TopBare({ onChangeTab }) {
             </div>
             <div id='Top-bare-slider-container'>
                 <div className='Menu-container'>
-                    <OneSection parentCallback={callback} title={'ACCUEIL'} />
-                    <OneSection parentCallback={callback} title={'TRAVEAUX'} />
-                    <OneSection parentCallback={callback} title={'SERVICE'} />
-                    <OneSection parentCallback={callback} title={'CREATEUR'} />
-                    <OneSection parentCallback={callback} title={'CONTACT'} />
+                    <OneSection parentCallback={callback} link={'/'} title={'ACCUEIL'} />
+                    <OneSection parentCallback={callback} link={'/Traveaux'} title={'TRAVEAUX'} />
+                    <OneSection parentCallback={callback} link={'/Service'} title={'SERVICE'} />
+                    <OneSection parentCallback={callback} link={'/Createur'} title={'CREATEUR'} />
+                    <OneSection parentCallback={callback} link={'/Contact'} title={'CONTACT'} />
                 </div>
 
                 <div className="network_container">
@@ -97,7 +97,7 @@ function TopBare({ onChangeTab }) {
 //!###################################################
 //!###################################################
 //!###################################################
-function OneSection({ title, parentCallback }) {
+function OneSection({ title, parentCallback, link }) {
 
     const [TheLink, setTheLink] = useState('/');
 
@@ -126,7 +126,7 @@ function OneSection({ title, parentCallback }) {
     });
 
     const onClickOnTab = (e) => {
-        parentCallback(title)
+        parentCallback(title, link)
 
         e.target.childNodes[0].style.top = ''
         e.target.childNodes[0].childNodes[1].style.opacity = ''

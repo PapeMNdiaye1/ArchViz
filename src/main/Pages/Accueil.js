@@ -405,26 +405,18 @@ function TheFooter({ }) {
                 preserves the historic framework of the MIT
             </div>
             <div className='menu_elemant_container'>
-                {/* <div className='menu_elemant'> */}
                 <Link className='menu_elemant' to={'/'} onClick={onClickOnTab}>
                     Accueil
                 </Link>
-                {/* </div> */}
-                {/* <div className='menu_elemant'> */}
                 <Link className='menu_elemant' to={'/Traveaux'} onClick={onClickOnTab}>
                     Traveaux
                 </Link>
-                {/* </div> */}
-                {/* <div className='menu_elemant'> */}
                 <Link className='menu_elemant' to={'/Service'} onClick={onClickOnTab}>
                     Services
                 </Link>
-                {/* </div> */}
-                {/* <div className='menu_elemant'> */}
                 <Link className='menu_elemant' to={'/Createur'} onClick={onClickOnTab}>
                     Createur
                 </Link>
-                {/* </div> */}
                 <div className='menu_elemant'></div>
             </div>
             <div className='categories_elemant_container'>
@@ -469,9 +461,6 @@ function TheFooter({ }) {
             <div className='rights'>
                 © 2022 | Archviz. Tout droit réservé.
             </div>
-
-
-
         </div>
     );
 
