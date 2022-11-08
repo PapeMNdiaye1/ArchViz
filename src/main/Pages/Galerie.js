@@ -1,7 +1,5 @@
 import { React, useEffect, useState, Fragment } from 'react';
-
-import { TheGallery, TheFooter } from './Accueil';
-
+import { TheGallery } from './Accueil';
 import { Link } from "react-router-dom";
 
 function Gallery({ TheImageToGallery,
@@ -20,9 +18,6 @@ function Gallery({ TheImageToGallery,
 
     useEffect(() => {
 
-        console.log('######################################################');
-        console.log('######################################################');
-        console.log(TheLinkToGallery);
         if (!TheChangeInGalerie) {
             setTheImage(TheImageToGallery);
             setTheTitle(TheTitleToGallery);
@@ -37,18 +32,21 @@ function Gallery({ TheImageToGallery,
         }
 
         return () => {
-            console.log('TheTitle');
-            setTheChangeInGalerie(true);
+            setTheChangeInGalerie(false);
+            setTheImageContainer(false);
+            setTheImage('');
+            setTheTitle('');
+            setTheDate('');
+            setTheLink('/');
         }
-    }, []);
 
+    }, []);
 
     const GetImageOnApp = (theimage, title, date, link) => {
         setTheImage(theimage);
         setTheTitle(title);
         setTheDate(date);
         setTheLink(link);
-        console.log(link);
     }
 
     const displayImage = () => {
@@ -58,7 +56,6 @@ function Gallery({ TheImageToGallery,
             setTheImageContainer(true);
         }
     }
-
 
     return (
         <Fragment>
@@ -76,21 +73,17 @@ function Gallery({ TheImageToGallery,
                 }
                 <div className='the_galerie_presantation_container'>
                     <img onClick={displayImage} src={TheImage} width='80%' />
-                    {/* <div className='the_title'> */}
                     <Link className='the_title' to={TheLink}>
                         {TheTitle}
                     </Link>
-                    {/* </div> */}
                     <div className='the_date'>
                         {TheDate}
                     </div>
 
                 </div>
                 <TheGallery GetImageOnAccueil={GetImageOnApp} />
-                <TheFooter />
             </div>
         </Fragment>
-
     );
 }
 

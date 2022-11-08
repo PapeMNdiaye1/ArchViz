@@ -49,7 +49,7 @@ function Traveaux() {
                     color={'#F1F1F1'} textcolor={'#222'} theKey={6} side={'right'} />
 
             </div>
-            <TheFooter />
+            {/* <TheFooter /> */}
         </div>
     );
 }

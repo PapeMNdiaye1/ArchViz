@@ -1,0 +1,176 @@
+   .the_footer {
+       width: calc(100% - 10em);
+       height: 40em;
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       grid-template-rows: repeat(13, 1fr);
+       padding-left: 5em;
+       padding-right: 5em;
+       padding-top: 2em;
+       background-color: rgba(0, 0, 0, 1);
+       font-family: 'Montserrat', sans-serif;
+       font-size: 1em;
+       font-weight: 800;
+       color: var(--color0);
+
+       .logo-container {
+           width: 5em;
+           height: 5.5em;
+           margin-left: 10%;
+           background-image: url('./Images/SVG/Asset\ 6.svg');
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: 90%;
+           filter: invert(100%);
+       }
+
+       .archviz_description {
+           margin-left: 10%;
+           margin-top: 1.5em;
+           font-size: .7em;
+           color: rgb(104, 104, 104);
+       }
+
+       .titles {
+           @include cent();
+           justify-content: flex-start;
+           align-items: flex-end;
+           margin-left: 20%;
+       }
+
+       .menu_elemant_container {
+           height: 100%;
+           grid-column: 1 / 2;
+           grid-row: 3 / 8;
+           margin-left: 10%;
+           @include cent();
+           justify-content: flex-start;
+           align-items: flex-start;
+           flex-direction: column;
+
+           .menu_elemant {
+               height: calc(100% * 5);
+               @include cent();
+               justify-content: flex-start;
+               align-items: flex-end;
+               font-size: .7em;
+               color: rgb(104, 104, 104);
+               text-decoration: none;
+
+               &:hover {
+                   transform: scale(1.1);
+               }
+           }
+       }
+
+       .categories_elemant_container {
+           height: 100%;
+           grid-column: 2 / 2;
+           grid-row: 3 / 9;
+           margin-left: 20%;
+           @include cent();
+           justify-content: flex-start;
+           align-items: flex-start;
+           flex-direction: column;
+
+           ion-icon {
+               top: -.1em;
+               transform: scale(.8);
+           }
+
+           .categories_elemant {
+               height: calc(100% * 6);
+               @include cent();
+               justify-content: flex-start;
+               align-items: flex-end;
+               font-size: .7em;
+               color: rgb(104, 104, 104);
+               // color: rgb(41, 41, 41);
+           }
+       }
+
+       .contact_elemant_container {
+           // height: 100%;
+           grid-column: 3 / 3;
+           grid-row: 3 / 5;
+           margin-left: 20%;
+           @include cent();
+           justify-content: flex-start;
+           align-items: flex-start;
+           flex-direction: column;
+
+           .contact_elemant {
+               height: calc(100% * 2);
+               @include cent();
+               justify-content: flex-start;
+               align-items: flex-end;
+               font-size: .7em;
+               color: rgb(104, 104, 104);
+           }
+       }
+
+       .network_container {
+           font-size: .7em;
+           @include cent();
+           justify-content: flex-start;
+           align-items: flex-start;
+           flex-direction: row;
+           color: var(--colorX);
+           grid-column: 4 / 4;
+           grid-row: 3 / 6;
+           margin-left: 20%;
+           flex-direction: column;
+
+           a {
+
+               height: calc(100% / 3);
+               color: var(--color0);
+
+               &:hover {
+                   transform: scale(1.1);
+                   color: var(--color0);
+               }
+
+               &:active {
+                   transform: scale(0.9);
+               }
+
+               .network {
+                   width: 1.5em;
+                   text-align: start;
+                   font-size: 2em;
+                   cursor: pointer;
+               }
+           }
+
+       }
+
+       .the_line {
+           width: 100%;
+           height: .1em;
+           background-color: rgb(104, 104, 104);
+           grid-column: 1 / 5;
+           grid-row: 12 / 12;
+       }
+
+       .country {
+           grid-column: 4 / 5;
+           grid-row: 12 / 13;
+           font-size: .7em;
+           color: rgb(104, 104, 104);
+           @include cent();
+           justify-content: flex-end;
+           font-weight: 500;
+
+       }
+
+       .rights {
+           grid-column: 1 / 3;
+           grid-row: 12 / 13;
+           font-size: .7em;
+           color: rgb(104, 104, 104);
+           @include cent();
+           font-weight: 500;
+           justify-content: flex-start;
+       }
+   }

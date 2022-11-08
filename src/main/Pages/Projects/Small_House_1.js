@@ -1,6 +1,5 @@
 import { React, useEffect, useState } from 'react';
 
-import { TheFooter } from '../Accueil';
 
 
 
@@ -18,7 +17,7 @@ function SmallHouse1({ }) {
     return (
         <div id="Services">
             SmallHouse1
-            <TheFooter />
+            {/* <TheFooter /> */}
         </div >
     );
 }

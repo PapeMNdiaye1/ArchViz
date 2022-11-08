@@ -86,7 +86,7 @@ function Services() {
                     </div>
                 } color={'#EBEBEB'}
             />
-            <TheFooter />
+            {/* <TheFooter /> */}
         </div>
     );
 }

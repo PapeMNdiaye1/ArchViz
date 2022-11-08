@@ -6,12 +6,14 @@ import { Routes, BrowserRouter, Route, } from "react-router-dom";
 
 import TopBare from './TopBare';
 import { Accueil } from './Pages/Accueil';
+import { TheFooter } from './Pages/Accueil';
 import Gallery from './Pages/Galerie';
 import Traveaux from './Pages/Traveaux';
 import Service from './Pages/Service';
 import Contact from './Pages/Contact';
 import Createur from './Pages/Createur';
-import Interior1 from './Pages/Projects/Interior_1';
+
+import Interior1 from './Pages/Projects/Interior_Design';
 import SmallHouse1 from './Pages/Projects/Small_House_1';
 
 
@@ -57,9 +59,10 @@ function App() {
                 TheDateToGallery={TheDate}
                 TheLinkToGallery={TheLink}
               />} />
-            <Route exact path="/Interior1" element={<Interior1 />} />
+            <Route exact path="/Interior_Design" element={<Interior1 />} />
             <Route exact path="/SmallHouse1" element={<SmallHouse1 />} />
           </Routes>
+          <TheFooter />
         </div>
       </div>
     </BrowserRouter>
