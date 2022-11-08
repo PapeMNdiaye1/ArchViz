@@ -23,8 +23,6 @@ function Interior1({ }) {
     //     AccueilContainer.scrollTop = 0;
     // }
 
-
-
     const displayImage = (e) => {
         if (TheImageContainer) {
             setTheImageContainer(false);
@@ -33,7 +31,6 @@ function Interior1({ }) {
             setTheImageContainer(true);
         }
     }
-
 
     return (
         <Fragment>
@@ -51,7 +48,7 @@ function Interior1({ }) {
 
             <div className='Interior_1_container'>
 
-                <div className='Interior_1'>
+                <div className='project_display'>
                     <h1 className='project_title'>
                         Interior Decoration
                     </h1>
@@ -83,7 +80,8 @@ function Interior1({ }) {
                         <img onClick={displayImage} src={ImageProjectC4} width='100%' />
                     </div>
                 </div>
-                <div className='tools'>
+
+                {/* <div className='tools'>
                     <h1 className='theToolsTitle'>
                         Tools
                     </h1>
@@ -107,13 +105,11 @@ function Interior1({ }) {
                         }}
                         className='theToolsIcon3'>
                     </div>
-                </div>
+                </div> */}
             </div>
         </Fragment >
     );
+
 }
-
-
-
 
 export default Interior1;

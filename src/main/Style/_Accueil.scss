@@ -45,7 +45,7 @@
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 900;
                 margin-left: 10vw;
-                // background-color: aqua;
+                top: -6%;
             }
 
             .slider_date {
@@ -59,6 +59,8 @@
                 flex-direction: column;
                 font-weight: 300;
                 margin-left: 10vw;
+                top: -6%;
+                // top: -1.3em;
             }
         }
 
@@ -213,6 +215,8 @@
                     font-family: 'Montserrat', sans-serif;
                     font-size: 1.5em;
                     font-weight: 900;
+                    text-decoration: none;
+                    // color: ;
 
                     .bar {
                         height: .1em;

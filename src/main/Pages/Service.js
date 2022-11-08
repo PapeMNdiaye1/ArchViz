@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react';
-
+import { Link } from "react-router-dom";
 import { TheFooter } from './Accueil';
 
 
@@ -52,10 +52,10 @@ function Services() {
                 }
                 TheGalerieElements={
                     <div className='project_container'>
-                        <OneGalerieElement image={ImageProjectA4} title={'Interior Design'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectB3} title={'Interior Design'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectE7} title={'Interior Design'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectC7} title={'Interior Design'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectA4} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectB3} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectE7} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectC7} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
                     </div>
                 } color={'#F4EFE4'}
             />
@@ -68,8 +68,8 @@ function Services() {
                     </p>}
                 TheGalerieElements={
                     <div className='project_container'>
-                        <OneGalerieElement image={ImageProjectC1} title={'Interior Design'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectB3} title={'Interior Design'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectC1} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectB3} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
                     </div>
                 } color={'#F1F1F1'}
             />
@@ -81,8 +81,8 @@ function Services() {
                     </p>}
                 TheGalerieElements={
                     <div className='project_container'>
-                        <OneGalerieElement image={ImageProjectD1} title={'Interior Design'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectF2} title={'Interior Design'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectD1} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectF2} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
                     </div>
                 } color={'#EBEBEB'}
             />
@@ -112,7 +112,7 @@ function OneService({ color, theServiceTitle, TheGalerieElements, theServiceDesc
 }
 
 
-function OneGalerieElement({ giveImageId, title, theKey, image, date }) {
+function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
 
     const clickOnImage = (e) => {
         let AccueilContainer = document.querySelector(".App_container")
@@ -125,7 +125,6 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date }) {
                 <img src={image} width='100%' />
                 <div className='one_galerie_element_hover'>
                     <div className='iner_container' >
-
                         <p className='titre'>
                             {title}
                         </p>
@@ -135,9 +134,9 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date }) {
                     </div>
                 </div>
             </div>
-            <div className='one_galerie_title'>
+            <Link className='one_galerie_link' to={link}>
                 Voir le projet  <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
+            </Link>
         </div>
     );
 }

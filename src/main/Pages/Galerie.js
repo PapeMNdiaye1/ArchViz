@@ -32,7 +32,7 @@ function Gallery({ TheImageToGallery,
         }
 
         return () => {
-            setTheChangeInGalerie(false);
+            setTheChangeInGalerie(true);
             setTheImageContainer(false);
             setTheImage('');
             setTheTitle('');

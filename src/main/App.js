@@ -16,9 +16,6 @@ import Createur from './Pages/Createur';
 import Interior1 from './Pages/Projects/Interior_Design';
 import SmallHouse1 from './Pages/Projects/Small_House_1';
 
-
-
-
 function App() {
 
   const [TheImage, setTheImage] = useState('');
@@ -59,7 +56,7 @@ function App() {
                 TheDateToGallery={TheDate}
                 TheLinkToGallery={TheLink}
               />} />
-            <Route exact path="/Interior_Design" element={<Interior1 />} />
+            <Route exact path="/Interior1" element={<Interior1 />} />
             <Route exact path="/SmallHouse1" element={<SmallHouse1 />} />
           </Routes>
           <TheFooter />

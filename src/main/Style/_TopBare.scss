@@ -29,6 +29,7 @@
         width: 5em;
         height: 100%;
         @include cent;
+        cursor: pointer;
 
         .Menu {
             width: 2.3em;

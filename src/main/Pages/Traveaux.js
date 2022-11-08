@@ -31,25 +31,24 @@ function Traveaux() {
             <div className='AccueilBigProjectsSection'>
                 <OneBigProject title={'MIT Student Hub'} image={ImageProjectC3}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'left'} />
+                    color={'#EAEAEA'} textcolor={'#222'} theKey={1} link={'/Interior1'} side={'left'} />
                 <OneBigProject title={'MIT Student Hub1'} image={ImageProjectA1}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#93A490'} textcolor={'#222'} theKey={2} side={'right'} />
+                    color={'#93A490'} textcolor={'#222'} theKey={2} link={'/Interior1'} side={'right'} />
                 <OneBigProject title={'MIT Student Hub'} image={ImageProjectD3}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#DB9B18'} textcolor={'#222'} theKey={3} side={'left'} />
+                    color={'#DB9B18'} textcolor={'#222'} theKey={3} link={'/Interior1'} side={'left'} />
                 <OneBigProject title={'MIT Student Hub3'} image={ImageProjectE4}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#F4EFE4'} textcolor={'#222'} theKey={4} side={'right'} />
+                    color={'#F4EFE4'} textcolor={'#222'} theKey={4} link={'/Interior1'} side={'right'} />
                 <OneBigProject title={'MIT Student Hub'} image={ImageProjectB1}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={5} side={'left'} />
+                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={5} link={'/Interior1'} side={'left'} />
                 <OneBigProject title={'MIT Student Hub3'} image={ImageProjectF2}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#F1F1F1'} textcolor={'#222'} theKey={6} side={'right'} />
+                    color={'#F1F1F1'} textcolor={'#222'} theKey={6} link={'/Interior1'} side={'right'} />
 
             </div>
-            {/* <TheFooter /> */}
         </div>
     );
 }

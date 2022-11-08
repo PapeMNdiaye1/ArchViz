@@ -51,8 +51,8 @@ function TopBare({ onChangeTab }) {
     return (
         <Fragment>
             <div id="Top-Bare">
-                <div className='logo-container'>
-                </div>
+                <Link className='logo-container' to={'/'}>
+                </Link>
                 <div className='Menu-container'>
                     <div onClick={onClickOnMenu} className='Menu'>
                     </div>

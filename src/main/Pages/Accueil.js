@@ -45,6 +45,8 @@ function Accueil({ GetImageToApp }) {
 
         let AccueilContainer = document.querySelector(".App_container")
         let ThesliderImg = document.querySelectorAll(".slider")
+        // let AccueilContainer = document.querySelector(".App_container")
+        AccueilContainer.scrollTop = 0;
 
         AccueilContainer.addEventListener('scroll', (event) => {
             let TheScrollTop = AccueilContainer.scrollTop;
@@ -108,16 +110,16 @@ function Accueil({ GetImageToApp }) {
             <div className='AccueilBigProjectsSection'>
                 <OneBigProject title={'MIT Student Hub1'} image={ImageProjectA1}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#93A490'} textcolor={'#222'} theKey={1} side={'right'} />
+                    color={'#93A490'} textcolor={'#222'} theKey={1} side={'right'} link={'/SmallHouse1'} />
                 <OneBigProject title={'MIT Student Hub'} image={ImageProjectC3}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#EAEAEA'} textcolor={'#222'} theKey={2} side={'left'} />
+                    color={'#EAEAEA'} textcolor={'#222'} theKey={2} side={'left'} link={'/Interior1'} />
                 <OneBigProject title={'MIT Student Hub3'} image={ImageProjectE4}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} />
+                    color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Interior1'} />
                 <OneBigProject title={'MIT Student Hub'} image={ImageProjectB1}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={4} side={'left'} />
+                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={4} side={'left'} link={'/Interior1'} />
             </div>
             <div className='galerie_presantation'>
                 <div className='visualisation_maquette' >
@@ -235,7 +237,7 @@ function Slider({ giveSliderKey, title, date, theKey }) {
 
 //!###############################################################
 
-function OneBigProject({ color, title, description, side, textcolor, theKey, image }) {
+function OneBigProject({ color, title, description, side, textcolor, theKey, image, link }) {
     const [TheSide, setTheSide] = useState('');
 
     useEffect(() => {
@@ -254,31 +256,33 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                             color: textcolor,
                         }}
                         className='info_container '>
-                        <div
+                        <Link
 
-                            className='title'>
+                            style={{
+                                color: textcolor,
+                            }} className='title' to={link}>
                             {title}
                             <div
                                 style={{
                                     backgroundColor: textcolor,
                                 }}
                                 className='bar'>
-
                             </div>
-                        </div>
+                        </Link>
                         <div
 
                             className='description'>
                             {description}
                         </div>
                     </div>
-                    <div
+                    <Link
+                        to={link}
                         className='image_container'
                         style={{
                             backgroundImage: `url('${image}')`,
                         }}
                     >
-                    </div>
+                    </Link>
                 </div>
             ) : (
                 <div className="One_Project_In_Home left">
@@ -287,29 +291,32 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                             color: textcolor,
                         }}
                         className='info_container' >
-                        <div
-                            className='title'>
+                        <Link
+                            style={{
+                                color: textcolor,
+                            }}
+                            className='title' to={link}>
                             {title}
                             <div
                                 style={{
                                     backgroundColor: textcolor,
                                 }}
                                 className='bar'>
-
                             </div>
-                        </div>
+                        </Link>
                         <div
                             className='description'>
                             {description}
                         </div>
                     </div>
-                    <div
+                    <Link
+                        to={link}
                         className='image_container'
                         style={{
                             backgroundImage: `url('${image}')`,
                         }}
                     >
-                    </div>
+                    </Link>
                 </div>
             )
             }
@@ -323,30 +330,29 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
 function TheGallery({ GetImageOnAccueil }) {
 
     const onClickOnImage = (theimage, title, date, link) => {
-        // console.log(theimage, title, date);
         GetImageOnAccueil(theimage, title, date, link);
     }
 
     return (
         <Fragment>
             <div className="the_galerie_container">
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior_Design'} image={ImageProjectC3} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC3} title={'Interior Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectB3} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior_Design'} image={ImageProjectE4} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectE4} title={'Interior Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Small House'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE5} title={'Color Studies2'} date={'Juin 09, 2022'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectD1} title={'Collection "Morceaux du Sénégal"'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE1} title={'Color Studies2'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectB2} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior_Design'} image={ImageProjectC4} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC4} title={'Interior Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectF1} title={'Color Studies2'} date={'Juin 09, 2022'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA4} title={'Small House'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA2} title={'Small House'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior_Design'} image={ImageProjectC2} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior_Design'} image={ImageProjectC7} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior_Design'} image={ImageProjectC5} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC2} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC7} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC5} title={'Interior Design'} date={'Juin 09, 2022'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE7} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE9} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
@@ -354,7 +360,7 @@ function TheGallery({ GetImageOnAccueil }) {
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE3} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE6} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectF3} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectF3} title={'Color Studies2'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectD2} title={'Collection "Morceaux du Sénégal"'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectC6} title={'Color Studies2'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectC1} title={'Color Studies2'} date={'Juin 09, 2022'} />
