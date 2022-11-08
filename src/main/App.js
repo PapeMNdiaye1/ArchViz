@@ -24,10 +24,8 @@ function App() {
   const [TheDate, setTheDate] = useState('');
   const [TheLink, setTheLink] = useState('/');
 
-  // let history = useNavigate();
 
   const changeTab = (newTab, link) => {
-    // history.push(link);
     console.log(newTab, link);
   }
 
@@ -38,12 +36,6 @@ function App() {
     setTheDate(date);
     setTheLink(link);
   }
-
-  // const changeHistory = () => {
-
-  // }
-
-
 
   return (
     <BrowserRouter>

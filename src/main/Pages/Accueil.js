@@ -42,8 +42,10 @@ import ImageProjectF3 from '../Style/Images/Project/Hangar-3.jpg';
 function Accueil({ GetImageToApp }) {
 
     useEffect(() => {
+
         let AccueilContainer = document.querySelector(".App_container")
         let ThesliderImg = document.querySelectorAll(".slider")
+
         AccueilContainer.addEventListener('scroll', (event) => {
             let TheScrollTop = AccueilContainer.scrollTop;
             let TheScrollHeight = AccueilContainer.scrollHeight;
@@ -53,11 +55,19 @@ function Accueil({ GetImageToApp }) {
                 element.style.backgroundPositionY = `-${TheScrollTopInP * 10}%`;
             });
         })
-    });
+        return () => {
+
+
+
+            // setTheChangeInGalerie(false);
+            console.log('ww');
+        }
+    }, []);
+
+
 
     const GetImageOnApp = (theimage, title, date, link) => {
         GetImageToApp(theimage, title, date, link);
-        // console.log(theimage, title, date);
         console.log('#Accueil');
     }
 
@@ -151,9 +161,11 @@ function AccueilSlider() {
     useEffect(() => {
         let sliderBtnContainer = document.querySelector(".slider_btn_container")
         let AllDot = sliderBtnContainer.childNodes
+
         AllDot.forEach(element => {
             element.addEventListener("click", onClickOnDot);
         });
+
         AllDot[0].classList.add('ativeDot')
         let theCourentSlide = 0
         const interval = setInterval(function () {
@@ -167,9 +179,11 @@ function AccueilSlider() {
 
         return () => {
             clearInterval(interval);
+            sliderBtnContainer.innerHTML = '';
         }
 
     }, [])
+
     const CreateSliderBtn = (theSlider) => {
         let sliderBtnContainer = document.querySelector(".slider_btn_container")
         let OneDot = document.createElement("div")

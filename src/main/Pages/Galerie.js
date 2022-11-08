@@ -20,8 +20,8 @@ function Gallery({ TheImageToGallery,
 
     useEffect(() => {
 
-        console.log('##################################');
-        console.log('##################################');
+        console.log('######################################################');
+        console.log('######################################################');
         console.log(TheLinkToGallery);
         if (!TheChangeInGalerie) {
             setTheImage(TheImageToGallery);
@@ -35,8 +35,10 @@ function Gallery({ TheImageToGallery,
             setTheDate(TheDate);
             setTheLink(TheLink);
         }
+
         return () => {
-            setTheChangeInGalerie(false);
+            console.log('TheTitle');
+            setTheChangeInGalerie(true);
         }
     }, []);
 
