@@ -37,6 +37,10 @@ import ImageProjectF1 from '../Style/Images/Project/Hangar-1.jpg';
 import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
 import ImageProjectF3 from '../Style/Images/Project/Hangar-3.jpg';
 
+import ImageProjectG1 from '../Style/Images/Project/MSAD_1.jpg';
+import ImageProjectG2 from '../Style/Images/Project/MSAD_2.jpg';
+import ImageProjectG3 from '../Style/Images/Project/MSAD_3.jpg';
+
 
 
 function Accueil({ GetImageToApp }) {
@@ -45,7 +49,6 @@ function Accueil({ GetImageToApp }) {
 
         let AccueilContainer = document.querySelector(".App_container")
         let ThesliderImg = document.querySelectorAll(".slider")
-        // let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 
         AccueilContainer.addEventListener('scroll', (event) => {
@@ -58,9 +61,6 @@ function Accueil({ GetImageToApp }) {
             });
         })
         return () => {
-
-
-
             // setTheChangeInGalerie(false);
             // console.log('ww');
         }
@@ -108,18 +108,18 @@ function Accueil({ GetImageToApp }) {
                 </div>
             </div>
             <div className='AccueilBigProjectsSection'>
-                <OneBigProject title={'MIT Student Hub1'} image={ImageProjectA1}
+                <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
                     color={'#93A490'} textcolor={'#222'} theKey={1} side={'right'} link={'/SmallHouse1'} />
-                <OneBigProject title={'MIT Student Hub'} image={ImageProjectC3}
+                <OneBigProject title={'Interior Design'} image={ImageProjectC3}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#EAEAEA'} textcolor={'#222'} theKey={2} side={'left'} link={'/Interior1'} />
-                <OneBigProject title={'MIT Student Hub3'} image={ImageProjectE4}
+                    color={'#EAEAEA'} textcolor={'#222'} theKey={2} side={'left'} link={'/Pharmacie1'} />
+                <OneBigProject title={'Pharmacie Design'} image={ImageProjectE4}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Interior1'} />
-                <OneBigProject title={'MIT Student Hub'} image={ImageProjectB1}
+                <OneBigProject title={"Visualisation Exterieur d'Immeuble"} image={ImageProjectB1}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={4} side={'left'} link={'/Interior1'} />
+                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={4} side={'left'} link={'/Immeuble1'} />
             </div>
             <div className='galerie_presantation'>
                 <div className='visualisation_maquette' >
@@ -127,7 +127,6 @@ function Accueil({ GetImageToApp }) {
                 </div>
             </div>
             <TheGallery GetImageOnAccueil={GetImageOnApp} />
-            {/* <TheFooter /> */}
         </div >
     );
 }
@@ -192,19 +191,14 @@ function AccueilSlider() {
         OneDot.classList.add('dot');
         OneDot.setAttribute("theSlider", theSlider);
         sliderBtnContainer.appendChild(OneDot)
-
     }
 
     return (
         <div className="Accueil_Slider">
-            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={' Juin 09 , 2022'} title={<p>1Summerfest <dr />
-                Pavilion <br /> Color <dr /> Studies</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={' Juin 03 , 2022'} title={<p>2Summerfest <dr />
-                Pavilion Color <dr /> Studies</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={' Juin 03 , 2022'} title={<p>3Summerfest <dr />
-                Pavilion Color <dr /> Studies</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={' Juin 03 , 2022'} title={<p>4Summerfest <dr />
-                Pavilion Color <dr /> Studies</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={' Juin 09 , 2022'} title={<p>Visualisations <dr />Rendus Images<br />et Videos</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={' Juin 03 , 2022'} title={<p>Creation de <dr /> Maquet</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={' Juin 03 , 2022'} title={<p>Realiter <dr /> Virtuel 3D Web <dr /> experience</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={' Juin 03 , 2022'} title={<p>Visualisations <dr /> Architectural</p>} />
             <div className='slider_btn_container'>
 
             </div>
@@ -337,34 +331,34 @@ function TheGallery({ GetImageOnAccueil }) {
         <Fragment>
             <div className="the_galerie_container">
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC3} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectB3} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectE4} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Small House'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE5} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE3} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Design de Maison Moderne'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE5} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectD1} title={'Collection "Morceaux du Sénégal"'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE1} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectB2} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Touba'} image={ImageProjectD1} title={'Maquette de la Grande Mosquée de Touba'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE1} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Immeuble1'} image={ImageProjectB2} title={"Visualisation Exterieur d'Immeuble"} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC4} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectF1} title={'Color Studies2'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF1} title={'Maquette Hangar Photovoltaïque'} date={'Juin 09, 2022'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA4} title={'Small House'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA2} title={'Small House'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE4} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA2} title={'Design de Maison Moderne'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC2} title={'Interior Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC7} title={'Interior Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC5} title={'Interior Design'} date={'Juin 09, 2022'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE7} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE9} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE2} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE3} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectE6} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA4} title={'Design de Maison Moderne'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE7} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE9} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE2} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF3} title={'Maquette Hangar Photovoltaïque'} date={'Juin 09, 2022'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectF3} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectD2} title={'Collection "Morceaux du Sénégal"'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectC6} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectC1} title={'Color Studies2'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA5} title={'Small House'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE6} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG3} title={'Manufacture des Arts Décoratifs de Thiés'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC6} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC1} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA5} title={'Design de Maison Moderne'} date={'Juin 09, 2022'} />
             </div>
         </Fragment>
     );
@@ -434,8 +428,8 @@ function TheFooter({ }) {
                 <Link className='menu_elemant' to={'/Service'} onClick={onClickOnTab}>
                     Services
                 </Link>
-                <Link className='menu_elemant' to={'/Createur'} onClick={onClickOnTab}>
-                    Createur
+                <Link className='menu_elemant' to={'/Gallery'} onClick={onClickOnTab}>
+                    Gallerie
                 </Link>
                 <div className='menu_elemant'></div>
             </div>

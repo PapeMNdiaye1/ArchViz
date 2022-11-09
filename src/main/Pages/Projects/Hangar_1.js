@@ -1,19 +1,19 @@
 import { React, useEffect, useState, Fragment } from 'react';
 
 
+import ImageProjectC1 from '../../Style/Images/Project/Hangar-1.jpg';
+import ImageProjectC2 from '../../Style/Images/Project/Hangar-2.jpg';
+import ImageProjectC3 from '../../Style/Images/Project/Hangar-3.jpg';
+import ImageProjectC4 from '../../Style/Images/Project/Hangar-4.jpg';
+
+import blender from '../../Style/Images/SVG/blender.png';
+import unreal from '../../Style/Images/SVG/unreal.png';
+import photoShop from '../../Style/Images/SVG/PhotoShop.png';
 
 
-import ImageProjectC1 from '../../Style/Images/Project/Exterior-1.jpg';
-import ImageProjectC2 from '../../Style/Images/Project/Exterior-2.jpg';
-import ImageProjectC3 from '../../Style/Images/Project/Exterior-3.jpg';
-import ImageProjectC4 from '../../Style/Images/Project/Exterior-3.jpg';
-import ImageProjectC5 from '../../Style/Images/Project/Exterior-5.jpg';
 
+function Hangar_1({ }) {
 
-
-
-
-function SmallHouse1({ }) {
     const [TheImageContainer, setTheImageContainer] = useState(false);
     const [TheImageInTheContainer, setTheImageInTheContainer] = useState(ImageProjectC1);
 
@@ -45,11 +45,11 @@ function SmallHouse1({ }) {
                 </div>
             }
 
-            <div className='SmallHouse_1_container'>
+            <div className='Hangar_1_container'>
 
                 <div className='project_display'>
                     <h1 className='project_title'>
-                        Design de Maison Moderne
+                        Maquette Hangar Photovoltaïque
                     </h1>
                     <h3 className='project_description'>
                         par Pape Momor Ndiaye | Juin 6, 2022 |
@@ -100,11 +100,9 @@ function SmallHouse1({ }) {
                     </div>
                 </div> */}
             </div>
-        </Fragment>
+        </Fragment >
     );
+
 }
 
-
-
-
-export default SmallHouse1;
+export default Hangar_1;

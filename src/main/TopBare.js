@@ -62,14 +62,11 @@ function TopBare({ onChangeTab }) {
                 <div className='Menu-container'>
                     <OneSection parentCallback={callback} link={'/'} title={'ACCUEIL'} />
                     <OneSection parentCallback={callback} link={'/Traveaux'} title={'TRAVEAUX'} />
+                    <OneSection parentCallback={callback} link={'/Gallery'} title={'GALLERIE'} />
                     <OneSection parentCallback={callback} link={'/Service'} title={'SERVICE'} />
-                    <OneSection parentCallback={callback} link={'/Createur'} title={'CREATEUR'} />
                     <OneSection parentCallback={callback} link={'/Contact'} title={'CONTACT'} />
                 </div>
-
                 <div className="network_container">
-
-
                     <a href="https://www.instagram.com/pape_momar_ndiaye/" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-instagram"></ion-icon>
@@ -80,7 +77,6 @@ function TopBare({ onChangeTab }) {
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </div>
                     </a>
-
                     <a href="https://www.behance.net/papendiay" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-behance"></ion-icon>
@@ -102,7 +98,6 @@ function OneSection({ title, parentCallback, link }) {
     const [TheLink, setTheLink] = useState('/');
 
     useEffect(() => {
-
         switch (title) {
             case "ACCUEIL":
                 setTheLink('/')
@@ -113,8 +108,8 @@ function OneSection({ title, parentCallback, link }) {
             case "SERVICE":
                 setTheLink('/Service')
                 break;
-            case "CREATEUR":
-                setTheLink('/Createur')
+            case "GALLERIE":
+                setTheLink('/Gallery')
                 break;
             case "CONTACT":
                 setTheLink('/Contact')
@@ -122,15 +117,12 @@ function OneSection({ title, parentCallback, link }) {
             default:
                 setTheLink('/')
         }
-
     });
 
     const onClickOnTab = (e) => {
         parentCallback(title, link)
-
         e.target.childNodes[0].style.top = ''
         e.target.childNodes[0].childNodes[1].style.opacity = ''
-
         let Menu_slider = document.querySelector('#Top-bare-slider-container')
         let theMenu = document.querySelector('.Menu')
         let allMenuSection = document.querySelectorAll('.One-Section')
@@ -144,7 +136,6 @@ function OneSection({ title, parentCallback, link }) {
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
     }
-
     const onMouseOverTitle = (e) => {
         e.target.childNodes[0].style.top = '-100%';
         e.target.childNodes[0].childNodes[1].style.opacity = '.7'
@@ -153,7 +144,6 @@ function OneSection({ title, parentCallback, link }) {
         e.target.childNodes[0].style.top = ''
         e.target.childNodes[0].childNodes[1].style.opacity = ''
     }
-
     return (
         <Fragment>
             <Link to={TheLink} onClick={onClickOnTab}

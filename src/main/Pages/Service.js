@@ -3,42 +3,21 @@ import { Link } from "react-router-dom";
 import { TheFooter } from './Accueil';
 
 
-import ImageProjectA1 from '../Style/Images/Project/Exterior-1.jpg';
-import ImageProjectA2 from '../Style/Images/Project/Exterior-2.jpg';
-import ImageProjectA3 from '../Style/Images/Project/Exterior-3.jpg';
 import ImageProjectA4 from '../Style/Images/Project/Exterior-4.jpg';
-import ImageProjectA5 from '../Style/Images/Project/Exterior-5.jpg';
 
-import ImageProjectB1 from '../Style/Images/Project/Immeuble-1.jpg';
-import ImageProjectB2 from '../Style/Images/Project/Immeuble-2.jpg';
 import ImageProjectB3 from '../Style/Images/Project/Immeuble-3.jpg';
 
 import ImageProjectC1 from '../Style/Images/Project/Interior-1-1.jpg';
-import ImageProjectC2 from '../Style/Images/Project/Interior-1-2.jpg';
-import ImageProjectC3 from '../Style/Images/Project/Interior-1-3.jpg';
-import ImageProjectC4 from '../Style/Images/Project/Interior-1-4.jpg';
-import ImageProjectC5 from '../Style/Images/Project/Interior-1-5.jpg';
-import ImageProjectC6 from '../Style/Images/Project/Interior-1-6.jpg';
+
 import ImageProjectC7 from '../Style/Images/Project/Interior-1-7.jpg';
 
 import ImageProjectD1 from '../Style/Images/Project/NFT-1.jpg';
-import ImageProjectD2 from '../Style/Images/Project/NFT-2.jpg';
-import ImageProjectD3 from '../Style/Images/Project/NFT-3.jpg';
 
-import ImageProjectE1 from '../Style/Images/Project/Pharmacie-1.jpg';
-import ImageProjectE2 from '../Style/Images/Project/Pharmacie-2.jpg';
-import ImageProjectE3 from '../Style/Images/Project/Pharmacie-3.jpg';
-import ImageProjectE4 from '../Style/Images/Project/Pharmacie-4.jpg';
-import ImageProjectE5 from '../Style/Images/Project/Pharmacie-5.jpg';
-import ImageProjectE6 from '../Style/Images/Project/Pharmacie-6.jpg';
 import ImageProjectE7 from '../Style/Images/Project/Pharmacie-7.jpg';
-import ImageProjectE8 from '../Style/Images/Project/Pharmacie-8.jpg';
-import ImageProjectE9 from '../Style/Images/Project/Pharmacie-9.jpg';
 
-import ImageProjectF1 from '../Style/Images/Project/Hangar-1.jpg';
 import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
-import ImageProjectF3 from '../Style/Images/Project/Hangar-3.jpg';
 
+import ImageProjectG2 from '../Style/Images/Project/MSAD_2.jpg';
 
 
 function Services() {
@@ -52,15 +31,15 @@ function Services() {
                 }
                 TheGalerieElements={
                     <div className='project_container'>
-                        <OneGalerieElement image={ImageProjectA4} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectB3} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectE7} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectA4} title={'Design de Maison Moderne'} link={'/SmallHouse1'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectB3} title={"Visualisation Extérieur d'Immeuble"} link={"/Immeuble1"} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectE7} title={'Pharmacie'} link={'/Pharmacie1'} date={'Juin 09, 2022'} />
                         <OneGalerieElement image={ImageProjectC7} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
                     </div>
                 } color={'#F4EFE4'}
             />
             <OneService
-                theServiceTitle={'Realiter Virtuel Realiter augmenter 3D Web experience'}
+                theServiceTitle={'Réalité Virtuel et Experience 3D Web'}
                 theServiceDescription={
                     <p>
 
@@ -69,24 +48,23 @@ function Services() {
                 TheGalerieElements={
                     <div className='project_container'>
                         <OneGalerieElement image={ImageProjectC1} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectB3} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} link={'/MSAD'} date={'Juin 09, 2022'} />
                     </div>
                 } color={'#F1F1F1'}
             />
             <OneService
-                theServiceTitle={'Creation de Maquet '}
+                theServiceTitle={'Creation de Maquette'}
                 theServiceDescription={
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Odit porro omnis aspernatur alias officia laudantium ab eum. Quos maiores incidunt deserunt molestiae explicabo eaque, ipsam vel.
                     </p>}
                 TheGalerieElements={
                     <div className='project_container'>
-                        <OneGalerieElement image={ImageProjectD1} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectF2} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectD1} title={'Maquette de la Grande Mosquée de Touba'} link={'/Touba'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectF2} title={'Maquette "Hangar Photovoltaïque"'} link={'/Hangar1'} date={'Juin 09, 2022'} />
                     </div>
                 } color={'#EBEBEB'}
             />
-            {/* <TheFooter /> */}
         </div>
     );
 }

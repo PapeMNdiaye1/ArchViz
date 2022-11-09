@@ -3,17 +3,15 @@ import { React, useEffect, useState, Fragment } from 'react';
 
 
 
-import ImageProjectC1 from '../../Style/Images/Project/Exterior-1.jpg';
-import ImageProjectC2 from '../../Style/Images/Project/Exterior-2.jpg';
-import ImageProjectC3 from '../../Style/Images/Project/Exterior-3.jpg';
-import ImageProjectC4 from '../../Style/Images/Project/Exterior-3.jpg';
-import ImageProjectC5 from '../../Style/Images/Project/Exterior-5.jpg';
+import ImageProjectC1 from '../../Style/Images/Project/NFT-1.jpg';
+import ImageProjectC2 from '../../Style/Images/Project/NFT-2.jpg';
+import ImageProjectC3 from '../../Style/Images/Project/NFT-3.jpg';
 
 
 
 
 
-function SmallHouse1({ }) {
+function Touba({ }) {
     const [TheImageContainer, setTheImageContainer] = useState(false);
     const [TheImageInTheContainer, setTheImageInTheContainer] = useState(ImageProjectC1);
 
@@ -45,11 +43,11 @@ function SmallHouse1({ }) {
                 </div>
             }
 
-            <div className='SmallHouse_1_container'>
+            <div className='Touba_1_container'>
 
                 <div className='project_display'>
                     <h1 className='project_title'>
-                        Design de Maison Moderne
+                        Maquette de la Grande Mosquée de Touba
                     </h1>
                     <h3 className='project_description'>
                         par Pape Momor Ndiaye | Juin 6, 2022 |
@@ -69,9 +67,9 @@ function SmallHouse1({ }) {
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' />
                     </div>
-                    <div className='TheImageContainer'>
+                    {/* <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC4} width='100%' />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* <div className='tools'>
@@ -107,4 +105,4 @@ function SmallHouse1({ }) {
 
 
 
-export default SmallHouse1;
+export default Touba;

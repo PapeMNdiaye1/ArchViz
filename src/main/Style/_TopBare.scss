@@ -99,6 +99,8 @@
     transition-property: top, opacity;
     @include cent();
     flex-direction: column;
+    // background-color: #000;
+    // filter: blur(100%);
 
     .Menu-container {
         width: 30em;
