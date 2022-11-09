@@ -18,7 +18,10 @@ function Gallery({ TheImageToGallery,
 
     useEffect(() => {
 
-        if (!TheChangeInGalerie) {
+        let AccueilContainer = document.querySelector(".App_container")
+        AccueilContainer.scrollTop = 0;
+
+        if (TheChangeInGalerie === false) {
             setTheImage(TheImageToGallery);
             setTheTitle(TheTitleToGallery);
             setTheDate(TheDateToGallery);
@@ -34,12 +37,11 @@ function Gallery({ TheImageToGallery,
         return () => {
             setTheChangeInGalerie(true);
             setTheImageContainer(false);
-            setTheImage('');
-            setTheTitle('');
-            setTheDate('');
-            setTheLink('/');
+            setTheImage(TheImage);
+            setTheTitle(TheTitle);
+            setTheDate(TheDate);
+            setTheLink(TheLink);
         }
-
     }, []);
 
     const GetImageOnApp = (theimage, title, date, link) => {

@@ -1873,7 +1873,6 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 2.3em;
-  cursor: pointer;
   -webkit-transform: scale(1);
           transform: scale(1);
 }

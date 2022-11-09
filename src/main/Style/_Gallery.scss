@@ -6,7 +6,6 @@
 
 #Gallery {
     width: 100%;
-    // position: absolute;
     z-index: 1;
 
     .the_galerie_presantation_container {
@@ -69,7 +68,6 @@
                         top: 0%;
                     }
                 }
-
             }
 
             .one_galerie_element_hover {
@@ -100,7 +98,6 @@
                         color: rgba(0, 0, 0, .51);
                         @include cent();
                         font-size: 2.3em;
-                        cursor: pointer;
                         transform: scale(1);
 
                         &:hover {
@@ -205,7 +202,9 @@
                 }
             }
 
-            img {}
+            // img {
+
+            // }
         }
 
     }

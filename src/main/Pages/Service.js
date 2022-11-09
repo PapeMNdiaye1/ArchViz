@@ -1,6 +1,5 @@
 import { React, useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import { TheFooter } from './Accueil';
 
 
 import ImageProjectA4 from '../Style/Images/Project/Exterior-4.jpg';
@@ -21,6 +20,16 @@ import ImageProjectG2 from '../Style/Images/Project/MSAD_2.jpg';
 
 
 function Services() {
+
+    useEffect(() => {
+        let AccueilContainer = document.querySelector(".App_container")
+        AccueilContainer.scrollTop = 0;
+        return () => {
+            // setTheChangeInGalerie(false);
+            // console.log('ww');
+        }
+    }, []);
+
     return (
         <div id="Services">
             <OneService theServiceTitle={'3D Visualisations Rendus Images et Videos'}
@@ -42,7 +51,6 @@ function Services() {
                 theServiceTitle={'Réalité Virtuel et Experience 3D Web'}
                 theServiceDescription={
                     <p>
-
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Odit porro omnis aspernatur alias officia laudantium ab eum. Quos maiores incidunt deserunt molestiae explicabo eaque, ipsam vel.
                     </p>}
                 TheGalerieElements={

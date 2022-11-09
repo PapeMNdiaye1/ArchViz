@@ -18,10 +18,15 @@ function Interior1({ }) {
     const [TheImageContainer, setTheImageContainer] = useState(false);
     const [TheImageInTheContainer, setTheImageInTheContainer] = useState(ImageProjectC6);
 
-    // useEffect = () => {
-    //     let AccueilContainer = document.querySelector(".App_container")
-    //     AccueilContainer.scrollTop = 0;
-    // }
+    useEffect(() => {
+        let AccueilContainer = document.querySelector(".App_container")
+        AccueilContainer.scrollTop = 0;
+        return () => {
+            // setTheChangeInGalerie(false);
+            // console.log('ww');
+        }
+    }, []);
+
 
     const displayImage = (e) => {
         if (TheImageContainer) {

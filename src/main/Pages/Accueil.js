@@ -47,8 +47,8 @@ function Accueil({ GetImageToApp }) {
 
     useEffect(() => {
 
-        let AccueilContainer = document.querySelector(".App_container")
         let ThesliderImg = document.querySelectorAll(".slider")
+        let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 
         AccueilContainer.addEventListener('scroll', (event) => {
