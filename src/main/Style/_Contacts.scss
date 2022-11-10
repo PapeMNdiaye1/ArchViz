@@ -9,7 +9,6 @@
     height: calc(100vh - 4em);
     z-index: 1;
     @include cent();
-    // align-items: flex-start;
     flex-wrap: wrap;
 
     .follow_us {
@@ -24,7 +23,6 @@
         height: 30em;
         @include cent();
         flex-direction: column;
-        transform: scale(.8);
         transform: scale(1.5);
 
         .One-Contact {
@@ -135,5 +133,24 @@
             }
         }
 
+    }
+}
+
+
+//!########################################################
+@media all and (max-width: 1000px) {
+
+    #Contacts {
+
+
+        .Contact-container {
+            // width: 50em;
+            // height: 30em;
+            // @include cent();
+            // flex-direction: column;
+            transform: scale(.7);
+
+
+        }
     }
 }

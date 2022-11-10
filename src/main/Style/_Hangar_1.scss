@@ -176,3 +176,48 @@
     }
 
 }
+
+//!########################################
+
+@media all and (max-width: 1000px) {
+
+
+    .Hangar_1_container {
+        padding-left: 5vw;
+        padding-right: 0vw;
+
+        .project_display {
+
+
+            .project_title {
+                // font-family: 'Montserrat', sans-serif;
+                font-size: 1.5em;
+                // font-weight: 800;
+                // margin-bottom: .2em;
+            }
+
+            .project_description {
+                // margin-bottom: .5em;
+                // font-family: 'Montserrat', sans-serif;
+                font-size: .7em;
+                // font-weight: 400;
+            }
+
+            .TheImageContainer {
+                width: 90vw;
+                // height: auto;
+                margin-bottom: 1em;
+            }
+
+            p {
+                width: 80vw;
+                // margin-bottom: 2em;
+                // font-family: 'Montserrat', sans-serif;
+                // font-size: .8em;
+                // font-weight: 400;
+            }
+        }
+
+    }
+
+}

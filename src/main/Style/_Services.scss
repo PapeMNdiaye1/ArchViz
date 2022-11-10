@@ -7,7 +7,6 @@
 #Services {
     width: 100%;
     height: auto;
-    // position: absolute;
     z-index: 1;
 
     .one_service {
@@ -173,6 +172,46 @@
                 }
             }
 
+        }
+    }
+}
+
+
+//!########################################
+
+@media all and (max-width: 1000px) {
+
+    #Services {
+        .one_service {
+            width: calc(100% - 4vw);
+            padding-left: 2vw;
+            padding-right: 2vw;
+
+            .the_title {
+                // font-family: 'Montserrat', sans-serif;
+                font-size: 1.5em;
+
+                width: 90vw;
+
+
+            }
+
+            .the_descrition {
+                margin-top: 2em;
+                font-size: .7em;
+
+                p {
+                    width: 100%;
+                    text-align: start;
+                }
+            }
+
+            .project_container {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, auto);
+
+
+            }
         }
     }
 }

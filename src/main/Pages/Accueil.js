@@ -93,11 +93,6 @@ function Accueil({ GetImageToApp }) {
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
                     </a>
-                    {/* <a href="https://www.linkedin.com/in/pape-momar-ndiaye-37b862199/" target="_blank">
-                        <div className="network">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </div>
-                    </a> */}
 
                     <a href="https://www.facebook.com/ARVHVIZ/" target="_blank">
                         <div className="network">
@@ -119,10 +114,10 @@ function Accueil({ GetImageToApp }) {
                     color={'#93A490'} textcolor={'#222'} theKey={1} side={'right'} link={'/SmallHouse1'} />
                 <OneBigProject title={'Interior Design'} image={ImageProjectC3}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#EAEAEA'} textcolor={'#222'} theKey={2} side={'left'} link={'/Pharmacie1'} />
+                    color={'#EAEAEA'} textcolor={'#222'} theKey={2} side={'left'} link={'/Interior1'} />
                 <OneBigProject title={'Pharmacie Design'} image={ImageProjectE4}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Interior1'} />
+                    color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Pharmacie1'} />
                 <OneBigProject title={"Visualisation Exterieur d'Immeuble"} image={ImageProjectB1}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
                     color={'#182B38'} textcolor={'#f1f1f1'} theKey={4} side={'left'} link={'/Immeuble1'} />
