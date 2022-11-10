@@ -128,3 +128,107 @@
 
     }
 }
+
+
+
+
+
+
+
+@media all and (max-width: 1000px) {
+    #Traveaux {
+        .Traveaux-Header {
+            width: 100%;
+            height: 15em;
+            @include cent();
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .visualization-projects {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2em;
+                font-weight: 900;
+                width: 90%;
+                padding-bottom: 1em;
+            }
+
+            .visualization-projects-description {
+                width: 90%;
+                font-family: 'Montserrat', sans-serif;
+                font-size: .8em;
+                font-weight: 700;
+            }
+        }
+
+        .AccueilBigProjectsSection {
+            width: 100%;
+            min-height: auto;
+
+            .One_Project_In_Home {
+                min-height: 34em;
+                height: auto;
+                grid-gap: 0em;
+
+                .image_container {
+                    width: 100%;
+                    background-position: center;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+
+                }
+
+                .info_container {
+
+                    .title {
+                        font-size: 1.3em;
+
+                        .bar {
+                            bottom: -0.3em;
+                        }
+
+                    }
+
+                    .description {
+                        margin-top: 1em;
+                        font-size: .7em;
+                    }
+
+                }
+
+            }
+
+            .right {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+
+                .image_container {
+                    grid-column: 1 / 1;
+                    grid-row: 1 / 1;
+                }
+
+                .info_container {
+
+                    grid-column: 1 / 1;
+                    grid-row: 2 / 2;
+                }
+
+            }
+
+            .left {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+
+                .image_container {
+                    grid-column: 1 / 1;
+                    grid-row: 1 / 1;
+                }
+
+                .info_container {
+
+                    grid-column: 1 / 1;
+                    grid-row: 2 / 2;
+                }
+            }
+        }
+    }
+}

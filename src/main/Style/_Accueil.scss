@@ -537,11 +537,6 @@
 
         //!#####################################################################
         .archviz_presantation {
-            // height: 25em;
-            // width: 100%;
-            // @include cent();
-            // flex-wrap: wrap;
-
             .qui_somme_nous {
                 width: 100%;
                 // font-family: 'Montserrat', sans-serif;
@@ -601,71 +596,34 @@
         .AccueilBigProjectsSection {
             width: 100%;
             min-height: auto;
-            // background-color: salmon;
-
-
 
             .One_Project_In_Home {
                 min-height: 34em;
                 height: auto;
-                // display: grid;
                 grid-gap: 0em;
 
                 .image_container {
                     width: 100%;
-                    // height: 90%;
                     background-position: center;
                     background-size: 100%;
                     background-repeat: no-repeat;
-                    // background-color: salmon;
 
                 }
 
                 .info_container {
-                    // width: 100%;
-                    // height: 100%;
-                    // grid-column: 1 / 1;
-                    // grid-row: 1 / 1;
-                    // @include cent();
-                    // display: grid;
-                    // grid-template-columns: 1fr;
-                    // grid-template-rows: 40% 60%
-                    // background-color: seagreen;
 
                     .title {
-                        // margin: none;
-                        // @include cent();
-                        // justify-content: flex-start;
-                        // align-items: flex-end;
-                        // width: 70%;
-                        // height: 70%;
-                        // font-family: 'Montserrat', sans-serif;
                         font-size: 1.3em;
-                        // font-weight: 900;
-                        // text-decoration: none;
-                        // color: ;
 
                         .bar {
-                            // height: .1em;
-                            // width: 5em;
-                            // position: absolute;
                             bottom: -0.3em;
-                            // left: 0%;
-
                         }
 
                     }
 
                     .description {
-                        // margin: auto;
                         margin-top: 1em;
-                        // width: 70%;
-                        // @include cent();
-                        // justify-content: flex-start;
-                        // align-items: flex-start;
-                        // font-family: 'Montserrat', sans-serif;
                         font-size: .7em;
-                        // font-weight: 700;
                     }
 
                 }
@@ -704,9 +662,116 @@
                     grid-row: 2 / 2;
                 }
             }
+        }
+
+        //!#####################################################################
+        .galerie_presantation {
+            height: 9em;
+            justify-content: flex-start;
+
+            .visualisation_maquette {
+                width: 60%;
+                padding-left: 1em;
+                font-size: 1.6em;
+            }
+        }
+
+        //!#####################################################################
+        .the_galerie_container {
+            // width: 100%;
+            // height: auto;
+            // display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(25, 1fr);
+
+            .one_galerie_element {
+                // width: 100%;
+                // @include cent();
+                // display: grid;
+                // grid-template-columns: 1fr;
+                // grid-template-rows: 1fr;
+
+                img {
+                    // grid-column: 1 / 1;
+                    // grid-row: 1 / 1;
+                }
+
+                &:hover {
+                    .one_galerie_element_hover {
+                        // height: 100%;
+                        // background-color: rgba(255, 255, 255, 0.7);
+
+                        .iner_container {
+                            // top: 0%;
+                        }
+                    }
+
+                }
+
+                .one_galerie_element_hover {
+                    // grid-column: 1 / 1;
+                    // grid-row: 1 / 1;
+                    // width: 100%;
+                    // height: 0%;
+                    // overflow: hidden;
+                    // @include cent();
+                    // flex-wrap: wrap;
+                    // background-color: rgba(255, 255, 255, 0);
+                    // transition-duration: 0s, 1s;
+                    // transition-property: height, background-color;
 
 
+                    .iner_container {
+                        // width: 100%;
+                        // height: auto;
+                        // @include cent();
+                        // flex-wrap: wrap;
+                        // top: 6%;
+                        // transition-duration: .3s;
 
+                        .Icon-to-click-on {
+                            // width: 1.5em;
+                            // height: 1.5em;
+                            // border-radius: 50%;
+                            // color: rgba(0, 0, 0, .51);
+                            // @include cent();
+                            // font-size: 2.3em;
+                            // cursor: pointer;
+
+                            // transform: scale(1);
+
+                            &:hover {
+                                // transform: scale(1.2);
+                            }
+
+                            &:active {
+                                // transform: scale(1);
+                            }
+
+                        }
+
+                        .titre {
+                            // width: 99%;
+                            // min-height: 1em;
+                            // height: auto;
+                            // @include cent();
+                            // font-family: 'Montserrat', sans-serif;
+                            // font-weight: 600;
+                            // font-size: 1.2em;
+                            // text-align: center;
+                        }
+
+                        .date {
+                            // width: 100%;
+                            // height: 1em;
+                            // @include cent();
+                            // font-family: 'Montserrat', sans-serif;
+                            // font-size: .7em;
+                            // font-weight: 100;
+                        }
+                    }
+                }
+            }
         }
     }
 }
