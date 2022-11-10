@@ -30,10 +30,11 @@
 }
 
 .App .App_container {
-  margin-top: 5em;
+  margin-top: 4em;
   width: 100%;
-  height: calc(100% - 5em);
+  height: calc(100% - 4em);
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .App .App_container .the_footer {
@@ -371,7 +372,7 @@
 
 #Top-Bare {
   width: 100%;
-  height: 5em;
+  height: 4em;
   background-color: var(--color0);
   position: absolute;
   z-index: 4;
@@ -392,7 +393,7 @@
 }
 
 #Top-Bare .logo-container {
-  width: 5em;
+  width: 4em;
   height: 100%;
   margin-left: 1.5em;
   background-image: url("./Images/SVG/Asset 6.svg");
@@ -480,7 +481,7 @@
   top: -100vh;
   left: 0;
   width: 100vw;
-  height: calc(100vh - 5em);
+  height: calc(100vh - 4em);
   z-index: 3;
   opacity: .1;
   -webkit-transition-duration: .5s, 1s;
@@ -1273,6 +1274,114 @@
   font-weight: 100;
 }
 
+@media all and (max-width: 1000px) {
+  #Accueil .Accueil_Slider {
+    height: 70vh;
+    overflow: hidden;
+  }
+  #Accueil .Accueil_Slider .slider {
+    background-size: 100%;
+    background-size: cover;
+    background-position-x: 30%;
+    background-color: red;
+  }
+  #Accueil .Accueil_Slider .slider .slider_title {
+    width: 80%;
+    font-size: 2em;
+    margin-left: 0%;
+  }
+  #Accueil .Accueil_Slider .slider .slider_date {
+    width: 80%;
+    font-size: .9em;
+    margin-left: 0vw;
+  }
+  #Accueil .archviz_presantation .qui_somme_nous {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #Accueil .archviz_presantation p {
+    width: 80%;
+  }
+  #Accueil .archviz_presantation .network_container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #Accueil .AccueilBigProjectsSection {
+    width: 100%;
+    min-height: auto;
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home {
+    min-height: 34em;
+    height: auto;
+    grid-gap: 0em;
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container {
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .title {
+    font-size: 1.3em;
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .title .bar {
+    bottom: -0.3em;
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description {
+    margin-top: 1em;
+    font-size: .7em;
+  }
+  #Accueil .AccueilBigProjectsSection .right {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  #Accueil .AccueilBigProjectsSection .right .image_container {
+    -ms-grid-column: 1;
+    grid-column: 1 / 1;
+    -ms-grid-row: 1;
+    grid-row: 1 / 1;
+  }
+  #Accueil .AccueilBigProjectsSection .right .info_container {
+    -ms-grid-column: 1;
+    grid-column: 1 / 1;
+    -ms-grid-row: 2;
+    grid-row: 2 / 2;
+  }
+  #Accueil .AccueilBigProjectsSection .left {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  #Accueil .AccueilBigProjectsSection .left .image_container {
+    -ms-grid-column: 1;
+    grid-column: 1 / 1;
+    -ms-grid-row: 1;
+    grid-row: 1 / 1;
+  }
+  #Accueil .AccueilBigProjectsSection .left .info_container {
+    -ms-grid-column: 1;
+    grid-column: 1 / 1;
+    -ms-grid-row: 2;
+    grid-row: 2 / 2;
+  }
+}
+
 #Traveaux {
   width: 100%;
   height: auto;
@@ -1477,7 +1586,7 @@
       grid-template-rows: repeat(3, auto);
   padding-left: 20vw;
   padding-right: 20vw;
-  padding-top: 5em;
+  padding-top: 4em;
 }
 
 #Services .one_service .the_title {
@@ -1716,7 +1825,7 @@
 
 #Contacts {
   width: 100%;
-  height: calc(100vh - 5em);
+  height: calc(100vh - 4em);
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2182,9 +2291,9 @@
 
 .display_image_container {
   position: fixed;
-  top: 5em;
+  top: 4em;
   width: 100vw;
-  min-height: calc(100vh - 5em);
+  min-height: calc(100vh - 4em);
   background-color: rgba(46, 45, 45, 0.93);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2415,9 +2524,9 @@
 
 .display_image_container {
   position: fixed;
-  top: 5em;
+  top: 4em;
   width: 100vw;
-  min-height: calc(100vh - 5em);
+  min-height: calc(100vh - 4em);
   background-color: rgba(46, 45, 45, 0.93);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2648,9 +2757,9 @@
 
 .display_image_container {
   position: fixed;
-  top: 5em;
+  top: 4em;
   width: 100vw;
-  min-height: calc(100vh - 5em);
+  min-height: calc(100vh - 4em);
   background-color: rgba(46, 45, 45, 0.93);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2881,9 +2990,9 @@
 
 .display_image_container {
   position: fixed;
-  top: 5em;
+  top: 4em;
   width: 100vw;
-  min-height: calc(100vh - 5em);
+  min-height: calc(100vh - 4em);
   background-color: rgba(46, 45, 45, 0.93);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3114,9 +3223,9 @@
 
 .display_image_container {
   position: fixed;
-  top: 5em;
+  top: 4em;
   width: 100vw;
-  min-height: calc(100vh - 5em);
+  min-height: calc(100vh - 4em);
   background-color: rgba(46, 45, 45, 0.93);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3347,9 +3456,9 @@
 
 .display_image_container {
   position: fixed;
-  top: 5em;
+  top: 4em;
   width: 100vw;
-  min-height: calc(100vh - 5em);
+  min-height: calc(100vh - 4em);
   background-color: rgba(46, 45, 45, 0.93);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3580,9 +3689,9 @@
 
 .display_image_container {
   position: fixed;
-  top: 5em;
+  top: 4em;
   width: 100vw;
-  min-height: calc(100vh - 5em);
+  min-height: calc(100vh - 4em);
   background-color: rgba(46, 45, 45, 0.93);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3809,13 +3918,5 @@
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-@media all and (max-width: 1000px) {
-  #home-container {
-    width: 100vw;
-    min-height: 100vh;
-    border-radius: 0em;
-  }
 }
 /*# sourceMappingURL=Style.css.map */

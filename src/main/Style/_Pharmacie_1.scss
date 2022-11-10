@@ -6,9 +6,9 @@
 
 .display_image_container {
     position: fixed;
-    top: 5em;
+    top: 4em;
     width: 100vw;
-    min-height: calc(100vh - 5em);
+    min-height: calc(100vh - 4em);
     background-color: rgba(46, 45, 45, 0.93);
     @include cent();
     z-index: 110;

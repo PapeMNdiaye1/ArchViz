@@ -6,7 +6,7 @@
 
 #Top-Bare {
     width: 100%;
-    height: 5em;
+    height: 4em;
     background-color: var(--color0);
     position: absolute;
     z-index: 4;
@@ -15,7 +15,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
 
     .logo-container {
-        width: 5em;
+        width: 4em;
         height: 100%;
         margin-left: 1.5em;
         background-image: url('./Images/SVG/Asset\ 6.svg');
@@ -92,22 +92,22 @@
     top: -100vh;
     left: 0;
     width: 100vw;
-    height: calc(100vh - 5em);
+    height: calc(100vh - 4em);
     z-index: 3;
     opacity: .1;
     transition-duration: .5s, 1s;
     transition-property: top, opacity;
     @include cent();
     flex-direction: column;
-    // background-color: #000;
-    // filter: blur(100%);
+    // background-image: url('../Style/Images/Project/Exterior-5.jpg');
+    // backdrop-filter: blur(100px);
+    // filter: blur(100px);
 
     .Menu-container {
         width: 30em;
         height: 30em;
         @include cent();
         flex-direction: column;
-        // background-color: aqua;
         transform: scale(.8);
 
         .One-Section {
@@ -140,7 +140,6 @@
                 position: relative;
                 top: -0%;
                 transition-duration: .5s;
-
 
                 .Top-Title {
                     width: 100%;

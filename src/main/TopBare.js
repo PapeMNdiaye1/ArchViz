@@ -23,7 +23,6 @@ function TopBare({ onChangeTab }) {
         let Menu_slider = document.querySelector('#Top-bare-slider-container')
         let theMenu = document.querySelector('.Menu')
         let allMenuSection = document.querySelectorAll('.One-Section')
-        // console.log(allMenuSection);
 
         if (theMenu.classList.length > 1) {
             theMenu.classList.remove('Menu_On');
@@ -34,9 +33,8 @@ function TopBare({ onChangeTab }) {
                 allMenuSection[i].style.opacity = `0`;
             }
 
-
         } else {
-            Menu_slider.style.top = '5em';
+            Menu_slider.style.top = '4em';
             Menu_slider.style.opacity = '.9';
             theMenu.classList.add('Menu_On');
 

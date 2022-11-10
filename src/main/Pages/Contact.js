@@ -12,7 +12,6 @@ function Contacts() {
                 <OneSection link={'https://api.whatsapp.com/send?phone=221777278655&text=The message'}
                     title={<div className="network"><ion-icon name="logo-whatsapp"></ion-icon>WHATSAPP</div>}
                     title2={<div className="network">+221 777278655</div>}
-
                 />
                 <OneSection link={'https://www.instagram.com/arch_viz_sn/'}
                     title={<div className="network"><ion-icon name="logo-instagram"></ion-icon>INSTAGRAM</div>}
