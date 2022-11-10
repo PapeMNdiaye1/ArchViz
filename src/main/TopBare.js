@@ -77,9 +77,9 @@ function TopBare({ onChangeTab }) {
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </div>
                     </a>
-                    <a href="https://www.behance.net/papendiay" target="_blank">
+                    <a href="https://www.facebook.com/ARVHVIZ/" target="_blank">
                         <div className="network">
-                            <ion-icon name="logo-behance"></ion-icon>
+                            <ion-icon name="logo-facebook"></ion-icon>
                         </div>
                     </a>
                 </div>

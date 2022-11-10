@@ -93,15 +93,21 @@ function Accueil({ GetImageToApp }) {
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/pape-momar-ndiaye-37b862199/" target="_blank">
+                    {/* <a href="https://www.linkedin.com/in/pape-momar-ndiaye-37b862199/" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </div>
-                    </a>
+                    </a> */}
 
-                    <a href="https://www.behance.net/papendiay" target="_blank">
+                    <a href="https://www.facebook.com/ARVHVIZ/" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-facebook"></ion-icon>
+                        </div>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=221777278655&text=The message" target="_blank">
+                        <div className="network">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
                         </div>
                     </a>
 
@@ -269,14 +275,13 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                             {description}
                         </div>
                     </div>
-                    <Link
-                        to={link}
+                    <div
                         className='image_container'
                         style={{
                             backgroundImage: `url('${image}')`,
                         }}
                     >
-                    </Link>
+                    </div>
                 </div>
             ) : (
                 <div className="One_Project_In_Home left">
@@ -303,14 +308,13 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                             {description}
                         </div>
                     </div>
-                    <Link
-                        to={link}
+                    <div
                         className='image_container'
                         style={{
                             backgroundImage: `url('${image}')`,
                         }}
                     >
-                    </Link>
+                    </div>
                 </div>
             )
             }
@@ -355,8 +359,8 @@ function TheGallery({ GetImageOnAccueil }) {
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF3} title={'Maquette Hangar Photovoltaïque'} date={'Juin 09, 2022'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE6} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG3} title={'Manufacture des Arts Décoratifs de Thiés'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC6} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG3} title={'Manufacture des Arts Décoratifs de Thiés'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC1} title={'Interior Design'} date={'Juin 09, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA5} title={'Design de Maison Moderne'} date={'Juin 09, 2022'} />
             </div>
@@ -464,6 +468,13 @@ function TheFooter({ }) {
                         <ion-icon name="logo-facebook"></ion-icon>
                     </div>
                 </a>
+
+                <a href="https://api.whatsapp.com/send?phone=221777278655&text=The message" target="_blank">
+                    <div className="network">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </div>
+                </a>
+
             </div>
 
             <div className='the_line'>
