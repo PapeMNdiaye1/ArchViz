@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 import ImageProjectA1 from '../Style/Images/Project/Exterior-1.jpg';
 import ImageProjectA2 from '../Style/Images/Project/Exterior-2.jpg';
-import ImageProjectA3 from '../Style/Images/Project/Exterior-3.jpg';
+// import ImageProjectA3 from '../Style/Images/Project/Exterior-3.jpg';
 import ImageProjectA4 from '../Style/Images/Project/Exterior-4.jpg';
 import ImageProjectA5 from '../Style/Images/Project/Exterior-5.jpg';
 
 import ImageProjectB1 from '../Style/Images/Project/Immeuble-1.jpg';
 import ImageProjectB2 from '../Style/Images/Project/Immeuble-2.jpg';
-import ImageProjectB3 from '../Style/Images/Project/Immeuble-3.jpg';
+// import ImageProjectB3 from '../Style/Images/Project/Immeuble-3.jpg';
 
 import ImageProjectC1 from '../Style/Images/Project/Interior-1-1.jpg';
 import ImageProjectC2 from '../Style/Images/Project/Interior-1-2.jpg';
@@ -20,8 +20,8 @@ import ImageProjectC6 from '../Style/Images/Project/Interior-1-6.jpg';
 import ImageProjectC7 from '../Style/Images/Project/Interior-1-7.jpg';
 
 import ImageProjectD1 from '../Style/Images/Project/NFT-1.jpg';
-import ImageProjectD2 from '../Style/Images/Project/NFT-2.jpg';
-import ImageProjectD3 from '../Style/Images/Project/NFT-3.jpg';
+// import ImageProjectD2 from '../Style/Images/Project/NFT-2.jpg';
+// import ImageProjectD3 from '../Style/Images/Project/NFT-3.jpg';
 
 import ImageProjectE1 from '../Style/Images/Project/Pharmacie-1.jpg';
 import ImageProjectE2 from '../Style/Images/Project/Pharmacie-2.jpg';
@@ -30,7 +30,7 @@ import ImageProjectE4 from '../Style/Images/Project/Pharmacie-4.jpg';
 import ImageProjectE5 from '../Style/Images/Project/Pharmacie-5.jpg';
 import ImageProjectE6 from '../Style/Images/Project/Pharmacie-6.jpg';
 import ImageProjectE7 from '../Style/Images/Project/Pharmacie-7.jpg';
-import ImageProjectE8 from '../Style/Images/Project/Pharmacie-8.jpg';
+// import ImageProjectE8 from '../Style/Images/Project/Pharmacie-8.jpg';
 import ImageProjectE9 from '../Style/Images/Project/Pharmacie-9.jpg';
 
 import ImageProjectF1 from '../Style/Images/Project/Hangar-1.jpg';
@@ -73,7 +73,6 @@ function Accueil({ GetImageToApp }) {
         console.log('#Accueil');
     }
 
-
     return (
         <div id="Accueil">
             <AccueilSlider />
@@ -82,10 +81,8 @@ function Accueil({ GetImageToApp }) {
                     Qui somme Nous
                 </div>
                 <p>
-                    The Student Hub design
-                    preserves the historic framework of the MIT
-                    campus by recycling facades and maintaining
-                    existing building footprints. Modern forms are inserted
+                    ArchViz est un studio de visualisation architecturale,
+                    co-auteur d'images et d'animations architecturales pour les architectes et les promoteurs immobiliers.
                 </p>
                 <div className='network_container'>
                     <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
@@ -93,16 +90,14 @@ function Accueil({ GetImageToApp }) {
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
                     </a>
-
-                    <a href="https://www.facebook.com/ARVHVIZ/" target="_blank">
-                        <div className="network">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </div>
-                    </a>
-
                     <a href="https://api.whatsapp.com/send?phone=221777278655&text=The message" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-whatsapp"></ion-icon>
+                        </div>
+                    </a>
+                    <a href="mailto:archviz.sn@gmail.com?subject=The message" target="_blank">
+                        <div className="network">
+                            <ion-icon name="mail-outline"></ion-icon>
                         </div>
                     </a>
 
@@ -110,21 +105,25 @@ function Accueil({ GetImageToApp }) {
             </div>
             <div className='AccueilBigProjectsSection'>
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
-                    description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
+                    description={"Projet réalisé et rendu en avec blender, compositing sur photoshop, Design minimalist pour une optimisation de l'espace."}
                     color={'#93A490'} textcolor={'#222'} theKey={1} side={'right'} link={'/SmallHouse1'} />
                 <OneBigProject title={'Interior Design'} image={ImageProjectC3}
-                    description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
+                    description={"Décors interieur moderne simpliste et lumine. Rendus images en réalisés avec blender , animation et rendus videos sur Unreal Engine 5, compositing sur photoshop."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={2} side={'left'} link={'/Interior1'} />
                 <OneBigProject title={'Pharmacie Design'} image={ImageProjectE4}
-                    description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
+                    description={'Design de pharmacie interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Pharmacie1'} />
-                <OneBigProject title={"Visualisation Exterieur d'Immeuble"} image={ImageProjectB1}
+                <OneBigProject title={'Maquette Hangar Photovoltaique'} image={ImageProjectF2}
                     description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
-                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={4} side={'left'} link={'/Immeuble1'} />
+                    color={'#F1F1F1'} textcolor={'#222'} theKey={4} link={'/Hangar1'} side={'left'} />
+                <OneBigProject title={"Visualisation de Façade d'Immeuble"} image={ImageProjectB1}
+                    description={'Design de façade d\'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
+                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={5} side={'right'} link={'/Immeuble1'} />
+
             </div>
             <div className='galerie_presantation'>
                 <div className='visualisation_maquette' >
-                    Visualisation & Maquette
+                    Galerie
                 </div>
             </div>
             <TheGallery GetImageOnAccueil={GetImageOnApp} />
@@ -257,16 +256,16 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                                 color: textcolor,
                             }} className='title' to={link}>
                             {title}
+                        </Link>
+                        <div
+
+                            className='description'>
                             <div
                                 style={{
                                     backgroundColor: textcolor,
                                 }}
                                 className='bar'>
                             </div>
-                        </Link>
-                        <div
-
-                            className='description'>
                             {description}
                         </div>
                     </div>
@@ -291,15 +290,15 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                             }}
                             className='title' to={link}>
                             {title}
+                        </Link>
+                        <div
+                            className='description'>
                             <div
                                 style={{
                                     backgroundColor: textcolor,
                                 }}
                                 className='bar'>
                             </div>
-                        </Link>
-                        <div
-                            className='description'>
                             {description}
                         </div>
                     </div>
@@ -413,9 +412,13 @@ function TheFooter({ }) {
             <div className='titles'>Categories</div>
             <div className='titles'>Contacts</div>
             <div className='titles'>Reseaux</div>
+            <div className='titles'>Createur</div>
+
+            <a href="https://pape-momar-ndiaye-portfolio.herokuapp.com/" target="_blank"
+                className='portfolio_link'>Voir le portfolio <ion-icon name="arrow-forward-outline"></ion-icon></a>
+
             <div className='archviz_description'>
-                The Student Hub design
-                preserves the historic framework of the MIT
+                Depuis 2020, nous aidons les architectes et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels incroyables.
             </div>
             <div className='menu_elemant_container'>
                 <Link className='menu_elemant' to={'/'} onClick={onClickOnTab}>
@@ -430,6 +433,7 @@ function TheFooter({ }) {
                 <Link className='menu_elemant' to={'/Gallery'} onClick={onClickOnTab}>
                     Gallerie
                 </Link>
+
                 <div className='menu_elemant'></div>
             </div>
             <div className='categories_elemant_container'>
@@ -442,7 +446,7 @@ function TheFooter({ }) {
             </div>
 
             <div className='contact_elemant_container'>
-                <div className='contact_elemant '>Pmomar44@gmail.com</div>
+                <div className='contact_elemant '>archviz.sn@gmail.com</div>
                 <div className='contact_elemant '>Tel: 77 727 86 55</div>
             </div>
 
@@ -452,12 +456,11 @@ function TheFooter({ }) {
                         <ion-icon name="logo-instagram"></ion-icon>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/pape-momar-ndiaye-37b862199/" target="_blank">
+                <a href="mailto:archviz.sn@gmail.com?subject=The message" target="_blank">
                     <div className="network">
-                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <ion-icon name="mail-outline"></ion-icon>
                     </div>
                 </a>
-
                 <a href="https://www.facebook.com/ARVHVIZ/" target="_blank">
                     <div className="network">
                         <ion-icon name="logo-facebook"></ion-icon>
@@ -483,7 +486,6 @@ function TheFooter({ }) {
             </div>
         </div>
     );
-
 }
 
 

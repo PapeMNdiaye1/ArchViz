@@ -75,6 +75,14 @@
 
         .slider:nth-child(3) {
             background-image: url(./Images/Project/Interior-1-2.jpg);
+
+            // .slider_title {
+            //     color: rgb(255, 255, 255);
+            // }
+
+            // .slider_date {
+            //     color: rgb(255, 255, 255);
+            // }
         }
 
         .slider:nth-child(4) {
@@ -215,16 +223,11 @@
                     font-size: 1.5em;
                     font-weight: 900;
                     text-decoration: none;
-                    // color: ;
 
-                    .bar {
-                        height: .1em;
-                        width: 5em;
-                        position: absolute;
-                        bottom: -1em;
-                        left: 0%;
-
+                    &:hover {
+                        transform: scale(1.03);
                     }
+
 
                 }
 
@@ -238,6 +241,15 @@
                     font-family: 'Montserrat', sans-serif;
                     font-size: 1em;
                     font-weight: 700;
+
+                    .bar {
+                        height: .15em;
+                        width: 8em;
+                        position: absolute;
+                        top: -1em;
+                        left: 0%;
+
+                    }
                 }
 
             }
@@ -341,13 +353,19 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
+            overflow: hidden;
 
             img {
                 grid-column: 1 / 1;
                 grid-row: 1 / 1;
+                transition-duration: 1s;
             }
 
             &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+
                 .one_galerie_element_hover {
                     height: 100%;
                     background-color: rgba(255, 255, 255, 0.7);
@@ -356,7 +374,6 @@
                         top: 0%;
                     }
                 }
-
             }
 
             .one_galerie_element_hover {
@@ -607,19 +624,22 @@
                     background-position: center;
                     background-size: 100%;
                     background-repeat: no-repeat;
-
                 }
 
                 .info_container {
-
                     .title {
                         font-size: 1.3em;
                         width: 90%;
+                        transform: scale(1);
+                        // background-color: salmon;
+
+                        &:hover {
+                            transform: scale(1.03);
+                        }
 
                         .bar {
                             bottom: -0.3em;
                         }
-
                     }
 
                     .description {
@@ -627,9 +647,7 @@
                         font-size: .7em;
                         width: 90%;
                     }
-
                 }
-
             }
 
             .right {
@@ -642,7 +660,6 @@
                 }
 
                 .info_container {
-
                     grid-column: 1 / 1;
                     grid-row: 2 / 2;
                 }
@@ -659,7 +676,6 @@
                 }
 
                 .info_container {
-
                     grid-column: 1 / 1;
                     grid-row: 2 / 2;
                 }

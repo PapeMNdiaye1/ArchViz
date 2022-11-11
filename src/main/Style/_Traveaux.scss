@@ -57,22 +57,19 @@
 
                 .title {
                     margin: auto;
+                    margin-bottom: 0em;
                     @include cent();
                     justify-content: flex-start;
                     align-items: flex-end;
                     width: 70%;
-                    height: 70%;
+                    height: auto;
                     font-family: 'Montserrat', sans-serif;
                     font-size: 1.5em;
                     font-weight: 900;
                     text-decoration: none;
 
-                    .bar {
-                        height: .1em;
-                        width: 5em;
-                        position: absolute;
-                        bottom: -1em;
-                        left: 0%;
+                    &:hover {
+                        transform: scale(1.03);
                     }
                 }
 
@@ -86,6 +83,14 @@
                     font-family: 'Montserrat', sans-serif;
                     font-size: 1em;
                     font-weight: 700;
+
+                    .bar {
+                        height: .15em;
+                        width: 7em;
+                        position: absolute;
+                        top: -1em;
+                        left: 0%;
+                    }
                 }
 
             }
@@ -182,6 +187,10 @@
                     .title {
                         font-size: 1.3em;
                         width: 90%;
+
+                        &:hover {
+                            transform: scale(1.03);
+                        }
 
                         .bar {
                             bottom: -0.3em;

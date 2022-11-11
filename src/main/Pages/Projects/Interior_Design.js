@@ -7,6 +7,7 @@ import ImageProjectC3 from '../../Style/Images/Project/Interior-1-3.jpg';
 import ImageProjectC4 from '../../Style/Images/Project/Interior-1-4.jpg';
 import ImageProjectC6 from '../../Style/Images/Project/Interior-1-6.jpg';
 import ImageProjectC7 from '../../Style/Images/Project/Interior-1-7.jpg';
+
 import blender from '../../Style/Images/SVG/blender.png';
 import unreal from '../../Style/Images/SVG/unreal.png';
 import photoShop from '../../Style/Images/SVG/PhotoShop.png';
@@ -66,6 +67,20 @@ function Interior1({ }) {
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vitae dicta ut reprehenderit! Veniam explicabo aliquam vel, repellat aspernatur iste non itaque odit blanditiis quae autem facere neque minima id?
                     </p>
+                    <div className='the_video'>
+                        <iframe width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/GyZaKbQtU94"
+                            title="Interior Design"
+                            frameborder="0"
+                            allow="accelerometer; 
+                            autoplay; clipboard-write;
+                            encrypted-media; gyroscope;
+                            picture-in-picture"
+                            allowfullscreen>
+
+                        </iframe>
+                    </div>
                     <h1 className='project_title'>
                         1. Setup the Model to Render With and Without Glass
                     </h1>
@@ -84,6 +99,7 @@ function Interior1({ }) {
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC4} width='100%' />
                     </div>
+
                 </div>
 
                 {/* <div className='tools'>

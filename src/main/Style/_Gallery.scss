@@ -13,10 +13,21 @@
         height: auto;
         @include cent();
         flex-wrap: wrap;
+        overflow: hidden;
+        cursor: pointer;
 
         img {
             width: 60%;
             margin-top: 2em;
+
+            &:hover {
+                transform: scale(1.01);
+            }
+
+            &:active {
+                transform: scale(1);
+            }
+
         }
 
         .the_title {
@@ -28,6 +39,10 @@
             color: var(--colorX);
             text-decoration: none;
             cursor: pointer;
+
+            &:hover {
+                transform: scale(1.01);
+            }
         }
 
         .the_date {
@@ -53,13 +68,19 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
+            overflow: hidden;
 
             img {
                 grid-column: 1 / 1;
                 grid-row: 1 / 1;
+                transition-duration: 1s;
             }
 
             &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+
                 .one_galerie_element_hover {
                     height: 100%;
                     background-color: rgba(255, 255, 255, 0.7);
@@ -67,6 +88,8 @@
                     .iner_container {
                         top: 0%;
                     }
+
+
                 }
             }
 
@@ -231,11 +254,15 @@
                 width: 90%;
                 // font-family: 'Montserrat', sans-serif;
                 font-size: 1.5em;
+
                 // font-weight: 700;
                 // margin: 1em 0em 0em 0em;
                 // color: var(--colorX);
                 // text-decoration: none;
                 // cursor: pointer;
+                &:hover {
+                    transform: scale(1.03);
+                }
             }
 
             .the_date {

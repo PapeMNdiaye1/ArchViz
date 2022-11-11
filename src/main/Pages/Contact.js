@@ -25,12 +25,12 @@ function Contacts() {
                 />
                 <OneSection link={'https://www.facebook.com/ARVHVIZ/'}
                     title={<div className="network"><ion-icon name="logo-facebook"></ion-icon>FACEBOOK</div>}
-                    title2={<div className="network">facebook.com/ARVHVIZ</div>}
+                    title2={<div className="network">ARCHVIZ</div>}
                 />
 
-                <OneSection link={'mailto:pmomar58@gmail.com?subject=The message'}
-                    title={<div className="network"><ion-icon name="mail-outline"></ion-icon>GMAIL</div>}
-                    title2={<div className="network">Pmomar44@gmail.com</div>}
+                <OneSection link={'mailto:archviz.sn@gmail.com?subject=The message'}
+                    title={<div className="network"><ion-icon name="mail-outline"></ion-icon>MAIL</div>}
+                    title2={<div className="network">archviz.sn@gmail.com</div>}
                 />
             </div>
         </div>
