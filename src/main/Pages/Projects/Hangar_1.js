@@ -56,17 +56,16 @@ function Hangar_1({ }) {
                         Maquette Hangar Photovoltaïque
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momor Ndiaye | Juin 6, 2022 |
+                        par Pape Momor Ndiaye | 09 Juin, 2021 |
                     </h3>
+                    <p>
+                        Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vitae dicta ut reprehenderit! Veniam explicabo aliquam vel, repellat aspernatur iste non itaque odit blanditiis quae autem facere neque minima id?
-                    </p>
-                    <h1 className='project_title'>
+                    {/* <h1 className='project_title'>
                         1. Setup the Model to Render With and Without Glass
-                    </h1>
+                    </h1> */}
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC2} width='100%' />
                     </div>

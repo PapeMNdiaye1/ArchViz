@@ -25,11 +25,11 @@
     }
 
     .Menu-container {
-        margin-right: 1.5em;
-        width: 5em;
+        width: 3em;
         height: 100%;
         @include cent;
         cursor: pointer;
+        margin-right: 1.5em;
 
         .Menu {
             width: 2.3em;

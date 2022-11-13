@@ -54,17 +54,14 @@ function Touba({ }) {
                         Maquette de la Grande Mosquée de Touba
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momor Ndiaye | Juin 6, 2022 |
+                        par Pape Momor Ndiaye | 09 Mars, 2022 |
                     </h3>
+                    <p>
+                        Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.
+                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vitae dicta ut reprehenderit! Veniam explicabo aliquam vel, repellat aspernatur iste non itaque odit blanditiis quae autem facere neque minima id?
-                    </p>
-                    <h1 className='project_title'>
-                        1. Setup the Model to Render With and Without Glass
-                    </h1>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC2} width='100%' />
                     </div>

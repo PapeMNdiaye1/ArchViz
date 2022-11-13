@@ -6,7 +6,7 @@ import { React, useEffect, useState, Fragment } from 'react';
 import ImageProjectC1 from '../../Style/Images/Project/Exterior-1.jpg';
 import ImageProjectC2 from '../../Style/Images/Project/Exterior-2.jpg';
 import ImageProjectC3 from '../../Style/Images/Project/Exterior-3.jpg';
-import ImageProjectC4 from '../../Style/Images/Project/Exterior-3.jpg';
+import ImageProjectC4 from '../../Style/Images/Project/Exterior-4.jpg';
 import ImageProjectC5 from '../../Style/Images/Project/Exterior-5.jpg';
 
 
@@ -58,23 +58,26 @@ function SmallHouse1({ }) {
                     <h3 className='project_description'>
                         par Pape Momor Ndiaye | Juin 6, 2022 |
                     </h3>
+                    <p>
+                        Projet réalisé et rendu en avec blender, compositing sur photoshop, Design minimalist pour une optimisation de l'espace.
+                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vitae dicta ut reprehenderit! Veniam explicabo aliquam vel, repellat aspernatur iste non itaque odit blanditiis quae autem facere neque minima id?
-                    </p>
-                    <h1 className='project_title'>
-                        1. Setup the Model to Render With and Without Glass
-                    </h1>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC2} width='100%' />
                     </div>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' />
                     </div>
+                    <h1 className='project_title'>
+                        Clay Renders
+                    </h1>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC4} width='100%' />
+                    </div>
+                    <div className='TheImageContainer'>
+                        <img onClick={displayImage} src={ImageProjectC5} width='100%' />
                     </div>
                 </div>
 

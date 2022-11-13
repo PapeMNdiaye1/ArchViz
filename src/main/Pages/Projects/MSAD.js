@@ -54,17 +54,13 @@ function MSAD({ }) {
                         Manufacture des Arts Décoratifs de Thiés
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momor Ndiaye | Juin 6, 2022 |
+                        par Pape Momor Ndiaye | Juin 09, 2022 |
                     </h3>
+                    <p>
+                        Expériences de réalité virtuelle pour M.S.A.D. Nous avons une expérience éprouvée et pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution.                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vitae dicta ut reprehenderit! Veniam explicabo aliquam vel, repellat aspernatur iste non itaque odit blanditiis quae autem facere neque minima id?
-                    </p>
-                    <h1 className='project_title'>
-                        1. Setup the Model to Render With and Without Glass
-                    </h1>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC2} width='100%' />
                     </div>

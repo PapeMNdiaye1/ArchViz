@@ -35,15 +35,17 @@ function Services() {
             <OneService theServiceTitle={'3D Visualisations Rendus Images et Videos'}
                 theServiceDescription={
                     <p>
-                        1Lorem ipsum dolor <br /> sit amet consectetur, adipisicing elit. <br /> Odit porro omnis aspernatur alias officia laudantium ab eum. Quos maiores incidunt deserunt molestiae explicabo eaque, ipsam vel.
+                        Les images fixes et les animation constituent la base de la plupart des projets de visualisation architecturale <br />
+                        apparaissant sur de nombreux supports et plateformes. <br />Ils ouverent la porte à un monde de variations infinies dans la conception graphique
+                        adaptée à vos demandes uniques.
                     </p>
                 }
                 TheGalerieElements={
                     <div className='project_container'>
-                        <OneGalerieElement image={ImageProjectA4} title={'Design de Maison Moderne'} link={'/SmallHouse1'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectB3} title={"Visualisation Extérieur d'Immeuble"} link={"/Immeuble1"} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectE7} title={'Pharmacie'} link={'/Pharmacie1'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectC7} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectA4} title={'Design de Maison Moderne'} link={'/SmallHouse1'} date={'15 avril, 2022'} />
+                        <OneGalerieElement image={ImageProjectB3} title={"Visualisation Extérieur d'Immeuble"} link={"/Immeuble1"} date={'27 Mai, 2022'} />
+                        <OneGalerieElement image={ImageProjectE7} title={'Pharmacie'} link={'/Pharmacie1'} date={'27 Mai, 2022'} />
+                        <OneGalerieElement image={ImageProjectC7} title={'Interior Design'} link={'/Interior1'} date={'03 Juin, 2022'} />
                     </div>
                 } color={'#F4EFE4'}
             />
@@ -51,12 +53,14 @@ function Services() {
                 theServiceTitle={'Réalité Virtuel et Experience 3D Web'}
                 theServiceDescription={
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Odit porro omnis aspernatur alias officia laudantium ab eum. Quos maiores incidunt deserunt molestiae explicabo eaque, ipsam vel.
+                        Ayant produit des expériences de réalité virtuelle pour les promoteurs immobiliers  <br />
+                        nous avons une expérience éprouvée d'exemples de qualité et pouvons vous aider à améliorer vos ventes  <br />
+                        avec cette technologie en constante évolution.
                     </p>}
                 TheGalerieElements={
                     <div className='project_container'>
-                        <OneGalerieElement image={ImageProjectC1} title={'Interior Design'} link={'/Interior1'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} link={'/MSAD'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectC1} title={'Interior Design'} link={'/Interior1'} date={'03 Juin, 2022'} />
+                        <OneGalerieElement image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} link={'/MSAD'} date={'03 Septembre, 2022'} />
                     </div>
                 } color={'#F1F1F1'}
             />
@@ -68,8 +72,8 @@ function Services() {
                     </p>}
                 TheGalerieElements={
                     <div className='project_container'>
-                        <OneGalerieElement image={ImageProjectD1} title={'Maquette de la Grande Mosquée de Touba'} link={'/Touba'} date={'Juin 09, 2022'} />
-                        <OneGalerieElement image={ImageProjectF2} title={'Maquette "Hangar Photovoltaïque"'} link={'/Hangar1'} date={'Juin 09, 2022'} />
+                        <OneGalerieElement image={ImageProjectD1} title={'Maquette de la Grande Mosquée de Touba'} link={'/Touba'} date={'09 Mars, 2022'} />
+                        <OneGalerieElement image={ImageProjectF2} title={'Maquette "Hangar Photovoltaïque"'} link={'/Hangar1'} date={'29 Juin , 2021'} />
                     </div>
                 } color={'#EBEBEB'}
             />

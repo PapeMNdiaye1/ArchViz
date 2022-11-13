@@ -65,19 +65,19 @@ function TopBare({ onChangeTab }) {
                     <OneSection parentCallback={callback} link={'/Contact'} title={'CONTACT'} />
                 </div>
                 <div className="network_container">
-                    <a href="https://www.instagram.com/pape_momar_ndiaye/" target="_blank">
+                    <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/pape-momar-ndiaye-37b862199/" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=221777278655&text=Message provenant de ArchViz.sn" target="_blank">
                         <div className="network">
-                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
                         </div>
                     </a>
-                    <a href="https://www.facebook.com/ARVHVIZ/" target="_blank">
+                    <a href="mailto:archviz.sn@gmail.com?subject=Message provenant de ArchViz.sn" target="_blank">
                         <div className="network">
-                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="mail-outline"></ion-icon>
                         </div>
                     </a>
                 </div>

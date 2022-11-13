@@ -3,13 +3,11 @@ import { Link } from "react-router-dom";
 
 import ImageProjectA1 from '../Style/Images/Project/Exterior-1.jpg';
 import ImageProjectA2 from '../Style/Images/Project/Exterior-2.jpg';
-// import ImageProjectA3 from '../Style/Images/Project/Exterior-3.jpg';
 import ImageProjectA4 from '../Style/Images/Project/Exterior-4.jpg';
 import ImageProjectA5 from '../Style/Images/Project/Exterior-5.jpg';
 
 import ImageProjectB1 from '../Style/Images/Project/Immeuble-1.jpg';
 import ImageProjectB2 from '../Style/Images/Project/Immeuble-2.jpg';
-// import ImageProjectB3 from '../Style/Images/Project/Immeuble-3.jpg';
 
 import ImageProjectC1 from '../Style/Images/Project/Interior-1-1.jpg';
 import ImageProjectC2 from '../Style/Images/Project/Interior-1-2.jpg';
@@ -20,8 +18,6 @@ import ImageProjectC6 from '../Style/Images/Project/Interior-1-6.jpg';
 import ImageProjectC7 from '../Style/Images/Project/Interior-1-7.jpg';
 
 import ImageProjectD1 from '../Style/Images/Project/NFT-1.jpg';
-// import ImageProjectD2 from '../Style/Images/Project/NFT-2.jpg';
-// import ImageProjectD3 from '../Style/Images/Project/NFT-3.jpg';
 
 import ImageProjectE1 from '../Style/Images/Project/Pharmacie-1.jpg';
 import ImageProjectE2 from '../Style/Images/Project/Pharmacie-2.jpg';
@@ -30,14 +26,13 @@ import ImageProjectE4 from '../Style/Images/Project/Pharmacie-4.jpg';
 import ImageProjectE5 from '../Style/Images/Project/Pharmacie-5.jpg';
 import ImageProjectE6 from '../Style/Images/Project/Pharmacie-6.jpg';
 import ImageProjectE7 from '../Style/Images/Project/Pharmacie-7.jpg';
-// import ImageProjectE8 from '../Style/Images/Project/Pharmacie-8.jpg';
 import ImageProjectE9 from '../Style/Images/Project/Pharmacie-9.jpg';
 
 import ImageProjectF1 from '../Style/Images/Project/Hangar-1.jpg';
 import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
 import ImageProjectF3 from '../Style/Images/Project/Hangar-3.jpg';
 
-import ImageProjectG1 from '../Style/Images/Project/MSAD_1.jpg';
+// import ImageProjectG1 from '../Style/Images/Project/MSAD_1.jpg';
 import ImageProjectG2 from '../Style/Images/Project/MSAD_2.jpg';
 import ImageProjectG3 from '../Style/Images/Project/MSAD_3.jpg';
 
@@ -90,12 +85,12 @@ function Accueil({ GetImageToApp }) {
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=221777278655&text=The message" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=221777278655&text=Message provenant de ArchViz.sn" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-whatsapp"></ion-icon>
                         </div>
                     </a>
-                    <a href="mailto:archviz.sn@gmail.com?subject=The message" target="_blank">
+                    <a href="mailto:archviz.sn@gmail.com?subject=Message provenant de ArchViz.sn" target="_blank">
                         <div className="network">
                             <ion-icon name="mail-outline"></ion-icon>
                         </div>
@@ -104,17 +99,17 @@ function Accueil({ GetImageToApp }) {
                 </div>
             </div>
             <div className='AccueilBigProjectsSection'>
-                <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
-                    description={"Projet réalisé et rendu en avec blender, compositing sur photoshop, Design minimalist pour une optimisation de l'espace."}
-                    color={'#93A490'} textcolor={'#222'} theKey={1} side={'right'} link={'/SmallHouse1'} />
                 <OneBigProject title={'Interior Design'} image={ImageProjectC3}
                     description={"Décors interieur moderne simpliste et lumine. Rendus images en réalisés avec blender , animation et rendus videos sur Unreal Engine 5, compositing sur photoshop."}
-                    color={'#EAEAEA'} textcolor={'#222'} theKey={2} side={'left'} link={'/Interior1'} />
+                    color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'right'} link={'/Interior1'} />
+                <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
+                    description={"Projet réalisé et rendu en avec blender, compositing sur photoshop, Design minimalist pour une optimisation de l'espace."}
+                    color={'#93A490'} textcolor={'#222'} theKey={2} side={'left'} link={'/SmallHouse1'} />
                 <OneBigProject title={'Pharmacie Design'} image={ImageProjectE4}
                     description={'Design de pharmacie interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Pharmacie1'} />
-                <OneBigProject title={'Maquette Hangar Photovoltaique'} image={ImageProjectF2}
-                    description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
+                <OneBigProject title={'Maquette de Hangar Photovoltaique'} image={ImageProjectF2}
+                    description={"Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}
                     color={'#F1F1F1'} textcolor={'#222'} theKey={4} link={'/Hangar1'} side={'left'} />
                 <OneBigProject title={"Visualisation de Façade d'Immeuble"} image={ImageProjectB1}
                     description={'Design de façade d\'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
@@ -122,9 +117,11 @@ function Accueil({ GetImageToApp }) {
 
             </div>
             <div className='galerie_presantation'>
-                <div className='visualisation_maquette' >
-                    Galerie
-                </div>
+                {/* <div className='galerie_presantation' > */}
+                <Link className='nos_réalisations' to={'./Traveaux'}>
+                    Nos Réalisations
+                </Link>
+                {/* </div> */}
             </div>
             <TheGallery GetImageOnAccueil={GetImageOnApp} />
         </div >
@@ -195,10 +192,10 @@ function AccueilSlider() {
 
     return (
         <div className="Accueil_Slider">
-            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={' Juin 09 , 2022'} title={<p>Visualisations <dr />Rendus Images<br />et Videos</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={' Juin 03 , 2022'} title={<p>Creation de <dr /> Maquet</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={' Juin 03 , 2022'} title={<p>Realiter <dr /> Virtuel 3D Web <dr /> experience</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={' Juin 03 , 2022'} title={<p>Visualisations <dr /> Architectural</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'27 Mai, 2022'} title={<p>Visualisations <dr />Rendus Images<br />et Videos</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={'09 Mars, 2022'} title={<p>Creation de <dr /> Maquet</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={'03 Juin, 2022'} title={<p>Realiter <dr /> Virtuel 3D Web <dr /> experience</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={'27 Mai, 2022'} title={<p>Visualisations <dr /> Architectural</p>} />
             <div className='slider_btn_container'>
 
             </div>
@@ -328,35 +325,35 @@ function TheGallery({ GetImageOnAccueil }) {
     return (
         <Fragment>
             <div className="the_galerie_container">
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC3} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE3} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Design de Maison Moderne'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE5} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC3} title={'Interior Design'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE3} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Design de Maison Moderne'} date={'15 avril, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE5} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Touba'} image={ImageProjectD1} title={'Maquette de la Grande Mosquée de Touba'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE1} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Immeuble1'} image={ImageProjectB2} title={"Visualisation Exterieur d'Immeuble"} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC4} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF1} title={'Maquette Hangar Photovoltaïque'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Touba'} image={ImageProjectD1} title={'Maquette de la Grande Mosquée de Touba'} date={'09 Mars, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE1} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Immeuble1'} image={ImageProjectB2} title={"Visualisation Exterieur d'Immeuble"} date={'23 Mars, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC4} title={'Interior Design'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF1} title={'Maquette Hangar Photovoltaïque'} date={'29 Juin , 2021'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE4} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA2} title={'Design de Maison Moderne'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC2} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC7} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC5} title={'Interior Design'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE4} title={'Interior Design'} date={'27 Mai, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA2} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC2} title={'Interior Design'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC7} title={'Interior Design'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC5} title={'Interior Design'} date={'03 Juin, 2022'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA4} title={'Design de Maison Moderne'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE7} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE9} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE2} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF3} title={'Maquette Hangar Photovoltaïque'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA4} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE7} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE9} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE2} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF3} title={'Maquette Hangar Photovoltaïque'} date={'29 Juin, 2021'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE6} title={'Pharmacie Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC6} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG3} title={'Manufacture des Arts Décoratifs de Thiés'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC1} title={'Interior Design'} date={'Juin 09, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA5} title={'Design de Maison Moderne'} date={'Juin 09, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE6} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC6} title={'Interior Design'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG3} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC1} title={'Interior Design'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA5} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
             </div>
         </Fragment>
     );
@@ -418,7 +415,7 @@ function TheFooter({ }) {
                 className='portfolio_link'>Voir le portfolio <ion-icon name="arrow-forward-outline"></ion-icon></a>
 
             <div className='archviz_description'>
-                Depuis 2020, nous aidons les architectes et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels incroyables.
+                Depuis 2020, nous aidons les architectes et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels professionnels.
             </div>
             <div className='menu_elemant_container'>
                 <Link className='menu_elemant' to={'/'} onClick={onClickOnTab}>
@@ -431,9 +428,8 @@ function TheFooter({ }) {
                     Services
                 </Link>
                 <Link className='menu_elemant' to={'/Gallery'} onClick={onClickOnTab}>
-                    Gallerie
+                    Galerie
                 </Link>
-
                 <div className='menu_elemant'></div>
             </div>
             <div className='categories_elemant_container'>
@@ -456,7 +452,7 @@ function TheFooter({ }) {
                         <ion-icon name="logo-instagram"></ion-icon>
                     </div>
                 </a>
-                <a href="mailto:archviz.sn@gmail.com?subject=The message" target="_blank">
+                <a href="mailto:archviz.sn@gmail.com?subject=Message provenant de ArchViz.sn" target="_blank">
                     <div className="network">
                         <ion-icon name="mail-outline"></ion-icon>
                     </div>
@@ -467,7 +463,7 @@ function TheFooter({ }) {
                     </div>
                 </a>
 
-                <a href="https://api.whatsapp.com/send?phone=221777278655&text=The message" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=221777278655&text=Message provenant de ArchViz.sn" target="_blank">
                     <div className="network">
                         <ion-icon name="logo-whatsapp"></ion-icon>
                     </div>

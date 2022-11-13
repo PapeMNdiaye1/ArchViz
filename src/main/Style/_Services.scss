@@ -27,7 +27,7 @@
             justify-content: flex-start;
             align-items: flex-end;
             padding-bottom: 1em;
-            width: 40%;
+            width: 55%;
 
 
             &::after {
@@ -44,7 +44,7 @@
         }
 
         .the_descrition {
-            margin-top: 5em;
+            margin-top: 2em;
             width: 100%;
             font-family: 'Montserrat', sans-serif;
             font-size: .9em;
@@ -53,8 +53,9 @@
             justify-content: flex-end;
 
             p {
-                width: 40%;
-                text-align: end;
+                // background-color: salmon;
+                width: 100%;
+                text-align: start;
             }
         }
 

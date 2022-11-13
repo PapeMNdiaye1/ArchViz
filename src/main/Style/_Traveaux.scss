@@ -21,7 +21,7 @@
         .visualization-projects-description {
             width: 40%;
             font-family: 'Montserrat', sans-serif;
-            font-size: .8em;
+            font-size: 1em;
             font-weight: 700;
         }
     }
@@ -43,6 +43,11 @@
                 background-position: center;
                 background-size: 100%;
                 background-repeat: no-repeat;
+                transition-duration: .4s;
+
+                &:hover {
+                    background-size: 105%;
+                }
             }
 
             .info_container {

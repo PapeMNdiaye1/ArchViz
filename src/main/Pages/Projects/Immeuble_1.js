@@ -56,20 +56,22 @@ function Immeuble1({ }) {
                         Design de Maison Moderne
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momor Ndiaye | Juin 6, 2022 |
+                        par Pape Momor Ndiaye | 23 Mars, 2022 |
                     </h3>
+                    <p>
+                        Design de façade d\'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.
+                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vitae dicta ut reprehenderit! Veniam explicabo aliquam vel, repellat aspernatur iste non itaque odit blanditiis quae autem facere neque minima id?
-                    </p>
-                    <h1 className='project_title'>
+                    {/* <h1 className='project_title'>
                         1. Setup the Model to Render With and Without Glass
-                    </h1>
+                    </h1> */}
+
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC2} width='100%' />
                     </div>
+
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' />
                     </div>

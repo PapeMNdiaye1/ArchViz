@@ -14,25 +14,26 @@ function Traveaux() {
         <div id="Traveaux">
             <div className='Traveaux-Header'>
                 <div className='visualization-projects'>
-                    Visualization Projects
+                    Nos Réalisations
                 </div>
                 <div className='visualization-projects-description'>
-                    Depuis 2020, nous aidons les architectes et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels incroyables.                </div>
+                    Depuis 2020, nous aidons les architectes et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels professionnels.                        </div>
             </div>
             <div className='AccueilBigProjectsSection'>
                 <OneBigProject title={'Manufacture des Arts Décoratifs de Thiés'} image={ImageProjectG1}
-                    description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
+                    description={"Expériences de réalité virtuelle pour M.S.A.D. Nous avons une expérience éprouvée et pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={1} link={'/MSAD'} side={'right'} />
 
                 <OneBigProject title={'Interior Desing'} image={ImageProjectC3}
                     description={'Decors interieur moderne simpliste et lumine. Rendus images en réalisés avec blender , animation et rendus videos sur Unreal Engine 5, compositing sur photoshop.'}
                     color={'#F1F1F1'} textcolor={'#222'} theKey={2} link={'/Interior1'} side={'left'} />
 
-                <OneBigProject title={'Small House'} image={ImageProjectA1}
-                    description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
+                <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
+                    description={"Projet réalisé et rendu en avec blender, compositing sur photoshop, Design minimalist pour une optimisation de l'espace."}
                     color={'#93A490'} textcolor={'#222'} theKey={3} link={'/SmallHouse1'} side={'right'} />
-                <OneBigProject title={'Touba'} image={ImageProjectD3}
-                    description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
+
+                <OneBigProject title={'Maquette de la Grande Mosquée de Touba'} image={ImageProjectD3}
+                    description={'Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.'}
                     color={'#DB9B18'} textcolor={'#222'} theKey={4} link={'/Touba'} side={'left'} />
 
                 <OneBigProject title={'Pharmacie'} image={ImageProjectE4}
@@ -44,7 +45,7 @@ function Traveaux() {
                     color={'#182B38'} textcolor={'#f1f1f1'} theKey={6} link={'/Immeuble1'} side={'left'} />
 
                 <OneBigProject title={'Maquette pour hangar photovoltaique'} image={ImageProjectF2}
-                    description={'The Student Hub design preserves the historic framework of the MIT campus by recycling facades and maintaining existing building footprints. Modern forms are inserted underground and sliced through the form revealing new connections to iconic campus sculptures and gateways.'}
+                    description={"Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}
                     color={'#F1F1F1'} textcolor={'#222'} theKey={7} link={'/Hangar1'} side={'right'} />
             </div>
         </div>
