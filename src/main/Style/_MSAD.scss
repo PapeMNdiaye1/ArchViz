@@ -12,7 +12,6 @@
     background-color: rgba(46, 45, 45, 0.93);
     @include cent();
     z-index: 110;
-    // background-color: saddlebrown;
 
     div {
         width: 67%;
@@ -110,15 +109,41 @@
             font-weight: 400;
         }
 
+        a {
+            margin-bottom: 2em;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .8em;
+            font-weight: 800;
+            width: 12em;
+            height: 2em;
+            @include cent();
+            border: .1em solid #000;
+            border-radius: .3em;
+            text-decoration: none;
+            color: var(--colorX);
+
+            &:hover {
+                transform: scale(1.02);
+            }
+
+            ion-icon {
+                font-size: 1.2em;
+                // bottom: -.1em;
+            }
+
+        }
+
         .TheImageContainer {
             width: 60vw;
             height: auto;
             margin-bottom: 3em;
+            overflow: hidden;
+
         }
 
         p {
             width: 60vw;
-            margin-bottom: 2em;
+            margin-bottom: .5em;
             font-family: 'Montserrat', sans-serif;
             font-size: .8em;
             font-weight: 700;

@@ -4,9 +4,6 @@ import { React, useEffect, useState, Fragment } from 'react';
 import ImageProjectC1 from '../../Style/Images/Project/MSAD_1.jpg';
 import ImageProjectC2 from '../../Style/Images/Project/MSAD_2.jpg';
 import ImageProjectC3 from '../../Style/Images/Project/MSAD_3.jpg';
-import blender from '../../Style/Images/SVG/blender.png';
-import unreal from '../../Style/Images/SVG/unreal.png';
-import photoShop from '../../Style/Images/SVG/PhotoShop.png';
 
 
 
@@ -57,7 +54,12 @@ function MSAD({ }) {
                         par Pape Momor Ndiaye | Juin 09, 2022 |
                     </h3>
                     <p>
-                        Expériences de réalité virtuelle pour M.S.A.D. Nous avons une expérience éprouvée et pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution.                    </p>
+                        Expériences de réalité virtuelle réalisé pour M.S.A.D de Thiés. <br /> Nous avons une expérience éprouvée et pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution.
+                    </p>
+
+                    <a className='the_links' href='https://papemndiaye1.github.io/MSAT-WebSite/' target="_blank">
+                        Voir le site Web <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />
                     </div>
@@ -67,15 +69,7 @@ function MSAD({ }) {
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' />
                     </div>
-                    {/* <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC7} width='100%' />
-                    </div>
-                    <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC1} width='100%' />
-                    </div>
-                    <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC4} width='100%' />
-                    </div> */}
+
                 </div>
 
                 {/* <div className='tools'>

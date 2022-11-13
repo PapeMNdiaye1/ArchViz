@@ -68,7 +68,7 @@ function Services() {
                 theServiceTitle={'Creation de Maquette'}
                 theServiceDescription={
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Odit porro omnis aspernatur alias officia laudantium ab eum. Quos maiores incidunt deserunt molestiae explicabo eaque, ipsam vel.
+                        Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.
                     </p>}
                 TheGalerieElements={
                     <div className='project_container'>

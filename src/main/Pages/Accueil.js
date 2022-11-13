@@ -77,7 +77,7 @@ function Accueil({ GetImageToApp }) {
                 </div>
                 <p>
                     ArchViz est un studio de visualisation architecturale,
-                    co-auteur d'images et d'animations architecturales pour les architectes et les promoteurs immobiliers.
+                    créateur d'images promotionnelles et d'animations pour les architectes et les promoteurs immobiliers.
                 </p>
                 <div className='network_container'>
                     <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">

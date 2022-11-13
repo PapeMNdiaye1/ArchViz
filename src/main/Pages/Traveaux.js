@@ -21,7 +21,7 @@ function Traveaux() {
             </div>
             <div className='AccueilBigProjectsSection'>
                 <OneBigProject title={'Manufacture des Arts Décoratifs de Thiés'} image={ImageProjectG1}
-                    description={"Expériences de réalité virtuelle pour M.S.A.D. Nous avons une expérience éprouvée et pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution."}
+                    description={"Expériences de réalité virtuelle réalisé pour M.S.A.D de Thiés. Nous avons une expérience éprouvée et pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={1} link={'/MSAD'} side={'right'} />
 
                 <OneBigProject title={'Interior Desing'} image={ImageProjectC3}

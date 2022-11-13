@@ -6,8 +6,6 @@ import { React, useEffect, useState, Fragment } from 'react';
 import ImageProjectC1 from '../../Style/Images/Project/Immeuble-1.jpg';
 import ImageProjectC2 from '../../Style/Images/Project/Immeuble-2.jpg';
 import ImageProjectC3 from '../../Style/Images/Project/Immeuble-3.jpg';
-// import ImageProjectC4 from '../../Style/Images/Project/Exterior-3.jpg';
-// import ImageProjectC5 from '../../Style/Images/Project/Exterior-5.jpg';
 
 
 
@@ -59,7 +57,7 @@ function Immeuble1({ }) {
                         par Pape Momor Ndiaye | 23 Mars, 2022 |
                     </h3>
                     <p>
-                        Design de façade d\'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.
+                        Design de façade d'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.
                     </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />

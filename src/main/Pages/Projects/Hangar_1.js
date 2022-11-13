@@ -6,10 +6,6 @@ import ImageProjectC2 from '../../Style/Images/Project/Hangar-2.jpg';
 import ImageProjectC3 from '../../Style/Images/Project/Hangar-3.jpg';
 import ImageProjectC4 from '../../Style/Images/Project/Hangar-4.jpg';
 
-import blender from '../../Style/Images/SVG/blender.png';
-import unreal from '../../Style/Images/SVG/unreal.png';
-import photoShop from '../../Style/Images/SVG/PhotoShop.png';
-
 
 
 function Hangar_1({ }) {
@@ -21,8 +17,6 @@ function Hangar_1({ }) {
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
         return () => {
-            // setTheChangeInGalerie(false);
-            // console.log('ww');
         }
     }, []);
 
@@ -59,13 +53,11 @@ function Hangar_1({ }) {
                         par Pape Momor Ndiaye | 09 Juin, 2021 |
                     </h3>
                     <p>
-                        Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.                    </p>
+                        Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.
+                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />
                     </div>
-                    {/* <h1 className='project_title'>
-                        1. Setup the Model to Render With and Without Glass
-                    </h1> */}
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC2} width='100%' />
                     </div>
@@ -76,32 +68,6 @@ function Hangar_1({ }) {
                         <img onClick={displayImage} src={ImageProjectC4} width='100%' />
                     </div>
                 </div>
-
-                {/* <div className='tools'>
-                    <h1 className='theToolsTitle'>
-                        Tools
-                    </h1>
-                    <div
-                        style={{
-                            backgroundImage: `url('${blender}')`,
-                        }}
-                        className='theToolsIcon1'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${unreal}')`,
-                            backgroundSize: `85%`,
-                        }}
-                        className='theToolsIcon2'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${photoShop}')`,
-                            backgroundSize: `80%`,
-                        }}
-                        className='theToolsIcon3'>
-                    </div>
-                </div> */}
             </div>
         </Fragment >
     );
