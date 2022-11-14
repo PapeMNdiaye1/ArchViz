@@ -73,11 +73,11 @@ function Accueil({ GetImageToApp }) {
             <AccueilSlider />
             <div className='archviz_presantation' >
                 <div className='qui_somme_nous' >
-                    Qui somme Nous
+                    Qui somme Nous ?
                 </div>
                 <p>
                     ArchViz est un studio de visualisation architecturale,
-                    créateur d'images promotionnelles et d'animations pour les architectes et les promoteurs immobiliers.
+                    Nous créatons des images et animations promotionnelles pour les architectes et les promoteurs immobiliers.
                 </p>
                 <div className='network_container'>
                     <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
@@ -99,16 +99,16 @@ function Accueil({ GetImageToApp }) {
                 </div>
             </div>
             <div className='AccueilBigProjectsSection'>
-                <OneBigProject title={'Interior Design'} image={ImageProjectC3}
-                    description={"Décors interieur moderne simpliste et lumine. Rendus images en réalisés avec blender , animation et rendus videos sur Unreal Engine 5, compositing sur photoshop."}
+                <OneBigProject title={'Décoration Interieur'} image={ImageProjectC3}
+                    description={"Décor interieur moderne simpliste et lumine. Rendus réalisés avec blender, animation et rendus videos sur Unreal Engine 5, compositing sur photoshop."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'right'} link={'/Interior1'} />
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
-                    description={"Projet réalisé et rendu en avec blender, compositing sur photoshop, Design minimalist pour une optimisation de l'espace."}
+                    description={"Design minimalist pour une optimisation de l'espace. Projet réalisé et rendu en avec blender, compositing sur photoshop."}
                     color={'#93A490'} textcolor={'#222'} theKey={2} side={'left'} link={'/SmallHouse1'} />
                 <OneBigProject title={'Pharmacie Design'} image={ImageProjectE4}
                     description={'Design de pharmacie interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Pharmacie1'} />
-                <OneBigProject title={'Maquette de Hangar Photovoltaique'} image={ImageProjectF2}
+                <OneBigProject title={'Maquettete de Hangar Photovoltaique'} image={ImageProjectF2}
                     description={"Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}
                     color={'#F1F1F1'} textcolor={'#222'} theKey={4} link={'/Hangar1'} side={'left'} />
                 <OneBigProject title={"Visualisation de Façade d'Immeuble"} image={ImageProjectB1}
@@ -119,7 +119,7 @@ function Accueil({ GetImageToApp }) {
             <div className='galerie_presantation'>
                 {/* <div className='galerie_presantation' > */}
                 <Link className='nos_réalisations' to={'./Traveaux'}>
-                    Nos Réalisations
+                    Nos Réalisations   <ion-icon name="arrow-forward-outline"></ion-icon>
                 </Link>
                 {/* </div> */}
             </div>
@@ -127,6 +127,7 @@ function Accueil({ GetImageToApp }) {
         </div >
     );
 }
+
 
 function AccueilSlider() {
 
@@ -139,7 +140,6 @@ function AccueilSlider() {
             element.classList.remove('ativeDot')
         });
         e.target.classList.add('ativeDot')
-
 
         AllSlider.forEach(element => {
             element.style.opacity = '0'
@@ -192,10 +192,10 @@ function AccueilSlider() {
 
     return (
         <div className="Accueil_Slider">
-            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'27 Mai, 2022'} title={<p>Visualisations <dr />Rendus Images<br />et Videos</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={'09 Mars, 2022'} title={<p>Creation de <dr /> Maquet</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={'03 Juin, 2022'} title={<p>Realiter <dr /> Virtuel 3D Web <dr /> experience</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={'27 Mai, 2022'} title={<p>Visualisations <dr /> Architectural</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'27 Mai, 2022'} title={<p>Visualisations <dr />Rendus Images <br />& Animations</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={'09 Mars, 2022'} title={<p>Création de <dr />Maquette </p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={'03 Juin, 2022'} title={<p>Realiter <dr /> Virtuel & Experience <dr /> 3D Web</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={'27 Mai, 2022'} title={<p>Visualisations <dr /> Architecturals</p>} />
             <div className='slider_btn_container'>
 
             </div>
@@ -248,14 +248,12 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                         }}
                         className='info_container '>
                         <Link
-
                             style={{
                                 color: textcolor,
                             }} className='title' to={link}>
                             {title}
                         </Link>
                         <div
-
                             className='description'>
                             <div
                                 style={{
@@ -264,6 +262,14 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                                 className='bar'>
                             </div>
                             {description}
+                            <Link className='the_link'
+                                style={{
+                                    color: textcolor,
+                                    border: `.1em solid ${textcolor}`
+                                }} to={link}>
+
+                                Voir plus  <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </Link>
                         </div>
                     </div>
                     <div
@@ -297,6 +303,14 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                                 className='bar'>
                             </div>
                             {description}
+                            <Link className='the_link'
+                                style={{
+                                    color: textcolor,
+                                    border: `.1em solid ${textcolor}`
+                                }} to={link}>
+
+                                Voir plus  <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </Link>
                         </div>
                     </div>
                     <div
@@ -331,11 +345,11 @@ function TheGallery({ GetImageOnAccueil }) {
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Design de Maison Moderne'} date={'15 avril, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE5} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Touba'} image={ImageProjectD1} title={'Maquette de la Grande Mosquée de Touba'} date={'09 Mars, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Touba'} image={ImageProjectD1} title={'Maquettete de la Grande Mosquée de Touba'} date={'09 Mars, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE1} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Immeuble1'} image={ImageProjectB2} title={"Visualisation Exterieur d'Immeuble"} date={'23 Mars, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC4} title={'Interior Design'} date={'03 Juin, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF1} title={'Maquette Hangar Photovoltaïque'} date={'29 Juin , 2021'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF1} title={'Maquettete Hangar Photovoltaïque'} date={'29 Juin , 2021'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE4} title={'Interior Design'} date={'27 Mai, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA2} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
@@ -347,7 +361,7 @@ function TheGallery({ GetImageOnAccueil }) {
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE7} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE9} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE2} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF3} title={'Maquette Hangar Photovoltaïque'} date={'29 Juin, 2021'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF3} title={'Maquettete Hangar Photovoltaïque'} date={'29 Juin, 2021'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE6} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC6} title={'Interior Design'} date={'03 Juin, 2022'} />
@@ -415,7 +429,7 @@ function TheFooter({ }) {
                 className='portfolio_link'>Voir le portfolio <ion-icon name="arrow-forward-outline"></ion-icon></a>
 
             <div className='archviz_description'>
-                Depuis 2020, nous aidons les architectes et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels professionnels.
+                Nous aidons les architectes  et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels professionnels.
             </div>
             <div className='menu_elemant_container'>
                 <Link className='menu_elemant' to={'/'} onClick={onClickOnTab}>
@@ -435,7 +449,7 @@ function TheFooter({ }) {
             <div className='categories_elemant_container'>
                 <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Exterior Design</div>
                 <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Interior Design</div>
-                <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Creation de Maquet</div>
+                <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Creation de Maquette</div>
                 <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Visualisation</div>
                 <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Creation de Visite Web</div>
                 <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Experience de Realite Virtuel</div>

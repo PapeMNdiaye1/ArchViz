@@ -56,7 +56,7 @@ function SmallHouse1({ }) {
                         Design de Maison Moderne
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momor Ndiaye | Juin 6, 2022 |
+                        par Pape Momar Ndiaye | Juin 6, 2022 |
                     </h3>
                     <p>
                         Projet réalisé et rendu en avec blender, compositing sur photoshop, Design minimalist pour une optimisation de l'espace.

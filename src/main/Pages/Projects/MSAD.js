@@ -51,10 +51,10 @@ function MSAD({ }) {
                         Manufacture des Arts Décoratifs de Thiés
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momor Ndiaye | Juin 09, 2022 |
+                        par Pape Momar Ndiaye | Juin 09, 2022 |
                     </h3>
                     <p>
-                        Expériences de réalité virtuelle réalisé pour M.S.A.D de Thiés. <br /> Nous avons une expérience éprouvée et pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution.
+                        Expériences de réalité virtuelle réalisé pour la M.S.A.D de Thiés. <br /> Nous pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution.
                     </p>
 
                     <a className='the_links' href='https://papemndiaye1.github.io/MSAT-WebSite/' target="_blank">

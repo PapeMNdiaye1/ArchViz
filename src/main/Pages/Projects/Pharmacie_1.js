@@ -60,7 +60,7 @@ function Pharmacie1({ }) {
                         Pharmacie Design
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momor Ndiaye | 27 Mai, 2022 |
+                        par Pape Momar Ndiaye | 27 Mai, 2022 |
                     </h3>
                     <p>
                         Design de pharmacie interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.

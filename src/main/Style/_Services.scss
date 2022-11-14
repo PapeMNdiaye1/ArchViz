@@ -76,10 +76,8 @@
                     display: grid;
                     grid-template-columns: 1fr;
                     grid-template-rows: 1fr;
-                    border-radius: 1em;
+                    border-radius: 1.4em;
                     overflow: hidden;
-
-
 
                     img {
                         grid-column: 1 / 1;
@@ -129,6 +127,7 @@
                                 font-weight: 600;
                                 font-size: 1.2em;
                                 text-align: center;
+
                             }
 
                             .date {
@@ -155,7 +154,6 @@
                     transform: scale(1);
                     text-decoration: none;
                     color: var(--colorX);
-
                     cursor: pointer;
 
                     ion-icon {
@@ -189,13 +187,13 @@
             padding-right: 2vw;
 
             .the_title {
-                font-size: 1.5em;
+                font-size: 1.8em;
                 width: 90vw;
             }
 
             .the_descrition {
                 margin-top: 2em;
-                font-size: .7em;
+                font-size: 1em;
 
                 p {
                     width: 100%;

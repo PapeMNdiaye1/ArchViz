@@ -54,7 +54,7 @@ function Immeuble1({ }) {
                         Design de Maison Moderne
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momor Ndiaye | 23 Mars, 2022 |
+                        par Pape Momar Ndiaye | 23 Mars, 2022 |
                     </h3>
                     <p>
                         Design de façade d'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.

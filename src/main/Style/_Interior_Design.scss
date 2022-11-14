@@ -112,6 +112,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 1.2em;
             font-weight: 400;
+            cursor: pointer;
         }
 
         .TheImageContainer {
@@ -129,71 +130,65 @@
         }
     }
 
-    .tools {
-        margin-top: 7em;
-        margin-left: 2em;
-        height: 15em;
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-        grid-template-columns: repeat(2, auto);
+    // .tools {
+    //     margin-top: 7em;
+    //     margin-left: 2em;
+    //     height: 15em;
+    //     display: grid;
+    //     grid-template-rows: repeat(2, auto);
+    //     grid-template-columns: repeat(2, auto);
 
-        .theToolsTitle {
-            height: 2em;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.8em;
-            font-weight: 700;
-            margin-bottom: .2em;
-            grid-column: 1/3;
-            grid-row: 1/1;
-        }
+    //     .theToolsTitle {
+    //         height: 2em;
+    //         font-family: 'Montserrat', sans-serif;
+    //         font-size: 1.8em;
+    //         font-weight: 700;
+    //         margin-bottom: .2em;
+    //         grid-column: 1/3;
+    //         grid-row: 1/1;
+    //     }
 
 
-        .theToolsIcon1 {
-            width: 5em;
-            grid-column: 1/1;
-            grid-row: 2/2;
-            @include cent();
-            background-position: center;
-            background-size: 100%;
-            background-repeat: no-repeat;
-        }
+    //     .theToolsIcon1 {
+    //         width: 5em;
+    //         grid-column: 1/1;
+    //         grid-row: 2/2;
+    //         @include cent();
+    //         background-position: center;
+    //         background-size: 100%;
+    //         background-repeat: no-repeat;
+    //     }
 
-        .theToolsIcon2 {
-            width: 5em;
-            grid-column: 2/2;
-            grid-row: 2/2;
-            @include cent();
-            background-size: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+    //     .theToolsIcon2 {
+    //         width: 5em;
+    //         grid-column: 2/2;
+    //         grid-row: 2/2;
+    //         @include cent();
+    //         background-size: 100%;
+    //         background-position: center;
+    //         background-repeat: no-repeat;
+    //     }
 
-        .theToolsIcon3 {
-            width: 5em;
-            grid-column: 3/3;
-            grid-row: 2/2;
-            @include cent();
-            background-size: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-    }
-
+    //     .theToolsIcon3 {
+    //         width: 5em;
+    //         grid-column: 3/3;
+    //         grid-row: 2/2;
+    //         @include cent();
+    //         background-size: 100%;
+    //         background-position: center;
+    //         background-repeat: no-repeat;
+    //     }
+    // }
 }
 
 //!########################################
 
 @media all and (max-width: 1000px) {
-
-
     .Interior_1_container {
         padding-left: 5vw;
         padding-right: 0vw;
 
         .project_display {
-
-
             .project_title {
                 font-size: 1.5em;
             }
@@ -217,19 +212,5 @@
                 width: 80vw;
             }
         }
-
-        .tools {
-
-            .theToolsTitle {}
-
-            .theToolsIcon1 {}
-
-            .theToolsIcon2 {}
-
-            .theToolsIcon3 {}
-
-        }
-
     }
-
 }

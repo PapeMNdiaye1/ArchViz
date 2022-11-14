@@ -47,10 +47,10 @@ function Hangar_1({ }) {
 
                 <div className='project_display'>
                     <h1 className='project_title'>
-                        Maquette Hangar Photovoltaïque
+                        Maquettete Hangar Photovoltaïque
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momor Ndiaye | 09 Juin, 2021 |
+                        par Pape Momar Ndiaye | 09 Juin, 2021 |
                     </h3>
                     <p>
                         Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.

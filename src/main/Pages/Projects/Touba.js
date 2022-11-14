@@ -51,10 +51,10 @@ function Touba({ }) {
 
                 <div className='project_display'>
                     <h1 className='project_title'>
-                        Maquette de la Grande Mosquée de Touba
+                        Maquettete de la Grande Mosquée de Touba
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momor Ndiaye | 09 Mars, 2022 |
+                        par Pape Momar Ndiaye | 09 Mars, 2022 |
                     </h3>
                     <p>
                         Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.
@@ -62,44 +62,24 @@ function Touba({ }) {
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />
                     </div>
+                    <div className='the_video'>
+                        <iframe width="100%" height="100%"
+                            src="https://www.youtube.com/embed/uSlNYZqbRIQ"
+                            title="Touba"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+                        </iframe>
+                    </div>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC2} width='100%' />
                     </div>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' />
                     </div>
-                    {/* <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC4} width='100%' />
-                    </div> */}
                 </div>
-
-                {/* <div className='tools'>
-                    <h1 className='theToolsTitle'>
-                        Tools
-                    </h1>
-                    <div
-                        style={{
-                            backgroundImage: `url('${blender}')`,
-                        }}
-                        className='theToolsIcon1'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${unreal}')`,
-                            backgroundSize: `85%`,
-                        }}
-                        className='theToolsIcon2'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${photoShop}')`,
-                            backgroundSize: `80%`,
-                        }}
-                        className='theToolsIcon3'>
-                    </div>
-                </div> */}
             </div>
-        </Fragment>
+        </Fragment >
     );
 }
 

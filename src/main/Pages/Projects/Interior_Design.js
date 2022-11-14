@@ -59,10 +59,11 @@ function Interior1({ }) {
                         Interior Decoration
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momor Ndiaye | 3 Juin, 2022 |
+                        par Pape Momar Ndiaye | 3 Juin, 2022 |
                     </h3>
                     <p>
-                        Decors interieur moderne simpliste et lumine. Rendus images en réalisés avec blender , animation et rendus videos sur Unreal Engine 5, compositing sur photoshop.                    </p>
+                        Décor interieur moderne simpliste et lumine. Rendus réalisés avec blender, animation et rendus videos sur Unreal Engine 5, compositing sur photoshop.
+                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' />
                     </div>

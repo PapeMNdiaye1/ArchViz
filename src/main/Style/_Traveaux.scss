@@ -88,6 +88,23 @@
                     font-family: 'Montserrat', sans-serif;
                     font-size: 1em;
                     font-weight: 700;
+                    flex-wrap: wrap;
+
+                    .the_link {
+                        margin-top: .5em;
+                        font-size: 1em;
+                        text-decoration: none;
+                        padding: .3em;
+                        border-radius: .2em;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+
+                        ion-icon {
+                            bottom: -.2em;
+                        }
+                    }
 
                     .bar {
                         height: .15em;
@@ -192,6 +209,9 @@
                     .title {
                         font-size: 1.3em;
                         width: 90%;
+                        transform: scale(1);
+                        // background-color: salmon;
+                        margin-bottom: .5em;
 
                         &:hover {
                             transform: scale(1.03);
@@ -204,9 +224,9 @@
                     }
 
                     .description {
-                        width: 90%;
                         margin-top: 1em;
                         font-size: .7em;
+                        width: 90%;
                     }
 
                 }
