@@ -20,9 +20,17 @@ function SmallHouse1({ }) {
     useEffect(() => {
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
+
+        let hoverLoaderContainer = document.querySelector(".hover_loader_container")
+        hoverLoaderContainer.style.display = 'flex';
+
+        setTimeout(function () {
+            hoverLoaderContainer.style.display = '';
+        }, 1500);
+
+
         return () => {
-            // setTheChangeInGalerie(false);
-            // console.log('ww');
+
         }
     }, []);
 

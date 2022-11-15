@@ -247,12 +247,12 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                             color: textcolor,
                         }}
                         className='info_container '>
-                        <Link
+                        <div
                             style={{
                                 color: textcolor,
-                            }} className='title' to={link}>
+                            }} className='title'>
                             {title}
-                        </Link>
+                        </div>
                         <div
                             className='description'>
                             <div
@@ -287,13 +287,13 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                             color: textcolor,
                         }}
                         className='info_container' >
-                        <Link
+                        <div
                             style={{
                                 color: textcolor,
                             }}
-                            className='title' to={link}>
+                            className='title' >
                             {title}
-                        </Link>
+                        </div>
                         <div
                             className='description'>
                             <div

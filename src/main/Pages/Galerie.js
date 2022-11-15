@@ -17,6 +17,12 @@ function Gallery({ TheImageToGallery,
     const [TheImageContainer, setTheImageContainer] = useState(false);
 
     useEffect(() => {
+        let hoverLoaderContainer = document.querySelector(".hover_loader_container")
+        hoverLoaderContainer.style.display = 'flex';
+        setTimeout(function () {
+            hoverLoaderContainer.style.display = '';
+        }, 1500);
+
 
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
@@ -42,7 +48,9 @@ function Gallery({ TheImageToGallery,
             setTheDate(TheDate);
             setTheLink(TheLink);
         }
+
     }, []);
+
 
     const GetImageOnApp = (theimage, title, date, link) => {
         setTheImage(theimage);

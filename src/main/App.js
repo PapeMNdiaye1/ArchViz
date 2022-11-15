@@ -44,6 +44,11 @@ function App() {
       <div className="App">
         <TopBare onChangeTab={changeTab} />
         <div className='App_container'>
+          <div className='hover_loader_container'>
+            <div className='hover_loader'>
+              <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            </div>
+          </div>
           <Routes>
             <Route exact path="/"
               element={<Accueil GetImageToApp={GetImage} />}

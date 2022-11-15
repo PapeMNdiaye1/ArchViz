@@ -3,11 +3,28 @@ import { React, useEffect, } from 'react';
 
 
 function Contacts() {
+
+
+    useEffect(() => {
+        let AccueilContainer = document.querySelector(".App_container")
+        AccueilContainer.scrollTop = 0;
+
+        let hoverLoaderContainer = document.querySelector(".hover_loader_container")
+        hoverLoaderContainer.style.display = 'flex';
+
+        setTimeout(function () {
+            hoverLoaderContainer.style.display = '';
+        }, 1500);
+
+
+        return () => {
+
+        }
+    }, []);
+
+
     return (
         <div id="Contacts">
-            {/* <div className='follow_us'>
-                Suivez Nous Sur
-            </div> */}
             <div className='Contact-container'>
                 <OneSection link={'https://api.whatsapp.com/send?phone=221777278655&text=The message'}
                     title={<div className="network"><ion-icon name="logo-whatsapp"></ion-icon>WHATSAPP</div>}
