@@ -57,13 +57,13 @@ function TopBare({ onChangeTab }) {
                 </div>
             </div>
             <div id='Top-bare-slider-container'>
-                <div className='Menu-container'>
+                <nav className='Menu-container'>
                     <OneSection parentCallback={callback} link={'/'} title={'ACCUEIL'} />
                     <OneSection parentCallback={callback} link={'/Traveaux'} title={'TRAVEAUX'} />
                     <OneSection parentCallback={callback} link={'/Gallery'} title={'GALLERIE'} />
                     <OneSection parentCallback={callback} link={'/Service'} title={'SERVICE'} />
                     <OneSection parentCallback={callback} link={'/Contact'} title={'CONTACT'} />
-                </div>
+                </nav>
                 <div className="network_container">
                     <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
                         <div className="network">

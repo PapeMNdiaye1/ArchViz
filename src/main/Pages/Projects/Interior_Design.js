@@ -91,55 +91,28 @@ function Interior1({ }) {
                     </div>
 
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC2} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC2} width='100%' alt='Interior Decoration - 1' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC1} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt='Interior Decoration - 2' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC4} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC4} width='100%' alt='Interior Decoration - 3' />
                     </div>
                     <h1 className='project_title'>
                         Clay Renders
                     </h1>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC6} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC6} width='100%' alt='Interior Decoration - 4' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC7} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC7} width='100%' alt='Interior Decoration - 5' />
                     </div>
 
                 </div>
 
-                {/* <div className='tools'>
-                    <h1 className='theToolsTitle'>
-                        Tools
-                    </h1>
-                    <div
-                        style={{
-                            backgroundImage: `url('${blender}')`,
-                        }}
-                        className='theToolsIcon1'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${unreal}')`,
-                            backgroundSize: `85%`,
-                        }}
-                        className='theToolsIcon2'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${photoShop}')`,
-                            backgroundSize: `80%`,
-                        }}
-                        className='theToolsIcon3'>
-                    </div>
-                </div> */}
             </div>
         </Fragment >
     );
-
 }
-
 export default Interior1;

@@ -77,7 +77,7 @@ function Gallery({ TheImageToGallery,
                                 onClick={displayImage}
                                 className='close_image_container'>
                             </div>
-                            <img src={TheImage} width='100%' />
+                            <img src={TheImage} width='100%' alt={TheTitle} />
                         </div>
                     </div>
                 }

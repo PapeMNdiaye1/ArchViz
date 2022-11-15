@@ -71,10 +71,10 @@ function Accueil({ GetImageToApp }) {
     return (
         <div id="Accueil">
             <AccueilSlider />
-            <div className='archviz_presantation' >
-                <div className='qui_somme_nous' >
+            <section className='archviz_presantation' >
+                <h2 className='qui_somme_nous' >
                     Qui somme Nous ?
-                </div>
+                </h2>
                 <p>
                     ArchViz est un studio de visualisation architecturale,
                     Nous créatons des images et animations promotionnelles pour les architectes et les promoteurs immobiliers.
@@ -97,8 +97,8 @@ function Accueil({ GetImageToApp }) {
                     </a>
 
                 </div>
-            </div>
-            <div className='AccueilBigProjectsSection'>
+            </section>
+            <section className='AccueilBigProjectsSection'>
                 <OneBigProject title={'Décoration Interieur'} image={ImageProjectC3}
                     description={"Décors interieur moderne simpliste et lumine. Rendus images réalisés avec blender, animation et rendus videos sur Unreal Engine 5, compositing sur photoshop."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'right'} link={'/Interior1'} />
@@ -115,14 +115,12 @@ function Accueil({ GetImageToApp }) {
                     description={'Design de façade d\'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
                     color={'#182B38'} textcolor={'#f1f1f1'} theKey={5} side={'right'} link={'/Immeuble1'} />
 
-            </div>
-            <div className='galerie_presantation'>
-                {/* <div className='galerie_presantation' > */}
+            </section>
+            <section className='galerie_presantation'>
                 <Link className='nos_réalisations' to={'./Traveaux'}>
                     Nos Réalisations   <ion-icon name="arrow-forward-outline"></ion-icon>
                 </Link>
-                {/* </div> */}
-            </div>
+            </section>
             <TheGallery GetImageOnAccueil={GetImageOnApp} />
         </div >
     );
@@ -241,19 +239,20 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
     return (
         <Fragment>
             {TheSide === "right" ? (
-                <div className="One_Project_In_Home right">
+                <section className="One_Project_In_Home right">
                     <div
+
                         style={{
                             color: textcolor,
                         }}
                         className='info_container '>
-                        <div
+                        <h3
                             style={{
                                 color: textcolor,
                             }} className='title'>
                             {title}
-                        </div>
-                        <div
+                        </h3>
+                        <p
                             className='description'>
                             <div
                                 style={{
@@ -270,31 +269,32 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
 
                                 Voir plus  <ion-icon name="arrow-forward-outline"></ion-icon>
                             </Link>
-                        </div>
+                        </p>
                     </div>
                     <div
+                        role="img" alt={title}
                         className='image_container'
                         style={{
                             backgroundImage: `url('${image}')`,
                         }}
                     >
                     </div>
-                </div>
+                </section>
             ) : (
-                <div className="One_Project_In_Home left">
+                <section className="One_Project_In_Home left">
                     <div
                         style={{
                             color: textcolor,
                         }}
                         className='info_container' >
-                        <div
+                        <h3
                             style={{
                                 color: textcolor,
                             }}
                             className='title' >
                             {title}
-                        </div>
-                        <div
+                        </h3>
+                        <p
                             className='description'>
                             <div
                                 style={{
@@ -311,16 +311,17 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
 
                                 Voir plus  <ion-icon name="arrow-forward-outline"></ion-icon>
                             </Link>
-                        </div>
+                        </p>
                     </div>
                     <div
+                        role="img" alt={title}
                         className='image_container'
                         style={{
                             backgroundImage: `url('${image}')`,
                         }}
                     >
                     </div>
-                </div>
+                </section>
             )
             }
         </Fragment >
@@ -386,7 +387,7 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
 
     return (
         <div className='one_galerie_element'>
-            <img src={image} width='100%' />
+            <img src={image} width='100%' alt={title} />
             <div className='one_galerie_element_hover'>
                 <div className='iner_container' >
                     <Link onClick={clickOnImage} to={'/Gallery'}>
@@ -417,8 +418,10 @@ function TheFooter({ }) {
 
 
     return (
-        <div className='the_footer'>
-            <div className='logo-container'>
+        <footer className='the_footer'>
+            <div
+                role="img" alt='ArchVizLogo'
+                className='logo-container'>
             </div>
             <div className='titles'>Categories</div>
             <div className='titles'>Contacts</div>
@@ -428,10 +431,10 @@ function TheFooter({ }) {
             <a href="https://pape-momar-ndiaye-portfolio.herokuapp.com/" target="_blank"
                 className='portfolio_link'>Voir le portfolio <ion-icon name="arrow-forward-outline"></ion-icon></a>
 
-            <div className='archviz_description'>
+            <p className='archviz_description'>
                 Nous aidons les architectes  et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels professionnels.
-            </div>
-            <div className='menu_elemant_container'>
+            </p>
+            <nav className='menu_elemant_container'>
                 <Link className='menu_elemant' to={'/'} onClick={onClickOnTab}>
                     Accueil
                 </Link>
@@ -445,7 +448,7 @@ function TheFooter({ }) {
                     Galerie
                 </Link>
                 <div className='menu_elemant'></div>
-            </div>
+            </nav>
             <div className='categories_elemant_container'>
                 <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Exterior Design</div>
                 <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Interior Design</div>
@@ -461,6 +464,7 @@ function TheFooter({ }) {
             </div>
 
             <div className='network_container'>
+
                 <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
                     <div className="network">
                         <ion-icon name="logo-instagram"></ion-icon>
@@ -494,7 +498,7 @@ function TheFooter({ }) {
             <div className='rights'>
                 © 2022 | Archviz. Tout droit réservé.
             </div>
-        </div>
+        </footer>
     );
 }
 

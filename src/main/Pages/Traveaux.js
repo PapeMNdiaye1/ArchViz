@@ -31,15 +31,15 @@ function Traveaux() {
 
     return (
         <div id="Traveaux">
-            <div className='Traveaux-Header'>
-                <div className='visualization-projects'>
+            <section className='Traveaux-Header'>
+                <h1 className='visualization-projects'>
                     Nos Réalisations
-                </div>
-                <div className='visualization-projects-description'>
+                </h1>
+                <p className='visualization-projects-description'>
                     Nous aidons les architectes  et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels professionnels.
-                </div>
-            </div>
-            <div className='AccueilBigProjectsSection'>
+                </p>
+            </section>
+            <section className='AccueilBigProjectsSection'>
 
                 <OneBigProject title={'Maquettete de la Grande Mosquée de Touba'} image={ImageProjectD3}
                     description={'Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.'}
@@ -68,7 +68,7 @@ function Traveaux() {
                 <OneBigProject title={'Maquettete pour hangar photovoltaique'} image={ImageProjectF2}
                     description={"Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}
                     color={'#F1F1F1'} textcolor={'#222'} theKey={7} link={'/Hangar1'} side={'right'} />
-            </div>
+            </section>
         </div>
     );
 }

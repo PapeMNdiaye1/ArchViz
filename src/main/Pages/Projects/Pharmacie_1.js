@@ -74,62 +74,36 @@ function Pharmacie1({ }) {
                         Design de pharmacie interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.
                     </p>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC5} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC5} width='100%' alt='  Pharmacie Design - 1' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC1} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt='  Pharmacie Design - 2' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC2} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC2} width='100%' alt='  Pharmacie Design - 3' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC3} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC3} width='100%' alt='  Pharmacie Design - 4' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC4} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC4} width='100%' alt='  Pharmacie Design - 5' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC6} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC6} width='100%' alt='  Pharmacie Design - 6' />
                     </div>
                     <h1 className='project_title'>
                         Clay Renders
                     </h1>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC7} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC7} width='100%' alt='  Pharmacie Design - 7' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC8} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC8} width='100%' alt='  Pharmacie Design - 8' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC9} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC9} width='100%' alt='  Pharmacie Design - 9' />
                     </div>
                 </div>
-
-                {/* <div className='tools'>
-                    <h1 className='theToolsTitle'>
-                        Tools
-                    </h1>
-                    <div
-                        style={{
-                            backgroundImage: `url('${blender}')`,
-                        }}
-                        className='theToolsIcon1'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${unreal}')`,
-                            backgroundSize: `85%`,
-                        }}
-                        className='theToolsIcon2'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${photoShop}')`,
-                            backgroundSize: `80%`,
-                        }}
-                        className='theToolsIcon3'>
-                    </div>
-                </div> */}
             </div>
         </Fragment>
     );

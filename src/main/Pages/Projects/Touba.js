@@ -68,7 +68,7 @@ function Touba({ }) {
                         Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.
                     </p>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC1} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt=' Maquettete de la Grande Mosquée de Touba - 1' />
                     </div>
                     <div className='the_video'>
                         <iframe width="100%" height="100%"
@@ -80,10 +80,10 @@ function Touba({ }) {
                         </iframe>
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC2} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC2} width='100%' alt=' Maquettete de la Grande Mosquée de Touba - 2' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC3} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC3} width='100%' alt=' Maquettete de la Grande Mosquée de Touba - 3' />
                     </div>
                 </div>
             </div>

@@ -97,12 +97,12 @@ function OneService({ color, theServiceTitle, TheGalerieElements, theServiceDesc
                 backgroundColor: color,
             }}
             className="one_service" >
-            <div className='the_title'>
+            <h2 className='the_title'>
                 {theServiceTitle}
-            </div>
-            <div className='the_descrition'>
+            </h2>
+            <p className='the_descrition'>
                 {theServiceDescription}
-            </div>
+            </p>
             {TheGalerieElements}
         </div >
     );
@@ -111,20 +111,15 @@ function OneService({ color, theServiceTitle, TheGalerieElements, theServiceDesc
 
 function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
 
-    const clickOnImage = (e) => {
-        let AccueilContainer = document.querySelector(".App_container")
-        AccueilContainer.scrollTop = 0;
-    }
-
     return (
-        <div className='one_galerie_element_container'>
+        <section className='one_galerie_element_container'>
             <div className='one_galerie_element'>
-                <img src={image} width='100%' />
+                <img src={image} width='100%' alt={title} />
                 <div className='one_galerie_element_hover'>
                     <div className='iner_container' >
-                        <p className='titre'>
+                        <Link className='titre' to={link}>
                             {title}
-                        </p>
+                        </Link>
                         <p className='date'>
                             {date}
                         </p>
@@ -134,7 +129,7 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
             <Link className='one_galerie_link' to={link}>
                 Voir le projet  <ion-icon name="arrow-forward-outline"></ion-icon>
             </Link>
-        </div>
+        </section>
     );
 }
 

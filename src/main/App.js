@@ -56,7 +56,6 @@ function App() {
             <Route exact path="/Traveaux" element={<Traveaux />} />
             <Route exact path="/Service" element={<Service />} />
             <Route exact path="/Contact" element={<Contact />} />
-            {/* <Route exact path="/Createur" element={<Createur />} /> */}
             <Route exact path="/Gallery" element={<Gallery
               TheImageToGallery={TheImage}
               TheTitleToGallery={TheTitle}
