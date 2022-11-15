@@ -87,7 +87,6 @@
 }
 
 #Top-bare-slider-container {
-    background-color: var(--color0);
     position: fixed;
     top: -100vh;
     left: 0;
@@ -99,9 +98,7 @@
     transition-property: top, opacity;
     @include cent();
     flex-direction: column;
-    // background-image: url('../Style/Images/Project/Exterior-5.jpg');
-    // backdrop-filter: blur(100px);
-    // filter: blur(100px);
+    background-color: rgba(#f1f1f1, .93);
 
     .Menu-container {
         width: 30em;
@@ -222,25 +219,12 @@
                 transform: scale(1.1);
 
                 &::before {
-                    // content: '';
-                    // position: absolute;
-                    // top: calc(40% - .1em);
-                    // left: 25%;
-                    // width: 50%;
+
                     height: .12em;
-                    // background-color: var(--colorX);
-                    // transition-duration: .2s;
                 }
 
                 &::after {
-                    // content: '';
-                    // position: absolute;
-                    // top: calc(40% - .1em);
-                    // left: 25%;
-                    // width: 50%;
                     height: .12em;
-                    // background-color: var(--colorX);
-                    // transition-duration: .2s;
                 }
 
                 &:hover {
@@ -248,22 +232,6 @@
                 }
             }
 
-            .Menu_On {
-
-                &::before {
-                    // transform: rotate(-45deg);
-                    // top: calc(50% - .1em)
-                }
-
-                &::after {
-                    // transform: rotate(45deg);
-                    // top: calc(50% - .1em);
-                }
-
-                &:hover {
-                    // background-color: rgba($color: #222, $alpha: .1);
-                }
-            }
         }
 
     }

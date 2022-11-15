@@ -807,7 +807,6 @@
 }
 
 #Top-bare-slider-container {
-  background-color: var(--color0);
   position: fixed;
   top: -100vh;
   left: 0;
@@ -832,6 +831,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: rgba(241, 241, 241, 0.93);
 }
 
 #Top-bare-slider-container .Menu-container {
