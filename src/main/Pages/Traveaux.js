@@ -59,15 +59,15 @@ function Traveaux() {
 
                 <OneBigProject title={'Pharmacie'} image={ImageProjectE4}
                     description={'Design de pharmacie interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
-                    color={'#F4EFE4'} textcolor={'#222'} theKey={5} link={'/Pharmacie1'} side={'right'} />
+                    color={'#F4EFE4'} textcolor={'#222'} theKey={5} link={'/Pharmacie1'} side={'left'} />
 
                 <OneBigProject title={'Visualisation de façade d\'immeuble'} image={ImageProjectB1}
                     description={"Design de façade d'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop."}
-                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={6} link={'/Immeuble1'} side={'left'} />
+                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={6} link={'/Immeuble1'} side={'right'} />
 
                 <OneBigProject title={'Maquettete pour hangar photovoltaique'} image={ImageProjectF2}
                     description={"Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}
-                    color={'#F1F1F1'} textcolor={'#222'} theKey={7} link={'/Hangar1'} side={'right'} />
+                    color={'#F1F1F1'} textcolor={'#222'} theKey={7} link={'/Hangar1'} side={'left'} />
             </section>
         </div>
     );

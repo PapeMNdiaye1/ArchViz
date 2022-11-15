@@ -8,9 +8,9 @@ import ImageProjectC4 from '../../Style/Images/Project/Interior-1-4.jpg';
 import ImageProjectC6 from '../../Style/Images/Project/Interior-1-6.jpg';
 import ImageProjectC7 from '../../Style/Images/Project/Interior-1-7.jpg';
 
-import blender from '../../Style/Images/SVG/blender.png';
-import unreal from '../../Style/Images/SVG/unreal.png';
-import photoShop from '../../Style/Images/SVG/PhotoShop.png';
+// import blender from '../../Style/Images/SVG/blender.png';
+// import unreal from '../../Style/Images/SVG/unreal.png';
+// import photoShop from '../../Style/Images/SVG/PhotoShop.png';
 
 
 
