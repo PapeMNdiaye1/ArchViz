@@ -40,21 +40,22 @@ function Traveaux() {
                 </div>
             </div>
             <div className='AccueilBigProjectsSection'>
-                <OneBigProject title={'Manufacture des Arts Décoratifs de Thiés'} image={ImageProjectG1}
-                    description={"Expériences de réalité virtuelle réalisé pour la M.S.A.D de Thiés. Nous pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution."}
-                    color={'#EAEAEA'} textcolor={'#222'} theKey={1} link={'/MSAD'} side={'right'} />
-
-                <OneBigProject title={'Décoration Interieur '} image={ImageProjectC3}
-                    description={'Décors interieur moderne simpliste et lumine. Rendus images en réalisés avec blender, animation et rendus videos sur Unreal Engine 5, compositing sur photoshop.'}
-                    color={'#F1F1F1'} textcolor={'#222'} theKey={2} link={'/Interior1'} side={'left'} />
-
-                <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
-                    description={"Design minimalist pour une optimisation de l'espace. Projet réalisé et rendu en avec blender, compositing sur photoshop."}
-                    color={'#93A490'} textcolor={'#222'} theKey={3} link={'/SmallHouse1'} side={'right'} />
 
                 <OneBigProject title={'Maquettete de la Grande Mosquée de Touba'} image={ImageProjectD3}
                     description={'Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.'}
-                    color={'#DB9B18'} textcolor={'#222'} theKey={4} link={'/Touba'} side={'left'} />
+                    color={'#DB9B18'} textcolor={'#222'} theKey={1} link={'/Touba'} side={'left'} />
+
+                <OneBigProject title={'Manufacture des Arts Décoratifs de Thiés'} image={ImageProjectG1}
+                    description={"Expériences de réalité virtuelle réalisé pour la M.S.A.D de Thiés. Nous pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution."}
+                    color={'#EAEAEA'} textcolor={'#222'} theKey={2} link={'/MSAD'} side={'right'} />
+
+                <OneBigProject title={'Décoration Interieur'} image={ImageProjectC3}
+                    description={'Décors interieur moderne simpliste et lumine. Rendus images en réalisés avec blender, animation et rendus videos sur Unreal Engine 5, compositing sur photoshop.'}
+                    color={'#F1F1F1'} textcolor={'#222'} theKey={3} link={'/Interior1'} side={'left'} />
+
+                <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
+                    description={"Design minimalist pour une optimisation de l'espace. Projet réalisé et rendu en avec blender, compositing sur photoshop."}
+                    color={'#93A490'} textcolor={'#222'} theKey={4} link={'/SmallHouse1'} side={'right'} />
 
                 <OneBigProject title={'Pharmacie'} image={ImageProjectE4}
                     description={'Design de pharmacie interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}

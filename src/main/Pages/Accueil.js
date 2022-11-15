@@ -100,7 +100,7 @@ function Accueil({ GetImageToApp }) {
             </div>
             <div className='AccueilBigProjectsSection'>
                 <OneBigProject title={'Décoration Interieur'} image={ImageProjectC3}
-                    description={"Décor interieur moderne simpliste et lumine. Rendus réalisés avec blender, animation et rendus videos sur Unreal Engine 5, compositing sur photoshop."}
+                    description={"Décors interieur moderne simpliste et lumine. Rendus images réalisés avec blender, animation et rendus videos sur Unreal Engine 5, compositing sur photoshop."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'right'} link={'/Interior1'} />
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
                     description={"Design minimalist pour une optimisation de l'espace. Projet réalisé et rendu en avec blender, compositing sur photoshop."}
@@ -173,7 +173,7 @@ function AccueilSlider() {
                 return theCourentSlide = 0
             }
             console.log(theCourentSlide);
-        }, 15000);
+        }, 6000);
 
         return () => {
             clearInterval(interval);
@@ -192,9 +192,9 @@ function AccueilSlider() {
 
     return (
         <div className="Accueil_Slider">
-            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'27 Mai, 2022'} title={<p>Visualisations <dr />Rendus Images <br />& Animations</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={'09 Mars, 2022'} title={<p>Création de <dr />Maquette </p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={'03 Juin, 2022'} title={<p>Realiter <dr /> Virtuel & Experience <dr /> 3D Web</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'27 Mai, 2022'} title={<p>Visualisations <dr />"Rendus Images <br />& Animations"</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={'09 Mars, 2022'} title={<p>Création de <dr />Maquettes </p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={'03 Juin, 2022'} title={<p>Réalité <dr /> Virtuel & Experience <dr /> 3D Web</p>} />
             <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={'27 Mai, 2022'} title={<p>Visualisations <dr /> Architecturals</p>} />
             <div className='slider_btn_container'>
 
@@ -339,7 +339,7 @@ function TheGallery({ GetImageOnAccueil }) {
     return (
         <Fragment>
             <div className="the_galerie_container">
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC3} title={'Interior Design'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC3} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE3} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Design de Maison Moderne'} date={'15 avril, 2022'} />
@@ -348,14 +348,14 @@ function TheGallery({ GetImageOnAccueil }) {
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Touba'} image={ImageProjectD1} title={'Maquettete de la Grande Mosquée de Touba'} date={'09 Mars, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE1} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Immeuble1'} image={ImageProjectB2} title={"Visualisation Exterieur d'Immeuble"} date={'23 Mars, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC4} title={'Interior Design'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC4} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF1} title={'Maquettete Hangar Photovoltaïque'} date={'29 Juin , 2021'} />
 
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE4} title={'Interior Design'} date={'27 Mai, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE4} title={'Décoration Interieur'} date={'27 Mai, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA2} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC2} title={'Interior Design'} date={'03 Juin, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC7} title={'Interior Design'} date={'03 Juin, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC5} title={'Interior Design'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC2} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC7} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC5} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA4} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE7} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
@@ -364,9 +364,9 @@ function TheGallery({ GetImageOnAccueil }) {
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF3} title={'Maquettete Hangar Photovoltaïque'} date={'29 Juin, 2021'} />
 
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE6} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC6} title={'Interior Design'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC6} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG3} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC1} title={'Interior Design'} date={'03 Juin, 2022'} />
+                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC1} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
                 <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA5} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
             </div>
         </Fragment>
@@ -392,13 +392,13 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
                     <Link onClick={clickOnImage} to={'/Gallery'}>
                         <div
                             className='Icon-to-click-on '>
-                            <ion-icon name="add-circle">
-                            </ion-icon>
+                            <ion-icon name="expand-sharp"></ion-icon>
                         </div>
                     </Link >
-                    <p className='titre'>
+
+                    <Link className='titre' to={link}>
                         {title}
-                    </p>
+                    </Link>
                     <p className='date'>
                         {date}
                     </p>

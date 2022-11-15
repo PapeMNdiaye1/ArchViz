@@ -989,6 +989,19 @@
   #Top-Bare .Menu-container {
     margin-right: .5em;
   }
+  #Top-Bare .Menu-container .Menu {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #Top-Bare .Menu-container .Menu::before {
+    height: .12em;
+  }
+  #Top-Bare .Menu-container .Menu::after {
+    height: .12em;
+  }
+  #Top-Bare .Menu-container .Menu:hover {
+    background-color: rgba(34, 34, 34, 0);
+  }
 }
 
 #Accueil {
@@ -1639,6 +1652,13 @@
   font-weight: 600;
   font-size: 1.2em;
   text-align: center;
+  text-decoration: none;
+  color: var(--colorX);
+}
+
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .date {
@@ -1689,10 +1709,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 1em;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
   #Accueil .archviz_presantation p {
     width: 80%;
@@ -1771,11 +1787,11 @@
     grid-row: 2 / 2;
   }
   #Accueil .galerie_presantation {
-    height: 9em;
+    height: 7em;
   }
   #Accueil .galerie_presantation .nos_réalisations {
     padding-left: 1em;
-    font-size: 1em;
+    font-size: .8em;
   }
   #Accueil .the_galerie_container {
     -ms-grid-columns: 1fr;
@@ -2363,12 +2379,15 @@
     padding-right: 2vw;
   }
   #Services .one_service .the_title {
-    font-size: 1.8em;
+    font-size: 1.4em;
     width: 90vw;
   }
+  #Services .one_service .the_title::after {
+    width: 50vw;
+  }
   #Services .one_service .the_descrition {
-    margin-top: 2em;
-    font-size: 1em;
+    margin-top: 1em;
+    font-size: .8em;
   }
   #Services .one_service .the_descrition p {
     width: 100%;
@@ -2776,6 +2795,13 @@
   font-weight: 600;
   font-size: 1.2em;
   text-align: center;
+  text-decoration: none;
+  color: var(--colorX);
+}
+
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .date {

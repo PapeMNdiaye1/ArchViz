@@ -44,7 +44,7 @@ function Services() {
                 theServiceDescription={
                     <p>
                         Les images fixes et les animation constituent la base de la plupart des projets de visualisation architecturale <br />
-                        apparaissant sur de nombreux supports et plateformes. <br />Ils ouverent la porte à un monde de variations infinies dans la conception graphique
+                        apparaissant sur de nombreux supports et plateformes. Ils ouverent la porte à un monde de variations infinies dans la conception graphique
                         adaptée à vos demandes uniques.
                     </p>
                 }
@@ -61,9 +61,8 @@ function Services() {
                 theServiceTitle={'Réalité Virtuel et Experience 3D Web'}
                 theServiceDescription={
                     <p>
-                        Ayant produit des expériences de réalité virtuelle pour les promoteurs immobiliers  <br />
-                        nous avons une expérience éprouvée d'exemples de qualité et pouvons vous aider à améliorer vos ventes  <br />
-                        avec cette technologie en constante évolution.
+                        Nous avons une expérience éprouvée dans la VR et l'AR et pouvons vous aider à améliorer vos ventes  <br />
+                        avec ces technologies en constante évolution.
                     </p>}
                 TheGalerieElements={
                     <div className='project_container'>

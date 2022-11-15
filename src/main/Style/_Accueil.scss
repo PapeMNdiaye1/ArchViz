@@ -445,6 +445,12 @@
                         font-weight: 600;
                         font-size: 1.2em;
                         text-align: center;
+                        text-decoration: none;
+                        color: var(--colorX);
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
                     }
 
                     .date {
@@ -496,8 +502,8 @@
             .qui_somme_nous {
                 width: 100%;
                 @include cent();
-                padding-left: 1em;
-                justify-content: flex-start;
+                // padding-left: 1em;
+                // justify-content: flex-start;
             }
 
             p {
@@ -584,13 +590,11 @@
 
         //!#####################################################################
         .galerie_presantation {
-            height: 9em;
-            // justify-content: flex-start;
+            height: 7em;
 
             .nos_réalisations {
-                // width: 60%;
                 padding-left: 1em;
-                font-size: 1em;
+                font-size: .8em;
             }
         }
 
