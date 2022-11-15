@@ -66,16 +66,16 @@ function Hangar_1({ }) {
                         Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.
                     </p>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC1} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC2} width='100%' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC2} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC4} width='100%' />
                     </div>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC4} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC1} width='100%' />
                     </div>
                 </div>
             </div>

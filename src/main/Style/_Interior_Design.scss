@@ -4,79 +4,79 @@
     align-items: center;
 }
 
-.display_image_container {
-    position: fixed;
-    top: 4em;
-    width: 100vw;
-    min-height: calc(100vh - 4em);
-    background-color: rgba(46, 45, 45, 0.93);
-    @include cent();
-    z-index: 110;
+// .display_image_container {
+//     position: fixed;
+//     top: 4em;
+//     width: 100vw;
+//     min-height: calc(100vh - 4em);
+//     background-color: rgba(46, 45, 45, 0.93);
+//     @include cent();
+//     z-index: 110;
 
-    div {
-        width: 67%;
-        background-color: var(--colorX);
-        border: .5em solid var(--colorX);
-        border-bottom: 1.6em solid var(--colorX);
-        border-radius: .2em;
+//     div {
+//         width: 67%;
+//         background-color: var(--colorX);
+//         border: .5em solid var(--colorX);
+//         border-bottom: 1.6em solid var(--colorX);
+//         border-radius: .2em;
 
-        .close_image_container {
-            position: absolute;
-            width: 3em;
-            height: 3em;
-            border-radius: 5%;
-            background-color: rgba($color: rgb(0, 0, 0), $alpha: .5);
-            transition-duration: .2s;
-            z-index: 5;
-            right: 0%;
-            top: 0%;
-            margin: .5em;
-            border: 0em solid var(--colorX);
-            transform: scale(1);
+//         .close_image_container {
+//             position: absolute;
+//             width: 3em;
+//             height: 3em;
+//             border-radius: 5%;
+//             background-color: rgba($color: rgb(0, 0, 0), $alpha: .5);
+//             transition-duration: .2s;
+//             z-index: 5;
+//             right: 0%;
+//             top: 0%;
+//             margin: .5em;
+//             border: 0em solid var(--colorX);
+//             transform: scale(1);
 
-            &::before {
-                content: '';
-                position: absolute;
-                transform: rotate(-45deg);
-                top: calc(50% - .1em);
-                left: 25%;
-                width: 50%;
-                height: .15em;
-                background-color: var(--color0);
-                transition-duration: .2s;
+//             &::before {
+//                 content: '';
+//                 position: absolute;
+//                 transform: rotate(-45deg);
+//                 top: calc(50% - .1em);
+//                 left: 25%;
+//                 width: 50%;
+//                 height: .15em;
+//                 background-color: var(--color0);
+//                 transition-duration: .2s;
 
-            }
+//             }
 
-            &::after {
-                content: '';
-                position: absolute;
-                transform: rotate(45deg);
-                top: calc(50% - .1em);
-                left: 25%;
-                width: 50%;
-                height: .15em;
-                background-color: var(--color0);
-                transition-duration: .2s;
+//             &::after {
+//                 content: '';
+//                 position: absolute;
+//                 transform: rotate(45deg);
+//                 top: calc(50% - .1em);
+//                 left: 25%;
+//                 width: 50%;
+//                 height: .15em;
+//                 background-color: var(--color0);
+//                 transition-duration: .2s;
 
-            }
+//             }
 
-            &:hover {
-                background-color: rgba($color: rgb(0, 0, 0), $alpha: .5);
-                transform: scale(1.2);
-            }
+//             &:hover {
+//                 background-color: rgba($color: rgb(0, 0, 0), $alpha: .5);
+//                 transform: scale(1.2);
+//             }
 
-            &:active {
-                background-color: rgba($color: rgb(0, 0, 0), $alpha: .5);
-                transform: scale(1);
-            }
-        }
+//             &:active {
+//                 background-color: rgba($color: rgb(0, 0, 0), $alpha: .5);
+//                 transform: scale(1);
+//             }
+//         }
 
-        img {
-            cursor: pointer;
-        }
-    }
+//         img {
+//             cursor: pointer;
+//         }
+//     }
 
-}
+// }
 
 .Interior_1_container {
     display: grid;
