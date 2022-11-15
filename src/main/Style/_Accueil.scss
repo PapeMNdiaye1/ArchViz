@@ -45,7 +45,6 @@
                 font-weight: 900;
                 margin-left: 10vw;
                 top: -6%;
-                // tex
             }
 
             .slider_date {
@@ -78,7 +77,7 @@
         }
 
         .slider:nth-child(4) {
-            background-image: url(./Images/Project/Pharmacie-1.jpg);
+            background-image: url(./Images/Project/Pharmacie-3.jpg);
         }
 
         .slider_btn_container {
@@ -180,7 +179,7 @@
         min-height: 50em;
 
         .One_Project_In_Home {
-            min-height: 47em;
+            min-height: 48em;
             display: grid;
             grid-gap: .5em;
 
@@ -238,7 +237,6 @@
                         text-decoration: none;
                         padding: .3em;
                         border-radius: .2em;
-                        // background-color: salmon;
 
                         &:hover {
                             transform: scale(1.1);
@@ -419,11 +417,10 @@
                         width: 1.5em;
                         height: 1.5em;
                         border-radius: 50%;
-                        color: rgba(0, 0, 0, .51);
                         @include cent();
                         font-size: 2.3em;
+                        color: var(--colorX);
                         cursor: pointer;
-
                         transform: scale(1);
 
                         &:hover {

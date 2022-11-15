@@ -2,10 +2,10 @@ import { React, useEffect } from 'react';
 import { OneBigProject } from './Accueil';
 
 import ImageProjectA1 from '../Style/Images/Project/Exterior-1.jpg';
-import ImageProjectB1 from '../Style/Images/Project/Immeuble-1.jpg';
+import ImageProjectB1 from '../Style/Images/Project/Immeuble-2.jpg';
 import ImageProjectC3 from '../Style/Images/Project/Interior-1-3.jpg';
 import ImageProjectD3 from '../Style/Images/Project/NFT-3.jpg';
-import ImageProjectE4 from '../Style/Images/Project/Pharmacie-4.jpg';
+import ImageProjectE4 from '../Style/Images/Project/Pharmacie-3.jpg';
 import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
 import ImageProjectG1 from '../Style/Images/Project/MSAD_2.jpg';
 

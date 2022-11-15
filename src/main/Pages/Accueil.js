@@ -32,7 +32,6 @@ import ImageProjectF1 from '../Style/Images/Project/Hangar-1.jpg';
 import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
 import ImageProjectF3 from '../Style/Images/Project/Hangar-3.jpg';
 
-// import ImageProjectG1 from '../Style/Images/Project/MSAD_1.jpg';
 import ImageProjectG2 from '../Style/Images/Project/MSAD_2.jpg';
 import ImageProjectG3 from '../Style/Images/Project/MSAD_3.jpg';
 
@@ -56,8 +55,6 @@ function Accueil({ GetImageToApp }) {
             });
         })
         return () => {
-            // setTheChangeInGalerie(false);
-            // console.log('ww');
         }
     }, []);
 
@@ -76,8 +73,7 @@ function Accueil({ GetImageToApp }) {
                     Qui somme Nous ?
                 </h2>
                 <p>
-                    ArchViz est un studio de visualisation architecturale,
-                    Nous créatons des images et animations promotionnelles pour les architectes et les promoteurs immobiliers.
+                    ArchViz est un studio de visualisation architecturale, Nous créatons des images et animations promotionnelles pour les architectes et les promoteurs immobiliers.
                 </p>
                 <div className='network_container'>
                     <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
@@ -105,7 +101,7 @@ function Accueil({ GetImageToApp }) {
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
                     description={"Design minimalist pour une optimisation de l'espace. Projet réalisé et rendu en avec blender, compositing sur photoshop."}
                     color={'#93A490'} textcolor={'#222'} theKey={2} side={'left'} link={'/SmallHouse1'} />
-                <OneBigProject title={'Pharmacie Design'} image={ImageProjectE4}
+                <OneBigProject title={'Pharmacie Design'} image={ImageProjectE3}
                     description={'Design de pharmacie interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Pharmacie1'} />
                 <OneBigProject title={'Maquettete de Hangar Photovoltaique'} image={ImageProjectF2}
@@ -266,7 +262,6 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                                     color: textcolor,
                                     border: `.1em solid ${textcolor}`
                                 }} to={link}>
-
                                 Voir plus  <ion-icon name="arrow-forward-outline"></ion-icon>
                             </Link>
                         </p>
@@ -392,11 +387,10 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
                 <div className='iner_container' >
                     <Link onClick={clickOnImage} to={'/Gallery'}>
                         <div
-                            className='Icon-to-click-on '>
+                            className='Icon-to-click-on'>
                             <ion-icon name="expand-sharp"></ion-icon>
                         </div>
                     </Link >
-
                     <Link className='titre' to={link}>
                         {title}
                     </Link>
@@ -434,6 +428,7 @@ function TheFooter({ }) {
             <p className='archviz_description'>
                 Nous aidons les architectes  et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels professionnels.
             </p>
+
             <nav className='menu_elemant_container'>
                 <Link className='menu_elemant' to={'/'} onClick={onClickOnTab}>
                     Accueil
@@ -449,6 +444,7 @@ function TheFooter({ }) {
                 </Link>
                 <div className='menu_elemant'></div>
             </nav>
+
             <div className='categories_elemant_container'>
                 <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Exterior Design</div>
                 <div className='categories_elemant'><ion-icon name="ellipse"></ion-icon>Interior Design</div>
