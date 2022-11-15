@@ -1348,8 +1348,8 @@
 }
 
 #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
-  margin-top: .5em;
-  font-size: 1em;
+  margin-top: 2em;
+  font-size: .71em;
   text-decoration: none;
   padding: .3em;
   border-radius: .2em;
@@ -1437,7 +1437,7 @@
   padding: .4em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 1em;
+  font-size: .8em;
   text-decoration: none;
   color: var(--colorX);
   border: .1em solid #000;
@@ -1731,6 +1731,9 @@
     font-size: .7em;
     width: 90%;
   }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
+    font-size: 1.2em;
+  }
   #Accueil .AccueilBigProjectsSection .right {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1927,8 +1930,8 @@
 }
 
 #Traveaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
-  margin-top: .5em;
-  font-size: 1em;
+  margin-top: 2em;
+  font-size: .71em;
   text-decoration: none;
   padding: .3em;
   border-radius: .2em;
@@ -2057,6 +2060,9 @@
     margin-top: 1em;
     font-size: .7em;
     width: 90%;
+  }
+  #Traveaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
+    font-size: 1.2em;
   }
   #Traveaux .AccueilBigProjectsSection .right {
     -ms-grid-columns: 1fr;
@@ -3851,6 +3857,11 @@
   }
   .Touba_1_container .project_display .project_title {
     font-size: 1.5em;
+  }
+  .Touba_1_container .project_display .the_video {
+    width: 90vw;
+    height: 57vw;
+    background-color: salmon;
   }
   .Touba_1_container .project_display .project_description {
     font-size: .7em;

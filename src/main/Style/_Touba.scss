@@ -120,6 +120,7 @@
             width: 60vw;
             height: 45vw;
             margin-bottom: 3em;
+            // background-color: salmon;
         }
 
         p {
@@ -196,6 +197,12 @@
 
             .project_title {
                 font-size: 1.5em;
+            }
+
+            .the_video {
+                width: 90vw;
+                height: 57vw;
+                background-color: salmon;
             }
 
             .project_description {

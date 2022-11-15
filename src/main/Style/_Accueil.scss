@@ -218,10 +218,6 @@
                     font-size: 1.5em;
                     font-weight: 900;
                     text-decoration: none;
-
-                    // &:hover {
-                    //     transform: scale(1.03);
-                    // }
                 }
 
                 .description {
@@ -237,11 +233,12 @@
                     flex-wrap: wrap;
 
                     .the_link {
-                        margin-top: .5em;
-                        font-size: 1em;
+                        margin-top: 2em;
+                        font-size: .71em;
                         text-decoration: none;
                         padding: .3em;
                         border-radius: .2em;
+                        // background-color: salmon;
 
                         &:hover {
                             transform: scale(1.1);
@@ -312,7 +309,7 @@
             padding: .4em;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            font-size: 1em;
+            font-size: .8em;
             text-decoration: none;
             color: var(--colorX);
             border: .1em solid #000;
@@ -536,11 +533,6 @@
                         width: 90%;
                         transform: scale(1);
 
-
-                        // &:hover {
-                        //     transform: scale(1.03);
-                        // }
-
                         .bar {
                             bottom: -0.3em;
                         }
@@ -550,6 +542,10 @@
                         margin-top: 1em;
                         font-size: .7em;
                         width: 90%;
+
+                        .the_link {
+                            font-size: 1.2em;
+                        }
                     }
                 }
             }
