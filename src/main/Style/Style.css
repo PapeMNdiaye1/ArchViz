@@ -1658,7 +1658,7 @@
 }
 
 #Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre {
-  width: 90%;
+  width: 95%;
   min-height: 1em;
   height: auto;
   display: -webkit-box;
@@ -2813,7 +2813,7 @@
 }
 
 #Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre {
-  width: 90%;
+  width: 95%;
   min-height: 1em;
   height: auto;
   display: -webkit-box;

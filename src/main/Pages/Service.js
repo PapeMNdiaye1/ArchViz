@@ -40,7 +40,7 @@ function Services() {
 
     return (
         <div id="Services">
-            <OneService theServiceTitle={'3D Visualisations Rendus Images et Videos'}
+            <OneService theServiceTitle={'Visualisations 3D "Rendus Images et Animations"'}
                 theServiceDescription={
                     <p>
                         Les images fixes et les animation constituent la base de la plupart des projets de visualisation architecturale <br />
