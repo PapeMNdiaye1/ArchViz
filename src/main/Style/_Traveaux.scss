@@ -73,9 +73,7 @@
                     font-weight: 900;
                     text-decoration: none;
 
-                    // &:hover {
-                    //     transform: scale(1.03);
-                    // }
+
                 }
 
                 .description {
@@ -202,6 +200,10 @@
                     background-size: 100%;
                     background-repeat: no-repeat;
 
+                    &:hover {
+                        background-size: 100%;
+                    }
+
                 }
 
                 .info_container {
@@ -210,12 +212,7 @@
                         font-size: 1.3em;
                         width: 90%;
                         transform: scale(1);
-                        // background-color: salmon;
                         margin-bottom: .5em;
-
-                        // &:hover {
-                        //     transform: scale(1.03);
-                        // }
 
                         .bar {
                             bottom: -0.3em;
@@ -247,7 +244,6 @@
                 }
 
                 .info_container {
-
                     grid-column: 1 / 1;
                     grid-row: 2 / 2;
                 }

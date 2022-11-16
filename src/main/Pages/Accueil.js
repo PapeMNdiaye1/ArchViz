@@ -45,15 +45,25 @@ function Accueil({ GetImageToApp }) {
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 
-        AccueilContainer.addEventListener('scroll', (event) => {
-            let TheScrollTop = AccueilContainer.scrollTop;
-            let TheScrollHeight = AccueilContainer.scrollHeight;
-            let WindowInnerHeight = window.innerHeight;
-            let TheScrollTopInP = (TheScrollTop / (TheScrollHeight - WindowInnerHeight)) * 100;
-            ThesliderImg.forEach(element => {
-                element.style.backgroundPositionY = `-${TheScrollTopInP * 10}%`;
-            });
-        })
+        let thePageWidth = window.innerWidth
+        console.log(thePageWidth);
+
+        if (thePageWidth >= 1000) {
+
+
+            return AccueilContainer.addEventListener('scroll', (event) => {
+                let TheScrollTop = AccueilContainer.scrollTop;
+                let TheScrollHeight = AccueilContainer.scrollHeight;
+                let WindowInnerHeight = window.innerHeight;
+                let TheScrollTopInP = (TheScrollTop / (TheScrollHeight - WindowInnerHeight)) * 100;
+
+                ThesliderImg.forEach(element => {
+                    element.style.backgroundPositionY = `-${TheScrollTopInP * 10}%`;
+                });
+            })
+
+        }
+
         return () => {
         }
     }, []);
@@ -101,7 +111,7 @@ function Accueil({ GetImageToApp }) {
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
                     description={"Design minimalist pour une optimisation de l'espace. Projet réalisé et rendu en avec blender, compositing sur photoshop."}
                     color={'#93A490'} textcolor={'#222'} theKey={2} side={'left'} link={'/SmallHouse1'} />
-                <OneBigProject title={'Pharmacie Design'} image={ImageProjectE3}
+                <OneBigProject title={'Design pour les Commerces'} image={ImageProjectE3}
                     description={'Design de pharmacie interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Pharmacie1'} />
                 <OneBigProject title={'Maquettete de Hangar Photovoltaique'} image={ImageProjectF2}
@@ -151,6 +161,7 @@ function AccueilSlider() {
     }
 
     useEffect(() => {
+
         let sliderBtnContainer = document.querySelector(".slider_btn_container")
         let AllDot = sliderBtnContainer.childNodes
 
@@ -160,13 +171,14 @@ function AccueilSlider() {
 
         AllDot[0].classList.add('ativeDot')
         let theCourentSlide = 0
+
         const interval = setInterval(function () {
             AllDot[theCourentSlide].click()
             theCourentSlide++
             if (theCourentSlide >= AllDot.length) {
                 return theCourentSlide = 0
             }
-            console.log(theCourentSlide);
+            // console.log(theCourentSlide);
         }, 6000);
 
         return () => {
@@ -186,10 +198,10 @@ function AccueilSlider() {
 
     return (
         <div className="Accueil_Slider">
-            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'27 Mai, 2022'} title={<p>Visualisations <dr />"Rendus Images <br />& Animations"</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'27 Mai, 2022'} title={<p>Visualisations 3D <dr />"Rendus Images <br />& Animations"</p>} />
             <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={'09 Mars, 2022'} title={<p>Création de <dr />Maquettes </p>} />
             <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={'03 Juin, 2022'} title={<p>Réalité <dr /> Virtuel & Experience <dr /> 3D Web</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={'27 Mai, 2022'} title={<p>Visualisations <dr /> Architecturals</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={'27 Mai, 2022'} title={<p>Visualisations <dr /> Architecturals <dr />  Pour Commerces</p>} />
             <div className='slider_btn_container'>
 
             </div>

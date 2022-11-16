@@ -17,6 +17,8 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         overflow: hidden;
+        background-color: var(--colorX);
+
 
         .slider {
             background-position: inherit;
@@ -31,9 +33,11 @@
             opacity: 0;
             transition-duration: 1s, 0s;
             transition-property: opacity, background-position-y;
+            // opacity: .2;
+            background-color: var(--colorX);
 
             .slider_title {
-                width: 50%;
+                width: 55%;
                 font-size: 5.5em;
                 color: white;
                 text-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -43,21 +47,23 @@
                 flex-direction: column;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 900;
-                margin-left: 10vw;
+                // margin-left: 10vw;
                 top: -6%;
+                // background-color: salmon;
             }
 
             .slider_date {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 1.5em;
-                width: 50%;
+                width: 55%;
                 color: var(--color0);
                 text-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
                 @include cent();
                 align-items: flex-start;
                 flex-direction: column;
                 font-weight: 300;
-                margin-left: 10vw;
+                // margin-left: 10vw;
+                // background-color: sandybrown;
                 top: -6%;
             }
         }
@@ -187,8 +193,8 @@
                 width: 100%;
                 height: 100%;
                 background-position: center;
-                background-size: 100%;
                 background-repeat: no-repeat;
+                background-size: 100%;
                 transition-duration: .4s;
 
                 &:hover {
@@ -479,6 +485,8 @@
                 background-size: 100%;
                 background-size: cover;
                 background-position-x: 30%;
+                transition-duration: 0s, 0s;
+                transition-property: opacity, background-position-y;
 
                 .slider_title {
                     width: 80%;
@@ -521,11 +529,17 @@
                 height: auto;
                 grid-gap: 0em;
 
+
+
                 .image_container {
                     width: 100%;
                     background-position: center;
                     background-size: 100%;
                     background-repeat: no-repeat;
+
+                    &:hover {
+                        background-size: 100%;
+                    }
                 }
 
                 .info_container {
