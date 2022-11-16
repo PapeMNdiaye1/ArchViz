@@ -45,6 +45,7 @@
       display: none;
 
       .hover_loader {
+        top: -4em;
 
         .lds-ellipsis {
           display: inline-block;
@@ -158,10 +159,11 @@
 
     .App_container {
 
+      .hover_loader_container {
+        .hover_loader {}
+      }
 
       //!#####################################################################
-      // @import "./TheFooter";
-
     }
   }
 }

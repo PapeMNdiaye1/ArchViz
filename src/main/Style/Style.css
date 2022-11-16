@@ -56,6 +56,10 @@
   display: none;
 }
 
+.App .App_container .hover_loader_container .hover_loader {
+  top: -4em;
+}
+
 .App .App_container .hover_loader_container .hover_loader .lds-ellipsis {
   display: inline-block;
   position: relative;
@@ -706,7 +710,7 @@
   height: 4em;
   background-color: var(--color0);
   position: absolute;
-  z-index: 4;
+  z-index: 4000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1654,7 +1658,7 @@
 }
 
 #Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre {
-  width: 99%;
+  width: 90%;
   min-height: 1em;
   height: auto;
   display: -webkit-box;
@@ -1668,7 +1672,7 @@
           align-items: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
   text-decoration: none;
   color: var(--colorX);
@@ -2809,7 +2813,7 @@
 }
 
 #Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre {
-  width: 99%;
+  width: 90%;
   min-height: 1em;
   height: auto;
   display: -webkit-box;
@@ -2823,7 +2827,7 @@
           align-items: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
   text-decoration: none;
   color: var(--colorX);

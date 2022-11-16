@@ -133,13 +133,13 @@
                     }
 
                     .titre {
-                        width: 99%;
+                        width: 90%;
                         min-height: 1em;
                         height: auto;
                         @include cent();
                         font-family: 'Montserrat', sans-serif;
                         font-weight: 600;
-                        font-size: 1.2em;
+                        font-size: 1em;
                         text-align: center;
                         text-decoration: none;
                         color: var(--colorX);

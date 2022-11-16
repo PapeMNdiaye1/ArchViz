@@ -112,7 +112,7 @@ function Accueil({ GetImageToApp }) {
                     description={"Design minimalist pour une optimisation de l'espace. Projet réalisé et rendu en avec blender, compositing sur photoshop."}
                     color={'#93A490'} textcolor={'#222'} theKey={2} side={'left'} link={'/SmallHouse1'} />
                 <OneBigProject title={'Design pour les Commerces'} image={ImageProjectE3}
-                    description={'Design de pharmacie interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
+                    description={'Design pour les Commerces interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Pharmacie1'} />
                 <OneBigProject title={'Maquettete de Hangar Photovoltaique'} image={ImageProjectF2}
                     description={"Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}

@@ -52,7 +52,7 @@ function Services() {
                     <div className='project_container'>
                         <OneGalerieElement image={ImageProjectA4} title={'Design de Maison Moderne'} link={'/SmallHouse1'} date={'15 avril, 2022'} />
                         <OneGalerieElement image={ImageProjectB3} title={"Visualisation Extérieur d'Immeuble"} link={"/Immeuble1"} date={'27 Mai, 2022'} />
-                        <OneGalerieElement image={ImageProjectE7} title={'Pharmacie'} link={'/Pharmacie1'} date={'27 Mai, 2022'} />
+                        <OneGalerieElement image={ImageProjectE7} title={'Design pour les Commerces'} link={'/Pharmacie1'} date={'27 Mai, 2022'} />
                         <OneGalerieElement image={ImageProjectC7} title={'Interior Design'} link={'/Interior1'} date={'03 Juin, 2022'} />
                     </div>
                 } color={'#F4EFE4'}

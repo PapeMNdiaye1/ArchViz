@@ -57,8 +57,8 @@ function Traveaux() {
                     description={"Design minimalist pour une optimisation de l'espace. Projet réalisé et rendu en avec blender, compositing sur photoshop."}
                     color={'#93A490'} textcolor={'#222'} theKey={4} link={'/SmallHouse1'} side={'right'} />
 
-                <OneBigProject title={'Pharmacie'} image={ImageProjectE4}
-                    description={'Design de pharmacie interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
+                <OneBigProject title={'Design pour les Commerces'} image={ImageProjectE4}
+                    description={'Design pour les Commerces interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={5} link={'/Pharmacie1'} side={'left'} />
 
                 <OneBigProject title={'Visualisation de façade d\'immeuble'} image={ImageProjectB1}

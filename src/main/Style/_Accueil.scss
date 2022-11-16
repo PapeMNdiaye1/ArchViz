@@ -33,7 +33,6 @@
             opacity: 0;
             transition-duration: 1s, 0s;
             transition-property: opacity, background-position-y;
-            // opacity: .2;
             background-color: var(--colorX);
 
             .slider_title {
@@ -47,9 +46,7 @@
                 flex-direction: column;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 900;
-                // margin-left: 10vw;
                 top: -6%;
-                // background-color: salmon;
             }
 
             .slider_date {
@@ -62,8 +59,6 @@
                 align-items: flex-start;
                 flex-direction: column;
                 font-weight: 300;
-                // margin-left: 10vw;
-                // background-color: sandybrown;
                 top: -6%;
             }
         }
@@ -440,13 +435,13 @@
                     }
 
                     .titre {
-                        width: 99%;
+                        width: 90%;
                         min-height: 1em;
                         height: auto;
                         @include cent();
                         font-family: 'Montserrat', sans-serif;
                         font-weight: 600;
-                        font-size: 1.2em;
+                        font-size: 1em;
                         text-align: center;
                         text-decoration: none;
                         color: var(--colorX);
