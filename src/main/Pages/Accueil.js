@@ -80,11 +80,10 @@ function Accueil({ GetImageToApp }) {
             <AccueilSlider />
             <section className='archviz_presantation' >
                 <h2 className='qui_somme_nous' >
-                    Qui somme Nous ?
+                    Qui Sommes-nous ?
                 </h2>
                 <p>
-                    ArchViz est un studio de visualisation architecturale, Nous créatons des images et animations promotionnelles pour les architectes et les promoteurs immobiliers.
-                </p>
+                    ArchViz est un studio de visualisation architecturale, nous créons des images et animations Photoréalismes pour architectes, designers, les promoteurs immobiliers etc...                </p>
                 <div className='network_container'>
                     <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
                         <div className="network">
@@ -105,18 +104,22 @@ function Accueil({ GetImageToApp }) {
                 </div>
             </section>
             <section className='AccueilBigProjectsSection'>
-                <OneBigProject title={'Décoration Interieur'} image={ImageProjectC3}
-                    description={"Décors interieur moderne simpliste et lumine. Rendus images réalisés avec blender, animation et rendus videos sur Unreal Engine 5, compositing sur photoshop."}
+                <OneBigProject title={'Décoration Intérieur'} image={ImageProjectC3}
+                    description={"Décors intérieurs modernes simples et lumineux.Nous vous aidons a réaliser des maquettes d’intérieurs époustouflantes qui permettrons de présenter de manière tres réalistes vos projets avant réalisation."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'right'} link={'/Interior1'} />
+
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
-                    description={"Design minimalist pour une optimisation de l'espace. Projet réalisé et rendu en avec blender, compositing sur photoshop."}
+                    description={"Du design Moderne, épuré, minimalistes etc… nous mettons en  œuvres différentes approches pour une optimisation de vos espaces extérieurs qu’intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}
                     color={'#93A490'} textcolor={'#222'} theKey={2} side={'left'} link={'/SmallHouse1'} />
+
                 <OneBigProject title={'Design pour les Commerces'} image={ImageProjectE3}
-                    description={'Design pour les Commerces interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
+                    description={'Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Nous avons un grand savoir-faire quel que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Pharmacie1'} />
-                <OneBigProject title={'Maquettete de Hangar Photovoltaique'} image={ImageProjectF2}
+
+                <OneBigProject title={'La 3D dans le domaine des Industries'} image={ImageProjectF2}
                     description={"Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}
                     color={'#F1F1F1'} textcolor={'#222'} theKey={4} link={'/Hangar1'} side={'left'} />
+
                 <OneBigProject title={"Visualisation de Façade d'Immeuble"} image={ImageProjectB1}
                     description={'Design de façade d\'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
                     color={'#182B38'} textcolor={'#f1f1f1'} theKey={5} side={'right'} link={'/Immeuble1'} />

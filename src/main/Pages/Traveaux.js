@@ -54,18 +54,18 @@ function Traveaux() {
                     color={'#F1F1F1'} textcolor={'#222'} theKey={3} link={'/Interior1'} side={'left'} />
 
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
-                    description={"Design minimalist pour une optimisation de l'espace. Projet réalisé et rendu en avec blender, compositing sur photoshop."}
+                    description={"Du design Moderne, épuré, minimalistes etc… nous mettons en  œuvres différentes approches pour une optimisation de vos espaces extérieurs qu’intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}
                     color={'#93A490'} textcolor={'#222'} theKey={4} link={'/SmallHouse1'} side={'right'} />
 
                 <OneBigProject title={'Design pour les Commerces'} image={ImageProjectE4}
-                    description={'Design pour les Commerces interieur et exterieur sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
+                    description={'Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Nous avons un grand savoir-faire quel que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={5} link={'/Pharmacie1'} side={'left'} />
 
-                <OneBigProject title={'Visualisation de façade d\'immeuble'} image={ImageProjectB1}
+                <OneBigProject title={'Visualisation de Façade d\'Immeuble'} image={ImageProjectB1}
                     description={"Design de façade d'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop."}
                     color={'#182B38'} textcolor={'#f1f1f1'} theKey={6} link={'/Immeuble1'} side={'right'} />
 
-                <OneBigProject title={'Maquettete pour hangar photovoltaique'} image={ImageProjectF2}
+                <OneBigProject title={'La 3D dans le domaine des Industries'} image={ImageProjectF2}
                     description={"Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}
                     color={'#F1F1F1'} textcolor={'#222'} theKey={7} link={'/Hangar1'} side={'left'} />
             </section>
