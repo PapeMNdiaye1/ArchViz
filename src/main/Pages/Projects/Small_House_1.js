@@ -73,7 +73,7 @@ function SmallHouse1({ }) {
                         par Pape Momar Ndiaye | Juin 6, 2022 |
                     </h3>
                     <p>
-                        Projet réalisé et rendu en avec blender, compositing sur photoshop, Design minimalist pour une optimisation de l'espace.
+                        Des designs Modernes, épurés, minimalistes etc… nous mettons en  œuvres différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives.
                     </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />

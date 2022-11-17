@@ -15,11 +15,15 @@ function Gallery({ TheImageToGallery,
 
     const [TheChangeInGalerie, setTheChangeInGalerie] = useState(false);
     const [TheImageContainer, setTheImageContainer] = useState(false);
+    const [LoadGalerieContainer, setLoadGalerieContainer] = useState(false);
 
     useEffect(() => {
 
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
+
+        let Page_slider = document.querySelector('.page_title_slider')
+        Page_slider.style.top = `-200%`
 
         let hoverLoaderContainer = document.querySelector(".hover_loader_container")
         hoverLoaderContainer.style.display = 'flex';
@@ -28,8 +32,10 @@ function Gallery({ TheImageToGallery,
             hoverLoaderContainer.style.display = '';
         }, 1500);
 
-        let Page_slider = document.querySelector('.page_title_slider')
-        Page_slider.style.top = `-200%`
+        setTimeout(function () {
+            setLoadGalerieContainer(true)
+        }, 1600);
+
 
         if (TheChangeInGalerie === false) {
             setTheImage(TheImageToGallery);
@@ -95,7 +101,9 @@ function Gallery({ TheImageToGallery,
                     </div>
 
                 </div>
-                <TheGallery GetImageOnAccueil={GetImageOnApp} />
+                {LoadGalerieContainer &&
+                    <TheGallery GetImageOnAccueil={GetImageOnApp} />
+                }
             </div>
         </Fragment>
     );

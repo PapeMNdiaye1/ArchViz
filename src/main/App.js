@@ -21,9 +21,9 @@ import MSAD from './Pages/Projects/MSAD';
 
 function App() {
 
-  const [TheImage, setTheImage] = useState(' ');
-  const [TheTitle, setTheTitle] = useState(' ');
-  const [TheDate, setTheDate] = useState(' ');
+  const [TheImage, setTheImage] = useState('');
+  const [TheTitle, setTheTitle] = useState('');
+  const [TheDate, setTheDate] = useState('');
   const [TheLink, setTheLink] = useState('/');
 
 
@@ -55,7 +55,7 @@ function App() {
             <Route exact path="/Traveaux" element={<Traveaux />} />
             <Route exact path="/Service" element={<Service />} />
             <Route exact path="/Contact" element={<Contact />} />
-            <Route exact path="/Gallery" element={<Gallery
+            <Route exact path="/Galerie" element={<Gallery
               TheImageToGallery={TheImage}
               TheTitleToGallery={TheTitle}
               TheDateToGallery={TheDate}

@@ -58,7 +58,7 @@ function Traveaux() {
                     color={'#F1F1F1'} textcolor={'#222'} theKey={3} link={'/Interior1'} side={'left'} />
 
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
-                    description={"Du design Moderne, épuré, minimalistes etc… nous mettons en  œuvres différentes approches pour une optimisation de vos espaces extérieurs qu’intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}
+                    description={"Des designs Modernes, épurés, minimalistes etc… nous mettons en  œuvres différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}
                     color={'#93A490'} textcolor={'#222'} theKey={4} link={'/SmallHouse1'} side={'right'} />
 
                 <OneBigProject title={'Design pour les Commerces'} image={ImageProjectE4}

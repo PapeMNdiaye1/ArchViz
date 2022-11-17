@@ -41,19 +41,24 @@ function Accueil({ GetImageToApp }) {
 
     useEffect(() => {
 
+        let AccueilContainer = document.querySelector(".App_container")
+        AccueilContainer.scrollTop = 0;
 
         let Page_slider = document.querySelector('.page_title_slider')
         Page_slider.style.top = `-0%`
 
-        let ThesliderImg = document.querySelectorAll(".slider")
-        let AccueilContainer = document.querySelector(".App_container")
-        AccueilContainer.scrollTop = 0;
+        let hoverLoaderContainer = document.querySelector(".hover_loader_container")
+        hoverLoaderContainer.style.display = 'flex';
+
+        setTimeout(function () {
+            hoverLoaderContainer.style.display = '';
+        }, 1500);
 
         let thePageWidth = window.innerWidth
-        console.log(thePageWidth);
 
+
+        let ThesliderImg = document.querySelectorAll(".slider")
         if (thePageWidth >= 1000) {
-
 
             return AccueilContainer.addEventListener('scroll', (event) => {
                 let TheScrollTop = AccueilContainer.scrollTop;
@@ -109,15 +114,15 @@ function Accueil({ GetImageToApp }) {
             </section>
             <section className='AccueilBigProjectsSection'>
                 <OneBigProject title={'Décoration Intérieur'} image={ImageProjectC3}
-                    description={"Décors intérieurs modernes simples et lumineux.Nous vous aidons a réaliser des maquettes d’intérieurs époustouflantes qui permettrons de présenter de manière tres réalistes vos projets avant réalisation."}
+                    description={"Décors intérieurs modernes simples et lumineux. Nous vous aidons a réaliser des maquettes d’intérieurs époustouflantes qui permettrons de présenter de manière tres réalistes vos projets avant réalisation."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'right'} link={'/Interior1'} />
 
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
-                    description={"Du design Moderne, épuré, minimalistes etc… nous mettons en  œuvres différentes approches pour une optimisation de vos espaces extérieurs qu’intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}
+                    description={"Des designs Modernes, épurés, minimalistes etc… nous mettons en  œuvres différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}
                     color={'#93A490'} textcolor={'#222'} theKey={2} side={'left'} link={'/SmallHouse1'} />
 
                 <OneBigProject title={'Design pour les Commerces'} image={ImageProjectE3}
-                    description={'Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Nous avons un grand savoir-faire quel que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement.'}
+                    description={'Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Quel que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Pharmacie1'} />
 
                 <OneBigProject title={'La 3D dans le domaine des Industries'} image={ImageProjectF2}
@@ -125,7 +130,7 @@ function Accueil({ GetImageToApp }) {
                     color={'#F1F1F1'} textcolor={'#222'} theKey={4} link={'/Hangar1'} side={'left'} />
 
                 <OneBigProject title={"Visualisation de Façade d'Immeuble"} image={ImageProjectB1}
-                    description={'Design de façade d\'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.'}
+                    description={'Nous avons une grande expérience dans l’agencement de bureaux. Quel que soit la typologie, sa vocation, sa stratégie et son positionnement.'}
                     color={'#182B38'} textcolor={'#f1f1f1'} theKey={5} side={'right'} link={'/Immeuble1'} />
 
             </section>
@@ -138,8 +143,7 @@ function Accueil({ GetImageToApp }) {
         </div >
     );
 }
-
-
+//!###############################################################
 function AccueilSlider() {
 
     const onClickOnDot = (e) => {
@@ -215,10 +219,7 @@ function AccueilSlider() {
         </div>
     );
 }
-
 //!###############################################################
-
-
 function Slider({ giveSliderKey, title, date, theKey }) {
 
     useEffect(() => {
@@ -238,9 +239,81 @@ function Slider({ giveSliderKey, title, date, theKey }) {
         </div>
     );
 }
-
 //!###############################################################
+function TheGallery({ GetImageOnAccueil }) {
 
+    const onClickOnImage = (theimage, title, date, link) => {
+        GetImageOnAccueil(theimage, title, date, link);
+    }
+
+    return (
+        <div className="the_galerie_container">
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC3} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE3} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Design de Maison Moderne'} date={'15 avril, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE5} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Touba'} image={ImageProjectD1} title={'Maquettete de la Grande Mosquée de Touba'} date={'09 Mars, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE1} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Immeuble1'} image={ImageProjectB2} title={"Visualisation Exterieur d'Immeuble"} date={'23 Mars, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC4} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF1} title={'Maquettete Hangar Photovoltaïque'} date={'29 Juin , 2021'} />
+
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE4} title={'Décoration Interieur'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA2} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC2} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC7} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC5} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
+
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA4} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE7} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE9} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE2} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF3} title={'Maquettete Hangar Photovoltaïque'} date={'29 Juin, 2021'} />
+
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE6} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC6} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG3} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC1} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA5} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
+        </div>
+    );
+}
+//!###############################################################
+function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
+
+    const clickOnImage = (e) => {
+        let AccueilContainer = document.querySelector(".App_container")
+        AccueilContainer.scrollTop = 0;
+        giveImageId(image, title, date, link)
+    }
+
+    return (
+        <div className='one_galerie_element'>
+            <img src={image} width='100%' alt={title} />
+            <div className='one_galerie_element_hover'>
+                <div className='iner_container' >
+
+                    <Link onClick={clickOnImage} to={'/Galerie'}>
+                        <div
+                            className='Icon-to-click-on'>
+                            <ion-icon name="expand-sharp"></ion-icon>
+                        </div>
+                    </Link >
+
+                    <Link className='titre' to={link}>
+                        {title}
+                    </Link>
+                    <p className='date'>
+                        {date}
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
+}
+//!###############################################################
 function OneBigProject({ color, title, description, side, textcolor, theKey, image, link }) {
     const [TheSide, setTheSide] = useState('');
 
@@ -344,91 +417,12 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
 }
 
 //!###############################################################
-
-function TheGallery({ GetImageOnAccueil }) {
-
-    const onClickOnImage = (theimage, title, date, link) => {
-        GetImageOnAccueil(theimage, title, date, link);
-    }
-
-    return (
-        <Fragment>
-            <div className="the_galerie_container">
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC3} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE3} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Design de Maison Moderne'} date={'15 avril, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE5} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Touba'} image={ImageProjectD1} title={'Maquettete de la Grande Mosquée de Touba'} date={'09 Mars, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE1} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Immeuble1'} image={ImageProjectB2} title={"Visualisation Exterieur d'Immeuble"} date={'23 Mars, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC4} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF1} title={'Maquettete Hangar Photovoltaïque'} date={'29 Juin , 2021'} />
-
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE4} title={'Décoration Interieur'} date={'27 Mai, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA2} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC2} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC7} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC5} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA4} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE7} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE9} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE2} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF3} title={'Maquettete Hangar Photovoltaïque'} date={'29 Juin, 2021'} />
-
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE6} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC6} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG3} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC1} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-                <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA5} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
-            </div>
-        </Fragment>
-    );
-
-}
-
-//!###############################################################
-function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
-
-    const clickOnImage = (e) => {
-        let AccueilContainer = document.querySelector(".App_container")
-        AccueilContainer.scrollTop = 0;
-
-        giveImageId(image, title, date, link)
-    }
-
-    return (
-        <div className='one_galerie_element'>
-            <img src={image} width='100%' alt={title} />
-            <div className='one_galerie_element_hover'>
-                <div className='iner_container' >
-                    <Link onClick={clickOnImage} to={'/Gallery'}>
-                        <div
-                            className='Icon-to-click-on'>
-                            <ion-icon name="expand-sharp"></ion-icon>
-                        </div>
-                    </Link >
-                    <Link className='titre' to={link}>
-                        {title}
-                    </Link>
-                    <p className='date'>
-                        {date}
-                    </p>
-                </div>
-            </div>
-        </div>
-    );
-}
-//!###############################################################
 function TheFooter({ }) {
 
     const onClickOnTab = () => {
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
     }
-
 
     return (
         <footer className='the_footer'>

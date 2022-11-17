@@ -75,8 +75,7 @@ function Interior1({ }) {
                         par Pape Momar Ndiaye | 3 Juin, 2022 |
                     </h3>
                     <p>
-                        Décor interieur moderne simpliste et lumine. Rendus réalisés avec blender, animation et rendus videos sur Unreal Engine 5, compositing sur photoshop.
-                    </p>
+                        Décors interieur moderne simpliste et lumine. Rendus images en réalisés avec blender, animation et rendus videos sur Unreal Engine 5, compositing sur photoshop.                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' />
                     </div>

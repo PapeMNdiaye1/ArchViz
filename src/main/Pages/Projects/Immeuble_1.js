@@ -65,8 +65,7 @@ function Immeuble1({ }) {
                         par Pape Momar Ndiaye | 23 Mars, 2022 |
                     </h3>
                     <p>
-                        Design de façade d'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop.
-                    </p>
+                        Nous avons une grande expérience dans l’agencement de bureaux. Quel que soit la typologie, sa vocation, sa stratégie et son positionnement.                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' alt='Design de Maison Moderne - 1' />
                     </div>

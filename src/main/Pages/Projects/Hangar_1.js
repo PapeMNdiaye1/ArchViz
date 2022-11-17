@@ -32,7 +32,6 @@ function Hangar_1({ }) {
 
         return () => {
             Page_slider.style.opacity = `1`
-
         }
     }, []);
 
@@ -69,8 +68,7 @@ function Hangar_1({ }) {
                         par Pape Momar Ndiaye | 09 Juin, 2021 |
                     </h3>
                     <p>
-                        Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.
-                    </p>
+                        Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC2} width='100%' alt=' Maquettete Hangar Photovoltaïque - 1' />
                     </div>

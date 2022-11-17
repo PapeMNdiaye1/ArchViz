@@ -740,15 +740,14 @@
 }
 
 #Top-Bare .page_title {
-  height: 1.2em;
+  height: 4em;
   width: auto;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   overflow: hidden;
 }
 
 #Top-Bare .page_title .page_title_slider {
-  top: -0%;
   width: 100%;
   height: 500%;
   display: -ms-grid;
@@ -2662,6 +2661,7 @@
 
 #Gallery {
   width: 100%;
+  min-height: 100vh;
   z-index: 1;
 }
 

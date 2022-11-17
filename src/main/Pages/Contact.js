@@ -47,7 +47,7 @@ function Contacts() {
                 />
                 <OneSection link={'https://www.facebook.com/ARVHVIZ/'}
                     title={<div className="network"><ion-icon name="logo-facebook"></ion-icon>FACEBOOK</div>}
-                    title2={<div className="network">ARCHVIZ</div>}
+                    title2={<div className="network">f/ARCHVIZ</div>}
                 />
 
                 <OneSection link={'mailto:archviz.sn@gmail.com?subject=The message'}
