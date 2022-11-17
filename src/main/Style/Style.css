@@ -741,7 +741,7 @@
 
 #Top-Bare .page_title {
   height: 1.2em;
-  width: 7em;
+  width: auto;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   overflow: hidden;
@@ -871,7 +871,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(241, 241, 241, 0.93);
+  background-color: rgba(241, 241, 241, 0.97);
 }
 
 #Top-bare-slider-container .Menu-container {
@@ -1028,6 +1028,9 @@
 @media all and (max-width: 1000px) {
   #Top-Bare .logo-container {
     margin-left: .5em;
+  }
+  #Top-Bare .page_title .page_title_slider .slides {
+    font-size: .8em;
   }
   #Top-Bare .Menu-container {
     margin-right: .5em;

@@ -1,14 +1,9 @@
 import { React, useEffect, useState, Fragment } from 'react';
 
 
-
-
 import ImageProjectC1 from '../../Style/Images/Project/Immeuble-1.jpg';
 import ImageProjectC2 from '../../Style/Images/Project/Immeuble-2.jpg';
 import ImageProjectC3 from '../../Style/Images/Project/Immeuble-3.jpg';
-
-
-
 
 
 function Immeuble1({ }) {
@@ -88,8 +83,6 @@ function Immeuble1({ }) {
         </Fragment>
     );
 }
-
-
 
 
 export default Immeuble1;

@@ -28,10 +28,11 @@
 
     .page_title {
         height: 1.2em;
-        width: 7em;
+        width: auto;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         overflow: hidden;
+
 
         .page_title_slider {
             top: -0%;
@@ -125,7 +126,7 @@
     transition-property: top, opacity;
     @include cent();
     flex-direction: column;
-    background-color: rgba(#f1f1f1, .93);
+    background-color: rgba(#f1f1f1, .97);
 
     .Menu-container {
         width: 30em;
@@ -239,12 +240,19 @@
             margin-left: .5em;
         }
 
+        .page_title {
+            .page_title_slider {
+                .slides {
+                    font-size: .8em;
+                }
+            }
+        }
+
         .Menu-container {
             margin-right: .5em;
 
             .Menu {
                 transform: scale(1.1);
-                // background-color: salmon;
 
                 &::before {
                     height: .12em;
@@ -262,8 +270,6 @@
             }
 
             .Menu_On {
-                // background-color: rgba($color: #222, $alpha: 0);
-
                 &::before {
                     transform: rotate(-45deg);
                     top: calc(50% - .1em)

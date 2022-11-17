@@ -1,5 +1,5 @@
 import './Style/Style.css';
-import { React, useEffect, useState, Fragment } from 'react';
+import { React, useState } from 'react';
 import { Routes, BrowserRouter, Route, } from "react-router-dom";
 
 
@@ -21,9 +21,9 @@ import MSAD from './Pages/Projects/MSAD';
 
 function App() {
 
-  const [TheImage, setTheImage] = useState('');
-  const [TheTitle, setTheTitle] = useState('');
-  const [TheDate, setTheDate] = useState('');
+  const [TheImage, setTheImage] = useState(' ');
+  const [TheTitle, setTheTitle] = useState(' ');
+  const [TheDate, setTheDate] = useState(' ');
   const [TheLink, setTheLink] = useState('/');
 
 
@@ -32,7 +32,6 @@ function App() {
   }
 
   const GetImage = (theimage, title, date, link) => {
-    console.log('#App');
     setTheImage(theimage);
     setTheTitle(title);
     setTheDate(date);

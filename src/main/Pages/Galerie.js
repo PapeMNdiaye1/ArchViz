@@ -18,10 +18,6 @@ function Gallery({ TheImageToGallery,
 
     useEffect(() => {
 
-
-        let Page_slider = document.querySelector('.page_title_slider')
-        Page_slider.style.top = `-200%`
-
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 
@@ -32,6 +28,8 @@ function Gallery({ TheImageToGallery,
             hoverLoaderContainer.style.display = '';
         }, 1500);
 
+        let Page_slider = document.querySelector('.page_title_slider')
+        Page_slider.style.top = `-200%`
 
         if (TheChangeInGalerie === false) {
             setTheImage(TheImageToGallery);
