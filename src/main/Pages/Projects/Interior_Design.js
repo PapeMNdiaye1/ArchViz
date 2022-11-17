@@ -20,6 +20,10 @@ function Interior1({ }) {
     const [TheImageInTheContainer, setTheImageInTheContainer] = useState(ImageProjectC6);
 
     useEffect(() => {
+
+        let Page_slider = document.querySelector('.page_title_slider')
+        Page_slider.style.opacity = `0`
+
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 
@@ -32,6 +36,7 @@ function Interior1({ }) {
 
 
         return () => {
+            Page_slider.style.opacity = `1`
 
         }
     }, []);
@@ -80,7 +85,7 @@ function Interior1({ }) {
                             height="100%"
                             src="https://www.youtube.com/embed/GyZaKbQtU94"
                             title="Interior Design"
-                            frameborder="0"
+                            // frameborder="0"
                             allow="accelerometer; 
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;

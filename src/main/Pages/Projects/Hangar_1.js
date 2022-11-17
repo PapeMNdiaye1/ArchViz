@@ -14,6 +14,11 @@ function Hangar_1({ }) {
     const [TheImageInTheContainer, setTheImageInTheContainer] = useState(ImageProjectC1);
 
     useEffect(() => {
+
+        let Page_slider = document.querySelector('.page_title_slider')
+        Page_slider.style.opacity = `0`
+
+
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 
@@ -26,6 +31,7 @@ function Hangar_1({ }) {
 
 
         return () => {
+            Page_slider.style.opacity = `1`
 
         }
     }, []);

@@ -17,6 +17,11 @@ function Gallery({ TheImageToGallery,
     const [TheImageContainer, setTheImageContainer] = useState(false);
 
     useEffect(() => {
+
+
+        let Page_slider = document.querySelector('.page_title_slider')
+        Page_slider.style.top = `-200%`
+
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 

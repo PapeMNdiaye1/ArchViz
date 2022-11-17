@@ -41,6 +41,10 @@ function Accueil({ GetImageToApp }) {
 
     useEffect(() => {
 
+
+        let Page_slider = document.querySelector('.page_title_slider')
+        Page_slider.style.top = `-0%`
+
         let ThesliderImg = document.querySelectorAll(".slider")
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;

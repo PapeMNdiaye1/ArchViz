@@ -1,5 +1,4 @@
-import React, { Fragment, Suspense, useState, useEffect, componentWillUnmount } from 'react'
-// import { render } from 'react-dom';
+import React, { Fragment, useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 
 
@@ -51,6 +50,25 @@ function TopBare({ onChangeTab }) {
             <div id="Top-Bare">
                 <Link className='logo-container' to={'/'}>
                 </Link>
+                <div className='page_title'>
+                    <div className='page_title_slider'>
+                        <div className='slides' >
+                            ACCUEIL
+                        </div>
+                        <div className='slides' >
+                            TRAVEAUX
+                        </div>
+                        <div className='slides' >
+                            GALLERIE
+                        </div>
+                        <div className='slides' >
+                            SERVICE
+                        </div>
+                        <div className='slides' >
+                            CONTACT
+                        </div>
+                    </div>
+                </div>
                 <div className='Menu-container'>
                     <div onClick={onClickOnMenu} className='Menu'>
                     </div>
@@ -118,6 +136,7 @@ function OneSection({ title, parentCallback, link }) {
     });
 
     const onClickOnTab = (e) => {
+
         parentCallback(title, link)
         e.target.childNodes[0].style.top = ''
         e.target.childNodes[0].childNodes[1].style.opacity = ''
@@ -127,6 +146,7 @@ function OneSection({ title, parentCallback, link }) {
         theMenu.classList.remove('Menu_On');
         Menu_slider.style.top = ''
         Menu_slider.style.opacity = '';
+
         for (let i = 0; i < allMenuSection.length; i++) {
             allMenuSection[i].style.top = ``;
             allMenuSection[i].style.opacity = `0`;
@@ -134,6 +154,7 @@ function OneSection({ title, parentCallback, link }) {
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
     }
+
     const onMouseOverTitle = (e) => {
         e.target.childNodes[0].style.top = '-100%';
         e.target.childNodes[0].childNodes[1].style.opacity = '.7'

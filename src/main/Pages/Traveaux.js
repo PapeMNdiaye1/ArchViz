@@ -12,6 +12,10 @@ import ImageProjectG1 from '../Style/Images/Project/MSAD_2.jpg';
 function Traveaux() {
 
     useEffect(() => {
+
+        let Page_slider = document.querySelector('.page_title_slider')
+        Page_slider.style.top = `-100%`
+
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 

@@ -6,6 +6,11 @@ function Contacts() {
 
 
     useEffect(() => {
+
+        let Page_slider = document.querySelector('.page_title_slider')
+        Page_slider.style.top = `-400%`
+
+
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 
