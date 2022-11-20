@@ -2,7 +2,7 @@ import { React, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 
-import ImageProjectA4 from '../Style/Images/Project/Exterior-4.jpg';
+import ImageProjectA4 from '../Style/Images/Project/Exterior-0.jpg';
 import ImageProjectB3 from '../Style/Images/Project/Immeuble-3.jpg';
 import ImageProjectC1 from '../Style/Images/Project/Interior-1-1.jpg';
 import ImageProjectC7 from '../Style/Images/Project/Interior-1-7.jpg';
@@ -56,9 +56,7 @@ function Services() {
                 theServiceTitle={'Réalité Virtuel et Experience 3D Web'}
                 theServiceDescription={
                     <p>
-                        Nous avons une expérience éprouvée dans la VR et l'AR et pouvons vous aider à améliorer vos ventes  <br />
-                        avec ces technologies en constante évolution.
-                    </p>}
+                        Nous donnons plus de vie a vos projets immobiliers avec la technologie de réalité virtuelle en produisant des rendus 3D immersives permettant de visiter les espaces comme si vous y étiez.                    </p>}
                 TheGalerieElements={
                     <div className='project_container'>
                         <OneGalerieElement image={ImageProjectC1} title={'Interior Design'} link={'/Interior1'} date={'03 Juin, 2022'} />

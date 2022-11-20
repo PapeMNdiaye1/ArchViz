@@ -10,6 +10,12 @@
     z-index: 1;
     @include cent();
     flex-wrap: wrap;
+    background-image: url('../Style/Images/Extra/4x/Asset\ 7@4x.png');
+    // background-image: url('../Style/Images/Project/Exterior-0.jpg');
+    // background-repeat: no-repeat;
+    background-size: 100%;
+
+
 
     .follow_us {
         width: 100%;

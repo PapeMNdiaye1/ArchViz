@@ -114,7 +114,7 @@ function Accueil({ GetImageToApp }) {
             </section>
             <section className='AccueilBigProjectsSection'>
                 <OneBigProject title={'Décoration Intérieur'} image={ImageProjectC3}
-                    description={"Décors intérieurs modernes simples et lumineux. Nous vous aidons a réaliser des maquettes d’intérieurs époustouflantes qui permettrons de présenter de manière tres réalistes vos projets avant réalisation."}
+                    description={"A l’aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur, nous vous aidons dans l’aménagement de vos espaces.Du design moderne au traditionnelle, minimaliste etc.nous modélisons espaces, mobiliers et décors intérieurs afin de vous assurer de toute la commodité et de l’esthétique qu’auront vos projets avant leur réalisation."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'right'} link={'/Interior1'} />
 
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
@@ -189,7 +189,6 @@ function AccueilSlider() {
             if (theCourentSlide >= AllDot.length) {
                 return theCourentSlide = 0
             }
-            // console.log(theCourentSlide);
         }, 6000);
 
         return () => {

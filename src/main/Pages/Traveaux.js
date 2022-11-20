@@ -54,7 +54,7 @@ function Traveaux() {
                     color={'#EAEAEA'} textcolor={'#222'} theKey={2} link={'/MSAD'} side={'right'} />
 
                 <OneBigProject title={'Décoration Interieur'} image={ImageProjectC3}
-                    description={'Décors interieur moderne simpliste et lumine. Rendus images en réalisés avec blender, animation et rendus videos sur Unreal Engine 5, compositing sur photoshop.'}
+                    description={'A l’aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur, nous vous aidons dans l’aménagement de vos espaces. Du design moderne au traditionnelle, minimaliste etc. nous modélisons espaces, mobiliers et décors intérieurs afin de vous assurer de toute la commodité et de l’esthétique qu’auront vos projets avant leur réalisation.'}
                     color={'#F1F1F1'} textcolor={'#222'} theKey={3} link={'/Interior1'} side={'left'} />
 
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
