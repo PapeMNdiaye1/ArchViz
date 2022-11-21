@@ -233,7 +233,7 @@
                     flex-wrap: wrap;
 
                     .the_link {
-                        margin-top: 2em;
+                        margin-top: 1em;
                         font-size: .71em;
                         text-decoration: none;
                         padding: .3em;
@@ -405,7 +405,6 @@
                 transition-duration: 0s, 1s;
                 transition-property: height, background-color;
 
-
                 .iner_container {
                     width: 100%;
                     height: auto;
@@ -460,8 +459,6 @@
                         font-weight: 100;
                     }
                 }
-
-
             }
         }
     }
@@ -520,7 +517,7 @@
             min-height: auto;
 
             .One_Project_In_Home {
-                min-height: 34em;
+                min-height: 36em;
                 height: auto;
                 grid-gap: 0em;
 
@@ -606,6 +603,14 @@
         .the_galerie_container {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(25, 1fr);
+
+            .one_galerie_element {
+                &:hover {
+                    img {
+                        transform: scale(1);
+                    }
+                }
+            }
         }
     }
 }

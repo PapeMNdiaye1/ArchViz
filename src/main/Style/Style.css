@@ -1421,7 +1421,7 @@
 }
 
 #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: .71em;
   text-decoration: none;
   padding: .3em;
@@ -1787,7 +1787,7 @@
     min-height: auto;
   }
   #Accueil .AccueilBigProjectsSection .One_Project_In_Home {
-    min-height: 34em;
+    min-height: 36em;
     height: auto;
     grid-gap: 0em;
   }
@@ -1865,6 +1865,10 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: (1fr)[25];
         grid-template-rows: repeat(25, 1fr);
+  }
+  #Accueil .the_galerie_container .one_galerie_element:hover img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -2013,7 +2017,7 @@
 }
 
 #Traveaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: .71em;
   text-decoration: none;
   padding: .3em;
@@ -3004,6 +3008,10 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: (1fr)[25];
         grid-template-rows: repeat(25, 1fr);
+  }
+  #Gallery .the_galerie_container .one_galerie_element:hover img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   #Gallery .display_image_container {
     top: 4em;

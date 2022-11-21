@@ -81,7 +81,7 @@ function Accueil({ GetImageToApp }) {
 
     const GetImageOnApp = (theimage, title, date, link) => {
         GetImageToApp(theimage, title, date, link);
-        console.log('#Accueil');
+        // console.log('#Accueil');
     }
 
     return (
@@ -114,7 +114,7 @@ function Accueil({ GetImageToApp }) {
             </section>
             <section className='AccueilBigProjectsSection'>
                 <OneBigProject title={'Décoration Intérieur'} image={ImageProjectC3}
-                    description={"A l’aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur, nous vous aidons dans l’aménagement de vos espaces.Du design moderne au traditionnelle, minimaliste etc.nous modélisons espaces, mobiliers et décors intérieurs afin de vous assurer de toute la commodité et de l’esthétique qu’auront vos projets avant leur réalisation."}
+                    description={"A l’aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur, nous vous aidons dans l’aménagement de vos espaces. Du design moderne au traditionnelle, minimaliste etc. nous modélisons espaces, mobiliers et décors intérieurs afin de vous assurer de toute la commodité et de l’esthétique qu’auront vos projets avant leur réalisation."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'right'} link={'/Interior1'} />
 
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
@@ -166,7 +166,6 @@ function AccueilSlider() {
                 element.style.zIndex = '1'
             });
             AllSlider[theSliderKey - 1].style.zIndex = '4'
-            console.log('ok');
         }, 1100);
 
     }
@@ -182,17 +181,20 @@ function AccueilSlider() {
 
         AllDot[0].classList.add('ativeDot')
         let theCourentSlide = 0
+        let windowWidth = window.innerWidth;
 
-        const interval = setInterval(function () {
-            AllDot[theCourentSlide].click()
-            theCourentSlide++
-            if (theCourentSlide >= AllDot.length) {
-                return theCourentSlide = 0
-            }
-        }, 6000);
+        if (windowWidth >= 1000) {
+            console.log(windowWidth);
+            setInterval(function () {
+                AllDot[theCourentSlide].click()
+                theCourentSlide++
+                if (theCourentSlide >= AllDot.length) {
+                    return theCourentSlide = 0
+                }
+            }, 6000);
+        }
 
         return () => {
-            clearInterval(interval);
             sliderBtnContainer.innerHTML = '';
         }
 
@@ -213,7 +215,6 @@ function AccueilSlider() {
             <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={'03 Juin, 2022'} title={<p>Réalité <dr /> Virtuel & Experience <dr /> 3D Web</p>} />
             <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={'27 Mai, 2022'} title={<p>Visualisations <dr /> Architecturals <dr />  Pour Commerces</p>} />
             <div className='slider_btn_container'>
-
             </div>
         </div>
     );
@@ -451,7 +452,7 @@ function TheFooter({ }) {
                 <Link className='menu_elemant' to={'/Service'} onClick={onClickOnTab}>
                     Services
                 </Link>
-                <Link className='menu_elemant' to={'/Gallery'} onClick={onClickOnTab}>
+                <Link className='menu_elemant' to={'/Galerie'} onClick={onClickOnTab}>
                     Galerie
                 </Link>
                 <div className='menu_elemant'></div>

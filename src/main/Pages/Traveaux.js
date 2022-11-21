@@ -41,6 +41,7 @@ function Traveaux() {
                 </h1>
                 <p className='visualization-projects-description'>
                     Nous aidons les architectes  et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels professionnels.
+                    Nos visualisations photo réalistes font profiter aux promoteurs immobiliers, aux architectes et autres professionnels de l’immobilier d’une large visibilité dans la mesure où elle permet de visualiser un projet avant sa réalisation. Ainsi, elles suscitent l’intérêt des clients cibles et convainc les éventuels acheteurs. En d’autres termes, nous contribuons a de donner vie à vos projets ou produits.
                 </p>
             </section>
             <section className='AccueilBigProjectsSection'>
@@ -66,12 +67,13 @@ function Traveaux() {
                     color={'#F4EFE4'} textcolor={'#222'} theKey={5} link={'/Pharmacie1'} side={'left'} />
 
                 <OneBigProject title={'Visualisation de Façade d\'Immeuble'} image={ImageProjectB1}
-                    description={"Design de façade d'immeuble sur base de plan. Rendus images en réalisés avec blender, compositing sur photoshop."}
+                    description={"Nous avons une grande expérience dans l’agencement de bureaux. Quel que soit la typologie, sa vocation, sa stratégie et son positionnement."}
                     color={'#182B38'} textcolor={'#f1f1f1'} theKey={6} link={'/Immeuble1'} side={'right'} />
 
                 <OneBigProject title={'La 3D dans le domaine des Industries'} image={ImageProjectF2}
                     description={"Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}
                     color={'#F1F1F1'} textcolor={'#222'} theKey={7} link={'/Hangar1'} side={'left'} />
+
             </section>
         </div>
     );
