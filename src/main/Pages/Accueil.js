@@ -92,7 +92,7 @@ function Accueil({ GetImageToApp }) {
                     Qui Sommes-nous ?
                 </h2>
                 <p>
-                    ArchViz est un studio de visualisation architecturale, nous créons des images et animations Photoréalismes pour architectes, designers, les promoteurs immobiliers etc...                </p>
+                    ArchViz est un studio de visualisation architecturale, nous créons des images et animations Photoréalistes pour les architectes, les designers, les promoteurs immobiliers etc...                </p>
                 <div className='network_container'>
                     <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
                         <div className="network">
@@ -211,7 +211,7 @@ function AccueilSlider() {
     return (
         <div className="Accueil_Slider">
             <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'27 Mai, 2022'} title={<p>Visualisations 3D <dr />"Rendus Images <br />& Animations"</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={'09 Mars, 2022'} title={<p>Création de <dr />Maquettes </p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={'09 Mars, 2022'} title={<p>Création De <dr />Maquettes </p>} />
             <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={'03 Juin, 2022'} title={<p>Réalité <dr /> Virtuel & Experience <dr /> 3D Web</p>} />
             <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={'27 Mai, 2022'} title={<p>Visualisations <dr /> Architecturals <dr />  Pour Commerces</p>} />
             <div className='slider_btn_container'>

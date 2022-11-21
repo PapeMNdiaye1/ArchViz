@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 
 import ImageProjectA4 from '../Style/Images/Project/Exterior-0.jpg';
-import ImageProjectB3 from '../Style/Images/Project/Immeuble-3.jpg';
+import ImageProjectB3 from '../Style/Images/Project/Immeuble-0.jpg';
 import ImageProjectC1 from '../Style/Images/Project/Interior-1-1.jpg';
-import ImageProjectC7 from '../Style/Images/Project/Interior-1-7.jpg';
+import ImageProjectC7 from '../Style/Images/Project/Interior-1-2.jpg';
 import ImageProjectD1 from '../Style/Images/Project/NFT-1.jpg';
-import ImageProjectE7 from '../Style/Images/Project/Pharmacie-7.jpg';
+import ImageProjectE7 from '../Style/Images/Project/Pharmacie-3.jpg';
 import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
 import ImageProjectG2 from '../Style/Images/Project/MSAD_2.jpg';
 

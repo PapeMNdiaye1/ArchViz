@@ -666,7 +666,8 @@
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
     -ms-grid-row: 20;
-    grid-row: 20 / 20;
+    -ms-grid-row-span: 2;
+    grid-row: 20 / 22;
     margin-left: 0%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1126,7 +1127,6 @@
 #Accueil .Accueil_Slider .slider .slider_title {
   width: 55%;
   font-size: 5.5em;
-  color: white;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1148,6 +1148,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   top: -6%;
+  color: white;
 }
 
 #Accueil .Accueil_Slider .slider .slider_date {
@@ -1182,12 +1183,38 @@
   opacity: 1;
 }
 
+#Accueil .Accueil_Slider .slider:nth-child(1) .slider_title:nth-child(1) {
+  color: black;
+}
+
+#Accueil .Accueil_Slider .slider:nth-child(1) .slider_date {
+  color: black;
+}
+
 #Accueil .Accueil_Slider .slider:nth-child(2) {
-  background-image: url(./Images/Project/NFT-3.jpg);
+  background-image: url(./Images/Project/Immeuble-0.jpg);
+}
+
+#Accueil .Accueil_Slider .slider:nth-child(2) .slider_title:nth-child(1) {
+  color: black;
+}
+
+#Accueil .Accueil_Slider .slider:nth-child(2) .slider_date {
+  color: black;
 }
 
 #Accueil .Accueil_Slider .slider:nth-child(3) {
   background-image: url(./Images/Project/Interior-1-2.jpg);
+}
+
+#Accueil .Accueil_Slider .slider:nth-child(3) .slider_title:nth-child(1) {
+  color: #182B38;
+  color: black;
+}
+
+#Accueil .Accueil_Slider .slider:nth-child(3) .slider_date {
+  color: #182B38;
+  color: black;
 }
 
 #Accueil .Accueil_Slider .slider:nth-child(4) {
@@ -1262,15 +1289,15 @@
   width: 80%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 
 #Accueil .archviz_presantation p {
-  width: 30%;
+  width: 50%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   text-align: center;
-  font-size: .9em;
+  font-size: 1.2em;
 }
 
 #Accueil .archviz_presantation .network_container {
