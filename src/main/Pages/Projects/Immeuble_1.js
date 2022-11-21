@@ -58,6 +58,7 @@ function Immeuble1({ }) {
             <div className='Immeuble_1_container'>
 
                 <div className='project_display'>
+
                     <h1 className='project_title'>
                         Design de Maison Moderne
                     </h1>
@@ -77,6 +78,7 @@ function Immeuble1({ }) {
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' alt='Design de Maison Moderne - 3' />
                     </div>
+
                 </div>
             </div>
         </Fragment>
