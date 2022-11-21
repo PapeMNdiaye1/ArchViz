@@ -212,10 +212,10 @@
                     @include cent();
                     justify-content: flex-start;
                     align-items: flex-end;
-                    width: 70%;
+                    width: 80%;
                     height: 70%;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 1.5em;
+                    font-size: 2em;
                     font-weight: 900;
                     text-decoration: none;
                 }
@@ -223,7 +223,7 @@
                 .description {
                     margin: auto;
                     margin-top: 4em;
-                    width: 70%;
+                    width: 80%;
                     @include cent();
                     justify-content: flex-start;
                     align-items: flex-start;
@@ -517,11 +517,9 @@
             min-height: auto;
 
             .One_Project_In_Home {
-                min-height: 36em;
+                min-height: 34em;
                 height: auto;
                 grid-gap: 0em;
-
-
 
                 .image_container {
                     width: 100%;
@@ -535,6 +533,7 @@
                 }
 
                 .info_container {
+
                     .title {
                         font-size: 1.3em;
                         width: 90%;
@@ -576,6 +575,7 @@
             .left {
                 grid-template-columns: 1fr;
                 grid-template-rows: repeat(2, 1fr);
+                // background-color: salmon;
 
                 .image_container {
                     grid-column: 1 / 1;

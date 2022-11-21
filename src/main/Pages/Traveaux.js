@@ -40,8 +40,8 @@ function Traveaux() {
                     Nos Réalisations
                 </h1>
                 <p className='visualization-projects-description'>
-                    Nous aidons les architectes  et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels professionnels.
-                    Nos visualisations photo réalistes font profiter aux promoteurs immobiliers, aux architectes et autres professionnels de l’immobilier d’une large visibilité dans la mesure où elle permet de visualiser un projet avant sa réalisation. Ainsi, elles suscitent l’intérêt des clients cibles et convainc les éventuels acheteurs. En d’autres termes, nous contribuons a de donner vie à vos projets ou produits.
+                    Nous aidons les architectes  et les promoteurs immobiliers à impressionner les investisseurs et les acheteurs avec des visuels professionnels. <br />
+                    Nos visualisations photo réalistes font profiter aux professionnels de l’immobilier d’une large visibilité dans la mesure où elle permet de visualiser un projet avant sa réalisation. Ainsi, elles suscitent l’intérêt des clients cibles et convainc les éventuels acheteurs. En d’autres termes, nous contribuons a de donner vie à vos projets ou produits.
                 </p>
             </section>
             <section className='AccueilBigProjectsSection'>

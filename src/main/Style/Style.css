@@ -1386,10 +1386,10 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 70%;
+  width: 80%;
   height: 70%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 900;
   text-decoration: none;
 }
@@ -1397,7 +1397,7 @@
 #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description {
   margin: auto;
   margin-top: 4em;
-  width: 70%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1787,7 +1787,7 @@
     min-height: auto;
   }
   #Accueil .AccueilBigProjectsSection .One_Project_In_Home {
-    min-height: 36em;
+    min-height: 34em;
     height: auto;
     grid-gap: 0em;
   }
@@ -1982,10 +1982,10 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 70%;
+  width: 80%;
   height: auto;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 900;
   text-decoration: none;
 }
@@ -1993,7 +1993,7 @@
 #Traveaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description {
   margin: auto;
   margin-top: 4em;
-  width: 70%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2088,7 +2088,7 @@
 @media all and (max-width: 1000px) {
   #Traveaux .Traveaux-Header {
     width: 100%;
-    height: 15em;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2107,16 +2107,18 @@
   }
   #Traveaux .Traveaux-Header .visualization-projects {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 900;
-    width: 90%;
+    width: 87%;
     padding-bottom: 1em;
+    margin-top: 2em;
   }
   #Traveaux .Traveaux-Header .visualization-projects-description {
-    width: 90%;
+    width: 87%;
     font-family: 'Montserrat', sans-serif;
     font-size: .8em;
     font-weight: 700;
+    margin-bottom: 3em;
   }
   #Traveaux .AccueilBigProjectsSection {
     width: 100%;
@@ -2456,7 +2458,7 @@
   }
   #Services .one_service .the_title {
     font-size: 1.4em;
-    width: 90vw;
+    width: 87vw;
   }
   #Services .one_service .the_title::after {
     width: 50vw;

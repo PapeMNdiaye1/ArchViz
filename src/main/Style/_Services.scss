@@ -193,17 +193,10 @@
 
             .the_title {
                 font-size: 1.4em;
-                width: 90vw;
+                width: 87vw;
 
                 &::after {
-                    // content: '';
-                    // position: absolute;
-                    // top: 100%;
-                    // left: 0%;
                     width: 50vw;
-                    // height: .1em;
-                    // background-color: var(--colorX);
-                    // transition-duration: .2s;
                 }
             }
 
