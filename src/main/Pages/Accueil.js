@@ -54,12 +54,12 @@ function Accueil({ GetImageToApp }) {
             hoverLoaderContainer.style.display = '';
         }, 1500);
 
-        let thePageWidth = window.innerWidth
 
 
         let ThesliderImg = document.querySelectorAll(".slider")
-        if (thePageWidth >= 1000) {
+        let thePageWidth = window.innerWidth
 
+        if (thePageWidth >= 1000) {
             return AccueilContainer.addEventListener('scroll', (event) => {
                 let TheScrollTop = AccueilContainer.scrollTop;
                 let TheScrollHeight = AccueilContainer.scrollHeight;
@@ -81,7 +81,6 @@ function Accueil({ GetImageToApp }) {
 
     const GetImageOnApp = (theimage, title, date, link) => {
         GetImageToApp(theimage, title, date, link);
-        // console.log('#Accueil');
     }
 
     return (
@@ -138,6 +137,9 @@ function Accueil({ GetImageToApp }) {
                 <Link className='nos_réalisations' to={'./Traveaux'}>
                     Nos Réalisations   <ion-icon name="arrow-forward-outline"></ion-icon>
                 </Link>
+                <div className='galerie_container'>
+                    Galerie
+                </div>
             </section>
             <TheGallery GetImageOnAccueil={GetImageOnApp} />
         </div >
@@ -181,8 +183,8 @@ function AccueilSlider() {
 
         AllDot[0].classList.add('ativeDot')
         let theCourentSlide = 0
-        let windowWidth = window.innerWidth;
 
+        let windowWidth = window.innerWidth;
         if (windowWidth >= 1000) {
             console.log(windowWidth);
             setInterval(function () {
@@ -235,7 +237,6 @@ function Slider({ giveSliderKey, title, date, theKey }) {
             <div className='slider_date'>
                 {date}
             </div>
-
         </div>
     );
 }

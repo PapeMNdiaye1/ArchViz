@@ -1553,6 +1553,14 @@
   bottom: -.2em;
 }
 
+#Accueil .galerie_presantation .galerie_container {
+  width: 100%;
+  padding-left: 10vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
 #Accueil .the_galerie_presantation_container {
   width: 100%;
   height: auto;
@@ -1881,11 +1889,14 @@
     grid-row: 2 / 2;
   }
   #Accueil .galerie_presantation {
-    height: 7em;
+    height: 10em;
   }
   #Accueil .galerie_presantation .nos_réalisations {
     padding-left: 1em;
     font-size: .8em;
+  }
+  #Accueil .galerie_presantation .galerie_container {
+    font-size: 1.3em;
   }
   #Accueil .the_galerie_container {
     -ms-grid-columns: 1fr;

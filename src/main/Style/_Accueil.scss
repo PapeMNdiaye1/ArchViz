@@ -19,7 +19,6 @@
         overflow: hidden;
         background-color: var(--colorX);
 
-
         .slider {
             background-position: inherit;
             background-size: 100%;
@@ -352,6 +351,15 @@
                 bottom: -.2em;
             }
         }
+
+        .galerie_container {
+            width: 100%;
+            // background-color: skyblue;
+            padding-left: 10vw;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2em
+        }
     }
 
     //!#####################################################################
@@ -521,6 +529,7 @@
                     font-size: .9em;
                     margin-left: 0vw;
                 }
+
             }
         }
 
@@ -563,7 +572,6 @@
                 }
 
                 .info_container {
-
                     .title {
                         font-size: 1.3em;
                         width: 90%;
@@ -599,13 +607,11 @@
                     grid-column: 1 / 1;
                     grid-row: 2 / 2;
                 }
-
             }
 
             .left {
                 grid-template-columns: 1fr;
                 grid-template-rows: repeat(2, 1fr);
-                // background-color: salmon;
 
                 .image_container {
                     grid-column: 1 / 1;
@@ -621,11 +627,15 @@
 
         //!#####################################################################
         .galerie_presantation {
-            height: 7em;
+            height: 10em;
 
             .nos_réalisations {
                 padding-left: 1em;
                 font-size: .8em;
+            }
+
+            .galerie_container {
+                font-size: 1.3em
             }
         }
 
