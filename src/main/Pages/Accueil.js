@@ -91,7 +91,7 @@ function Accueil({ GetImageToApp }) {
                     Qui Sommes-nous ?
                 </h2>
                 <p>
-                    ArchViz est un studio de visualisation architecturale, nous créons des images et animations Photoréalistes pour les architectes, les designers, les promoteurs immobiliers etc...                </p>
+                    ArchViz est un studio de visualisation architecturale, nous créons des images et animations Photoréalismes pour architectes, designers, promoteurs immobiliers etc...                              </p>
                 <div className='network_container'>
                     <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
                         <div className="network">
