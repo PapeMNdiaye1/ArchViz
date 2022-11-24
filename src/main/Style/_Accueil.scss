@@ -17,7 +17,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         overflow: hidden;
-        background-color: var(--colorX);
+        // background-color: var(--colorX);
 
         .slider {
             background-position: inherit;
@@ -325,6 +325,7 @@
 
     }
 
+
     //!#####################################################################
     .galerie_presantation {
         height: 15em;
@@ -368,7 +369,8 @@
         height: auto;
         @include cent();
         flex-wrap: wrap;
-        background-color: aqua;
+        // background-color: aqua;
+        background-color: var(--colorX);
 
         img {
             width: 60%;

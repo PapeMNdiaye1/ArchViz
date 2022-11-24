@@ -1090,7 +1090,6 @@
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   overflow: hidden;
-  background-color: var(--colorX);
 }
 
 #Accueil .Accueil_Slider .slider {
@@ -1575,7 +1574,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: aqua;
+  background-color: var(--colorX);
 }
 
 #Accueil .the_galerie_presantation_container img {
