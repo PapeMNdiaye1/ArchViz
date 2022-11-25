@@ -480,11 +480,19 @@ function TheFooter({ }) {
                         <ion-icon name="logo-instagram"></ion-icon>
                     </div>
                 </a>
+
                 <a href="mailto:archviz.sn@gmail.com?subject=Message provenant de ArchViz.sn" target="_blank">
                     <div className="network">
                         <ion-icon name="mail-outline"></ion-icon>
                     </div>
                 </a>
+
+                <a href="https://www.linkedin.com/company/archviz-sn/" target="_blank">
+                    <div className="network">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </div>
+                </a>
+
                 <a href="https://www.facebook.com/ARVHVIZ/" target="_blank">
                     <div className="network">
                         <ion-icon name="logo-facebook"></ion-icon>

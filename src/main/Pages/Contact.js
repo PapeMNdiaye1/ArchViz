@@ -40,9 +40,9 @@ function Contacts() {
                     title2={<div className="network">@arch_viz_sn</div>}
 
                 />
-                <OneSection link={'https://www.linkedin.com/in/pape-momar-ndiaye-37b862199/'}
+                <OneSection link={'https://www.linkedin.com/company/archviz-sn/'}
                     title={<div className="network"><ion-icon name="logo-linkedin"></ion-icon>LINKEDIN</div>}
-                    title2={<div className="network">in/pape-momar-ndiaye</div>}
+                    title2={<div className="network">in/Archviz</div>}
 
                 />
                 <OneSection link={'https://www.facebook.com/ARVHVIZ/'}
@@ -54,6 +54,8 @@ function Contacts() {
                     title={<div className="network"><ion-icon name="mail-outline"></ion-icon>MAIL</div>}
                     title2={<div className="network">archviz.sn@gmail.com</div>}
                 />
+
+
             </div>
         </div>
     );
