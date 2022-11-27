@@ -68,7 +68,7 @@ function Traveaux() {
 
                 <OneBigProject title={'Visualisation de Façade d\'Immeuble'} image={ImageProjectB1}
                     description={"Nous avons une grande expérience dans l’agencement de bureaux. Quel que soit la typologie, sa vocation, sa stratégie et son positionnement."}
-                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={6} link={'/Immeuble1'} side={'right'} />
+                    color={'#EAEAEA'} textcolor={'#222'} theKey={6} link={'/Immeuble1'} side={'right'} />
 
                 <OneBigProject title={'La 3D dans le domaine des Industries'} image={ImageProjectF2}
                     description={"Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}

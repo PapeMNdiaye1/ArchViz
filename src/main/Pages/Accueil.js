@@ -130,7 +130,7 @@ function Accueil({ GetImageToApp }) {
 
                 <OneBigProject title={"Visualisation de Façade d'Immeuble"} image={ImageProjectB1}
                     description={'Nous avons une grande expérience dans l’agencement de bureaux. Quel que soit la typologie, sa vocation, sa stratégie et son positionnement.'}
-                    color={'#182B38'} textcolor={'#f1f1f1'} theKey={5} side={'right'} link={'/Immeuble1'} />
+                    color={'#EAEAEA'} textcolor={'#222'} theKey={5} side={'right'} link={'/Immeuble1'} />
 
             </section>
             <section className='galerie_presantation'>
