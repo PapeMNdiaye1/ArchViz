@@ -64,7 +64,7 @@ function Touba({ }) {
 
                 <div className='project_display'>
                     <h1 className='project_title'>
-                        Maquettete de la Grande Mosquée de Touba
+                        Maquette de la Grande Mosquée de Touba
                     </h1>
                     <h3 className='project_description'>
                         par Pape Momar Ndiaye | 09 Mars, 2022 |
@@ -73,8 +73,11 @@ function Touba({ }) {
                         Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.
                     </p>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt=' Maquettete de la Grande Mosquée de Touba - 1' />
+                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt=' Maquette de la Grande Mosquée de Touba - 1' />
                     </div>
+                    <h1 className='project_title'>
+                        Création
+                    </h1>
                     <div className='the_video'>
                         <iframe width="100%" height="100%"
                             src="https://www.youtube.com/embed/uSlNYZqbRIQ"
@@ -85,10 +88,10 @@ function Touba({ }) {
                         </iframe>
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC2} width='100%' alt=' Maquettete de la Grande Mosquée de Touba - 2' />
+                        <img onClick={displayImage} src={ImageProjectC2} width='100%' alt=' Maquette de la Grande Mosquée de Touba - 2' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC3} width='100%' alt=' Maquettete de la Grande Mosquée de Touba - 3' />
+                        <img onClick={displayImage} src={ImageProjectC3} width='100%' alt=' Maquette de la Grande Mosquée de Touba - 3' />
                     </div>
                 </div>
             </div>

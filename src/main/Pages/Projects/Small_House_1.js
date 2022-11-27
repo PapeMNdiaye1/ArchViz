@@ -73,7 +73,7 @@ function SmallHouse1({ }) {
                         par Pape Momar Ndiaye | Juin 6, 2022 |
                     </h3>
                     <p>
-                        Des designs Modernes, épurés, minimalistes etc… nous mettons en  œuvres différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives.
+                        Des designs Modernes, épurés, minimalistes etc… nous mettons en œuvres différentes approches pour une optimisation de vos espaces extérieurs et intérieurs.
                     </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />

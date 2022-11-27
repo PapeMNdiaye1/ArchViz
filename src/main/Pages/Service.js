@@ -72,8 +72,8 @@ function Services() {
                     </p>}
                 TheGalerieElements={
                     <div className='project_container'>
-                        <OneGalerieElement image={ImageProjectD1} title={'Maquettete de la Grande Mosquée de Touba'} link={'/Touba'} date={'09 Mars, 2022'} />
-                        <OneGalerieElement image={ImageProjectF2} title={'Maquettete "Hangar Photovoltaïque"'} link={'/Hangar1'} date={'29 Juin , 2021'} />
+                        <OneGalerieElement image={ImageProjectD1} title={'Maquette de la Grande Mosquée de Touba'} link={'/Touba'} date={'09 Mars, 2022'} />
+                        <OneGalerieElement image={ImageProjectF2} title={'Maquette "Hangar Photovoltaïque"'} link={'/Hangar1'} date={'29 Juin , 2021'} />
                     </div>
                 } color={'#EBEBEB'}
             />

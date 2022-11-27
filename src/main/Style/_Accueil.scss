@@ -17,7 +17,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         overflow: hidden;
-        // background-color: var(--colorX);
 
         .slider {
             background-position: inherit;
@@ -32,7 +31,7 @@
             opacity: 0;
             transition-duration: 1s, 0s;
             transition-property: opacity, background-position-y;
-            background-color: var(--colorX);
+            // background-color: var(--colorX);
 
             .slider_title {
                 width: 55%;

@@ -46,11 +46,11 @@ function Traveaux() {
             </section>
             <section className='AccueilBigProjectsSection'>
 
-                <OneBigProject title={'Maquettete de la Grande Mosquée de Touba'} image={ImageProjectD3}
+                <OneBigProject title={'Maquette de la Grande Mosquée de Touba'} image={ImageProjectD3}
                     description={'Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.'}
                     color={'#DB9B18'} textcolor={'#222'} theKey={1} link={'/Touba'} side={'left'} />
 
-                <OneBigProject title={'Manufacture des Arts Décoratifs de Thiés'} image={ImageProjectG1}
+                <OneBigProject title={'Expériences de réalité virtuelle'} image={ImageProjectG1}
                     description={"Expériences de réalité virtuelle réalisé pour la M.S.A.D de Thiés. Nous pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={2} link={'/MSAD'} side={'right'} />
 
@@ -59,7 +59,7 @@ function Traveaux() {
                     color={'#F1F1F1'} textcolor={'#222'} theKey={3} link={'/Interior1'} side={'left'} />
 
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
-                    description={"Des designs Modernes, épurés, minimalistes etc… nous mettons en  œuvres différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}
+                    description={"Des designs Modernes, épurés, minimalistes etc… nous mettons en  œuvres différentes approches pour une optimisation de vos espaces extérieurs et intérieurs."}
                     color={'#93A490'} textcolor={'#222'} theKey={4} link={'/SmallHouse1'} side={'right'} />
 
                 <OneBigProject title={'Design pour les Commerces'} image={ImageProjectE4}

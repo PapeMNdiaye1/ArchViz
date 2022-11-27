@@ -80,12 +80,30 @@ function Interior1({ }) {
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' />
                     </div>
+                    <h1 className='project_title'>
+                        Animation                    </h1>
                     <div className='the_video'>
                         <iframe width="100%"
                             height="100%"
-                            src="https://www.youtube.com/embed/GyZaKbQtU94"
+                            src="https://www.youtube.com/embed/hci-BMwTmCU"
                             title="Interior Design"
                             // frameborder="0"
+                            allow="accelerometer; 
+                            autoplay; clipboard-write;
+                            encrypted-media; gyroscope;
+                            picture-in-picture"
+                            allowfullscreen>
+
+                        </iframe>
+                    </div>
+                    <h1 className='project_title'>
+                        Création
+                    </h1>
+                    <div className='the_video the_video_2 '>
+                        <iframe width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/Xtg9qROxy34"
+                            title="Interior Design"
                             allow="accelerometer; 
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;

@@ -62,7 +62,7 @@ function Hangar_1({ }) {
 
                 <div className='project_display'>
                     <h1 className='project_title'>
-                        Maquettete Hangar Photovoltaïque
+                        Maquette Hangar Photovoltaïque
                     </h1>
                     <h3 className='project_description'>
                         par Pape Momar Ndiaye | 09 Juin, 2021 |
@@ -70,16 +70,16 @@ function Hangar_1({ }) {
                     <p>
                         Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.                    </p>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC2} width='100%' alt=' Maquettete Hangar Photovoltaïque - 1' />
+                        <img onClick={displayImage} src={ImageProjectC2} width='100%' alt=' Maquette Hangar Photovoltaïque - 1' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC4} width='100%' alt=' Maquettete Hangar Photovoltaïque - 2' />
+                        <img onClick={displayImage} src={ImageProjectC4} width='100%' alt=' Maquette Hangar Photovoltaïque - 2' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC3} width='100%' alt=' Maquettete Hangar Photovoltaïque - 3' />
+                        <img onClick={displayImage} src={ImageProjectC3} width='100%' alt=' Maquette Hangar Photovoltaïque - 3' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt=' Maquettete Hangar Photovoltaïque - 4' />
+                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt=' Maquette Hangar Photovoltaïque - 4' />
                     </div>
                 </div>
             </div>
