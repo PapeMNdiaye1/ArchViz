@@ -73,8 +73,7 @@ function SmallHouse1({ }) {
                         par Pape Momar Ndiaye | Juin 6, 2022 |
                     </h3>
                     <p>
-                        Des designs Modernes, épurés, minimalistes etc… nous mettons en œuvres différentes approches pour une optimisation de vos espaces extérieurs et intérieurs.
-                    </p>
+                        Des designs Modernes, épurés, minimalistes etc.… nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives.                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />
                     </div>
@@ -94,32 +93,6 @@ function SmallHouse1({ }) {
                         <img onClick={displayImage} src={ImageProjectC5} width='100%' />
                     </div>
                 </div>
-
-                {/* <div className='tools'>
-                    <h1 className='theToolsTitle'>
-                        Tools
-                    </h1>
-                    <div
-                        style={{
-                            backgroundImage: `url('${blender}')`,
-                        }}
-                        className='theToolsIcon1'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${unreal}')`,
-                            backgroundSize: `85%`,
-                        }}
-                        className='theToolsIcon2'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${photoShop}')`,
-                            backgroundSize: `80%`,
-                        }}
-                        className='theToolsIcon3'>
-                    </div>
-                </div> */}
             </div>
         </Fragment>
     );

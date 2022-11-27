@@ -40,7 +40,7 @@ function Services() {
             <OneService theServiceTitle={'Visualisations 3D "Rendus Images et Animations"'}
                 theServiceDescription={
                     <p>
-                        Nos services en conception Visualisations 3D comprennent la création d'images fixes et d'animations. Grâce à ceux-ci, nous aidons nos clients à transmettre leur vision et à façonner les environnement de demain.
+                        Nos services en conception Visualisations 3D comprennent la création d'images fixes et d'animations. Grâce à ceux-ci, nous aidons nos clients à transmettre leur vision et à façonner les environnements de demain.
                     </p>
                 }
                 TheGalerieElements={
@@ -56,7 +56,8 @@ function Services() {
                 theServiceTitle={'Réalité Virtuel et Experience 3D Web'}
                 theServiceDescription={
                     <p>
-                        Nous donnons plus de vie a vos projets immobiliers avec la technologie de réalité virtuelle en produisant des rendus 3D immersives permettant de visiter les espaces comme si vous y étiez.                    </p>}
+                        Nous donnons plus de vie à vos projets immobiliers avec la technique de réalité virtuelle en produisant des rendus 3D immersifs permettant de visiter les espaces comme si vous y étiez.
+                    </p>}
                 TheGalerieElements={
                     <div className='project_container'>
                         <OneGalerieElement image={ImageProjectC1} title={'Interior Design'} link={'/Interior1'} date={'03 Juin, 2022'} />
@@ -68,7 +69,7 @@ function Services() {
                 theServiceTitle={'Création de Maquettes'}
                 theServiceDescription={
                     <p>
-                        Le rendu et l'animation avec des temps de production de plus en plus rapides ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.
+                        Le rendu et l'animation avec des temps de production de plus en plus rapide ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.
                     </p>}
                 TheGalerieElements={
                     <div className='project_container'>

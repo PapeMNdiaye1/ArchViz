@@ -75,7 +75,7 @@ function Pharmacie1({ }) {
                         par Pape Momar Ndiaye | 27 Mai, 2022 |
                     </h3>
                     <p>
-                        Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Nous avons un grand savoir-faire quel que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement.                    </p>
+                        Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Quelle que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement.                                        </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC5} width='100%' alt='  Pharmacie Design - 1' />
                     </div>

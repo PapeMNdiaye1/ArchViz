@@ -67,7 +67,7 @@ function MSAD({ }) {
                         par Pape Momar Ndiaye | Juin 09, 2022 |
                     </h3>
                     <p>
-                        Expériences de réalité virtuelle réalisé pour la M.S.A.D de Thiés. <br /> Nous pouvons vous aider à améliorer vos ventes avec cette technologie en constante évolution.
+                        Expériences de réalité virtuelle réalisées pour la M.S.A.D de Thiès. <br />Nous pouvons vous aider à améliorer vos ventes avec cette technique en constante évolution.
                     </p>
 
                     <a className='the_links' href='https://papemndiaye1.github.io/MSAT-WebSite/' target="_blank">
@@ -84,32 +84,6 @@ function MSAD({ }) {
                     </div>
 
                 </div>
-
-                {/* <div className='tools'>
-                    <h1 className='theToolsTitle'>
-                        Tools
-                    </h1>
-                    <div
-                        style={{
-                            backgroundImage: `url('${blender}')`,
-                        }}
-                        className='theToolsIcon1'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${unreal}')`,
-                            backgroundSize: `85%`,
-                        }}
-                        className='theToolsIcon2'>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url('${photoShop}')`,
-                            backgroundSize: `80%`,
-                        }}
-                        className='theToolsIcon3'>
-                    </div>
-                </div> */}
             </div>
         </Fragment >
     );
