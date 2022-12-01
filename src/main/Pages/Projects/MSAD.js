@@ -71,7 +71,7 @@ function MSAD({ }) {
                     </p>
 
                     <a className='the_links' href='https://papemndiaye1.github.io/MSAT-WebSite/' target="_blank">
-                        Voir le site Web <ion-icon name="arrow-forward-outline"></ion-icon>
+                        Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' />

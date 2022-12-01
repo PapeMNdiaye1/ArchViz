@@ -20,6 +20,30 @@
         grid-template-columns: 1fr;
         padding-bottom: 2em;
 
+        a {
+            margin-bottom: 2em;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .8em;
+            font-weight: 800;
+            width: 12em;
+            height: 2em;
+            @include cent();
+            border: .1em solid #000;
+            border-radius: .3em;
+            text-decoration: none;
+            color: var(--colorX);
+
+            &:hover {
+                transform: scale(1.02);
+            }
+
+            ion-icon {
+                font-size: 1.2em;
+                // bottom: -.1em;
+            }
+
+        }
+
         .the_video {
             width: 60vw;
             height: 45vw;

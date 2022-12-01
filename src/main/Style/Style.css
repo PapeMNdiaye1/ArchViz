@@ -1462,6 +1462,10 @@
   bottom: -.2em;
 }
 
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link:nth-child(2) {
+  margin-right: 2em;
+}
+
 #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .bar {
   height: .15em;
   width: 8em;
@@ -2067,6 +2071,10 @@
 
 #Traveaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link ion-icon {
   bottom: -.2em;
+}
+
+#Traveaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link:nth-child(2) {
+  margin-right: 2em;
 }
 
 #Traveaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .bar {
@@ -3100,6 +3108,37 @@
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   padding-bottom: 2em;
+}
+
+.Interior_1_container .project_display a {
+  margin-bottom: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+  font-weight: 800;
+  width: 12em;
+  height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: .1em solid #000;
+  border-radius: .3em;
+  text-decoration: none;
+  color: var(--colorX);
+}
+
+.Interior_1_container .project_display a:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.Interior_1_container .project_display a ion-icon {
+  font-size: 1.2em;
 }
 
 .Interior_1_container .project_display .the_video {

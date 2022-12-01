@@ -77,6 +77,10 @@ function Interior1({ }) {
                     <p>
                         À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur, nous vous aidons dans l’aménagement de vos espaces.Du design moderne au traditionnelle, minimaliste etc.nous modélisons espaces, mobiliers et décors intérieurs afin de vous assurer de toute la commodité et de l’esthétique qu’auront vos projets avant leur réalisation.
                     </p>
+
+                    <a className='the_links' href='https://papemndiaye1.github.io/MSAT-WebSite/' target="_blank">
+                        Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' />
                     </div>

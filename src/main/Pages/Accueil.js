@@ -114,23 +114,23 @@ function Accueil({ GetImageToApp }) {
             <section className='AccueilBigProjectsSection'>
                 <OneBigProject title={'Décoration Intérieur'} image={ImageProjectC3}
                     description={"À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur . Nous vous aidons dans l’aménagement de vos espaces. Du design moderne au traditionnelle, minimaliste etc..."}
-                    color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'right'} link={'/Interior1'} />
+                    color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'right'} link={'/Interior1'} The_Experience={true} The_Experience_Link={'https://papemndiaye1.github.io/ArchViz_Interior_Design_1/'} />
 
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
                     description={"Des designs Modernes, épurés, minimalistes etc.… nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs.Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives.                    "}
-                    color={'#93A490'} textcolor={'#222'} theKey={2} side={'left'} link={'/SmallHouse1'} />
+                    color={'#93A490'} textcolor={'#222'} theKey={2} side={'left'} The_Experience={false} link={'/SmallHouse1'} />
 
                 <OneBigProject title={'Design pour les Commerces'} image={ImageProjectE3}
                     description={'Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Quelle que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement.'}
-                    color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} link={'/Pharmacie1'} />
+                    color={'#F4EFE4'} textcolor={'#222'} theKey={3} side={'right'} The_Experience={false} link={'/Pharmacie1'} />
 
                 <OneBigProject title={'La 3D dans le domaine des Industries'} image={ImageProjectF2}
                     description={"Le rendu et l'animation avec des temps de production de plus en plus rapide ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}
-                    color={'#F1F1F1'} textcolor={'#222'} theKey={4} link={'/Hangar1'} side={'left'} />
+                    color={'#F1F1F1'} textcolor={'#222'} theKey={4} The_Experience={false} link={'/Hangar1'} side={'left'} />
 
                 <OneBigProject title={"Visualisation de Façade d'Immeuble"} image={ImageProjectB1}
                     description={'Nous avons une grande expérience dans l’agencement de bureaux. Quel que soit la typologie, sa vocation, sa stratégie et son positionnement.'}
-                    color={'#EAEAEA'} textcolor={'#222'} theKey={5} side={'right'} link={'/Immeuble1'} />
+                    color={'#EAEAEA'} textcolor={'#222'} theKey={5} side={'right'} The_Experience={false} link={'/Immeuble1'} />
 
             </section>
             <section className='galerie_presantation'>
@@ -315,7 +315,7 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
     );
 }
 //!###############################################################
-function OneBigProject({ color, title, description, side, textcolor, theKey, image, link }) {
+function OneBigProject({ color, title, description, side, textcolor, theKey, image, link, The_Experience, The_Experience_Link }) {
     const [TheSide, setTheSide] = useState('');
 
     useEffect(() => {
@@ -330,7 +330,6 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
             {TheSide === "right" ? (
                 <section className="One_Project_In_Home right">
                     <div
-
                         style={{
                             color: textcolor,
                         }}
@@ -357,6 +356,19 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                                 }} to={link}>
                                 Voir plus  <ion-icon name="arrow-forward-outline"></ion-icon>
                             </Link>
+                            {The_Experience ? (
+                                <a
+                                    style={{
+                                        color: textcolor,
+                                        border: `.1em solid ${textcolor}`
+                                    }}
+                                    className='the_link' href={The_Experience_Link} target="_blank" >
+
+                                    Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            ) : (
+                                <div></div>
+                            )}
                         </p>
                     </div>
                     <div
@@ -399,6 +411,19 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
 
                                 Voir plus  <ion-icon name="arrow-forward-outline"></ion-icon>
                             </Link>
+                            {The_Experience ? (
+                                <a
+                                    style={{
+                                        color: textcolor,
+                                        border: `.1em solid ${textcolor}`
+                                    }}
+                                    className='the_link' href={The_Experience_Link} target="_blank" >
+
+                                    Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            ) : (
+                                <div></div>
+                            )}
                         </p>
                     </div>
                     <div
