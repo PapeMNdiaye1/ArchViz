@@ -52,9 +52,9 @@ function App() {
             <Route exact path="/"
               element={<Accueil GetImageToApp={GetImage} />}
             />
-            <Route exact path="/ArchViz/"
+            {/* <Route exact path="/ArchViz/"
               element={<Accueil GetImageToApp={GetImage} />}
-            />
+            /> */}
             <Route exact path="/Traveaux" element={<Traveaux />} />
             <Route exact path="/Service" element={<Service />} />
             <Route exact path="/Contact" element={<Contact />} />
