@@ -461,7 +461,7 @@ function TheFooter({ }) {
             <div className='titles'>Reseaux</div>
             <div className='titles'>Createur</div>
 
-            <a href="https://warm-bienenstitch-a73023.netlify.app/" target="_blank"
+            <a href="https://pape-momar-ndiaye-portfolio.netlify.app/" target="_blank"
                 className='portfolio_link'>Voir le portfolio <ion-icon name="arrow-forward-outline"></ion-icon></a>
 
             <p className='archviz_description'>
