@@ -88,7 +88,7 @@ function Accueil({ GetImageToApp }) {
             <AccueilSlider />
             <section className='archviz_presantation' >
                 <h2 className='qui_somme_nous' >
-                    Qui Sommes-nous ?
+                    Qui sommes-nous ?
                 </h2>
                 <p>
                     ArchViz est un studio de visualisation architecturale, nous créons des images et animations Photoréalismes pour architectes, designers, promoteurs immobiliers etc...                              </p>
