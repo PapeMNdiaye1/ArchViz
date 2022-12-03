@@ -113,11 +113,11 @@ function Accueil({ GetImageToApp }) {
             </section>
             <section className='AccueilBigProjectsSection'>
                 <OneBigProject title={'Décoration Intérieur'} image={ImageProjectC3}
-                    description={"À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur . Nous vous aidons dans l’aménagement de vos espaces. Du design moderne au traditionnelle, minimaliste etc..."}
+                    description={"À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur. Nous vous aidons dans l’aménagement de vos espaces. Du design moderne au traditionnelle, minimaliste etc..."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={1} side={'right'} link={'/Interior1'} The_Experience={true} The_Experience_Link={'https://papemndiaye1.github.io/ArchViz_Interior_Design_1/'} />
 
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
-                    description={"Des designs Modernes, épurés, minimalistes etc.… nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs.Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives.                    "}
+                    description={"Nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}
                     color={'#93A490'} textcolor={'#222'} theKey={2} side={'left'} The_Experience={false} link={'/SmallHouse1'} />
 
                 <OneBigProject title={'Design pour les Commerces'} image={ImageProjectE3}

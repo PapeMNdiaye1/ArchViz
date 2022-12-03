@@ -169,7 +169,7 @@
 }
 
 .App .App_container .the_footer {
-  width: calc(100% - 10em);
+  width: calc(97% - 10em);
   height: 40em;
   display: -ms-grid;
   display: grid;
@@ -185,6 +185,10 @@
   font-size: 1em;
   font-weight: 800;
   color: var(--color0);
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 1em;
 }
 
 .App .App_container .the_footer .logo-container {
@@ -571,6 +575,8 @@
     padding-left: 0em;
     padding-right: 0em;
     padding-top: 1em;
+    margin: 0;
+    border-radius: 0em;
   }
   .App .App_container .the_footer .logo-container {
     width: 5em;
