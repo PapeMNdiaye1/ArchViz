@@ -2,7 +2,6 @@ import './Style/Style.css';
 import { React, useState } from 'react';
 import { Routes, BrowserRouter, Route, } from "react-router-dom";
 
-
 import TopBare from './TopBare';
 import { Accueil } from './Pages/Accueil';
 import { TheFooter } from './Pages/Accueil';
@@ -16,8 +15,12 @@ import SmallHouse1 from './Pages/Projects/Small_House_1';
 import Hangar1 from './Pages/Projects/Hangar_1';
 import Touba from './Pages/Projects/Touba';
 import Pharmacie1 from './Pages/Projects/Pharmacie_1';
+import Pharmacie2 from './Pages/Projects/Pharmacie_2';
+import Pharmacie3 from './Pages/Projects/Pharmacie_3';
 import Immeuble1 from './Pages/Projects/Immeuble_1';
 import MSAD from './Pages/Projects/MSAD';
+import Villa from './Pages/Projects/Villa_A';
+import VillaB from './Pages/Projects/Villa_B';
 
 function App() {
 
@@ -52,9 +55,6 @@ function App() {
             <Route exact path="/"
               element={<Accueil GetImageToApp={GetImage} />}
             />
-            {/* <Route exact path="/ArchViz/"
-              element={<Accueil GetImageToApp={GetImage} />}
-            /> */}
             <Route exact path="/Traveaux" element={<Traveaux />} />
             <Route exact path="/Service" element={<Service />} />
             <Route exact path="/Contact" element={<Contact />} />
@@ -70,8 +70,12 @@ function App() {
             <Route exact path="/Hangar1" element={<Hangar1 />} />
             <Route exact path="/Touba" element={<Touba />} />
             <Route exact path="/Pharmacie1" element={<Pharmacie1 />} />
+            <Route exact path="/Pharmacie2" element={<Pharmacie2 />} />
+            <Route exact path="/Pharmacie3" element={<Pharmacie3 />} />
             <Route exact path="/Immeuble1" element={<Immeuble1 />} />
             <Route exact path="/MSAD" element={<MSAD />} />
+            <Route exact path="/Villa" element={<Villa />} />
+            <Route exact path="/VillaB" element={<VillaB />} />
           </Routes>
           <TheFooter />
         </div>

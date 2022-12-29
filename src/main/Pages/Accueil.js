@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 import ImageProjectA1 from '../Style/Images/Project/Exterior-1.jpg';
 import ImageProjectA2 from '../Style/Images/Project/Exterior-2.jpg';
-import ImageProjectA4 from '../Style/Images/Project/Exterior-4.jpg';
-import ImageProjectA5 from '../Style/Images/Project/Exterior-5.jpg';
+// import ImageProjectA4 from '../Style/Images/Project/Exterior-4.jpg';
+// import ImageProjectA5 from '../Style/Images/Project/Exterior-5.jpg';
 
 import ImageProjectB1 from '../Style/Images/Project/Immeuble-1.jpg';
 import ImageProjectB2 from '../Style/Images/Project/Immeuble-2.jpg';
@@ -14,8 +14,8 @@ import ImageProjectC2 from '../Style/Images/Project/Interior-1-2.jpg';
 import ImageProjectC3 from '../Style/Images/Project/Interior-1-3.jpg';
 import ImageProjectC4 from '../Style/Images/Project/Interior-1-4.jpg';
 import ImageProjectC5 from '../Style/Images/Project/Interior-1-5.jpg';
-import ImageProjectC6 from '../Style/Images/Project/Interior-1-6.jpg';
-import ImageProjectC7 from '../Style/Images/Project/Interior-1-7.jpg';
+// import ImageProjectC6 from '../Style/Images/Project/Interior-1-6.jpg';
+// import ImageProjectC7 from '../Style/Images/Project/Interior-1-7.jpg';
 
 import ImageProjectD1 from '../Style/Images/Project/NFT-1.jpg';
 
@@ -23,17 +23,38 @@ import ImageProjectE1 from '../Style/Images/Project/Pharmacie-1.jpg';
 import ImageProjectE2 from '../Style/Images/Project/Pharmacie-2.jpg';
 import ImageProjectE3 from '../Style/Images/Project/Pharmacie-3.jpg';
 import ImageProjectE4 from '../Style/Images/Project/Pharmacie-4.jpg';
-import ImageProjectE5 from '../Style/Images/Project/Pharmacie-5.jpg';
+// import ImageProjectE5 from '../Style/Images/Project/Pharmacie-5.jpg';
 import ImageProjectE6 from '../Style/Images/Project/Pharmacie-6.jpg';
-import ImageProjectE7 from '../Style/Images/Project/Pharmacie-7.jpg';
-import ImageProjectE9 from '../Style/Images/Project/Pharmacie-9.jpg';
+// import ImageProjectE7 from '../Style/Images/Project/Pharmacie-7.jpg';
+// import ImageProjectE9 from '../Style/Images/Project/Pharmacie-9.jpg';
 
-import ImageProjectF1 from '../Style/Images/Project/Hangar-1.jpg';
+// import ImageProjectF1 from '../Style/Images/Project/Hangar-1.jpg';
 import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
 import ImageProjectF3 from '../Style/Images/Project/Hangar-3.jpg';
 
 import ImageProjectG2 from '../Style/Images/Project/MSAD_2.jpg';
-import ImageProjectG3 from '../Style/Images/Project/MSAD_3.jpg';
+// import ImageProjectG3 from '../Style/Images/Project/MSAD_3.jpg';
+
+import ImageProjectH1 from '../Style/Images/Project/Villa_A-1.jpg';
+import ImageProjectH2 from '../Style/Images/Project/Villa_A-2.jpg';
+import ImageProjectH3 from '../Style/Images/Project/Villa_A-3.jpg';
+
+// import ImageProjectI1 from '../Style/Images/Project/Villa_B-1.jpg';
+import ImageProjectI2 from '../Style/Images/Project/Villa_B-2.jpg';
+import ImageProjectI3 from '../Style/Images/Project/Villa_B-3.jpg';
+import ImageProjectI4 from '../Style/Images/Project/Villa_B-4.jpg';
+
+import ImageProjectJ1 from '../Style/Images/Project/Pharmacie_B-1.jpg';
+// import ImageProjectJ2 from '../Style/Images/Project/Pharmacie_B-2.jpg';
+// import ImageProjectJ3 from '../Style/Images/Project/Pharmacie_B-3.jpg';
+// import ImageProjectJ4 from '../Style/Images/Project/Pharmacie_B-4.jpg';
+// import ImageProjectJ5 from '../Style/Images/Project/Pharmacie_B-5.jpg';
+
+// import ImageProjectK1 from '../Style/Images/Project/Pharmacie_C-1.jpg';
+import ImageProjectK2 from '../Style/Images/Project/Pharmacie_C-2.jpg';
+import ImageProjectK3 from '../Style/Images/Project/Pharmacie_C-3.jpg';
+// import ImageProjectK4 from '../Style/Images/Project/Pharmacie_C-4.jpg';
+import ImageProjectK5 from '../Style/Images/Project/Pharmacie_C-5.jpg';
 
 
 
@@ -249,35 +270,37 @@ function TheGallery({ GetImageOnAccueil }) {
 
     return (
         <div className="the_galerie_container">
+
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC3} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE3} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Design de Maison Moderne'} date={'15 avril, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE5} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie2'} image={ImageProjectJ1} title={'Design pour les Commerces'} date={'27 Mai, 2012'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/VillaB'} image={ImageProjectI2} title={'Villa Fatou'} date={'06 Juin, 2014'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/VillaB'} image={ImageProjectI4} title={'Villa Fatou'} date={'06 Juin, 2014'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Villa'} image={ImageProjectH2} title={'Immeuble Thiès Grand Standing'} date={'15 Avril, 2022'} />
 
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Touba'} image={ImageProjectD1} title={'Maquette de la Grande Mosquée de Touba'} date={'09 Mars, 2022'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE1} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/Immeuble1'} image={ImageProjectB2} title={"Visualisation Exterieur d'Immeuble"} date={'23 Mars, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie3'} image={ImageProjectK3} title={'Pharmacie Martin Luther King'} date={'07 Mai, 2013'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie3'} image={ImageProjectK2} title={'Pharmacie Martin Luther King'} date={'07 Mai, 2013'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC4} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF1} title={'Maquette Hangar Photovoltaïque'} date={'29 Juin , 2021'} />
 
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE4} title={'Décoration Interieur'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Villa'} image={ImageProjectH3} title={'Immeuble Thiès Grand Standing'} date={'06 Juin, 2012'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA2} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC2} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC7} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC5} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
 
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA4} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE7} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE9} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Immeuble1'} image={ImageProjectB2} title={"Visualisation Exterieur d'Immeuble"} date={'23 Mars, 2022'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE2} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Design de Maison Moderne'} date={'15 avril, 2022'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Hangar1'} image={ImageProjectF3} title={'Maquette Hangar Photovoltaïque'} date={'29 Juin, 2021'} />
 
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE6} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC6} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG3} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE3} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/VillaB'} image={ImageProjectI3} title={'Villa Fatou'} date={'06 Juin, 2014'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC1} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA5} title={'Design de Maison Moderne'} date={'15 Avril, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie3'} image={ImageProjectK5} title={'Pharmacie Martin Luther King'} date={'07 Mai, 2013'} />
+
         </div>
     );
 }

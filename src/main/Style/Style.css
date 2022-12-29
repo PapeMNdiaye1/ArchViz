@@ -3634,6 +3634,170 @@
   }
 }
 
+.Pharmacie_2_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+
+.Pharmacie_2_container .project_display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[10];
+      grid-template-rows: repeat(10, auto);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+
+.Pharmacie_2_container .project_display .project_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: .2em;
+}
+
+.Pharmacie_2_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.Pharmacie_2_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+}
+
+.Pharmacie_2_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Pharmacie_1_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Pharmacie_1_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Pharmacie_1_container .project_display .project_description {
+    font-size: .7em;
+  }
+  .Pharmacie_1_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Pharmacie_1_container .project_display p {
+    width: 80vw;
+  }
+}
+
+.Pharmacie_3_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+
+.Pharmacie_3_container .project_display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[10];
+      grid-template-rows: repeat(10, auto);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+
+.Pharmacie_3_container .project_display .project_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: .2em;
+}
+
+.Pharmacie_3_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.Pharmacie_3_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+}
+
+.Pharmacie_3_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Pharmacie_1_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Pharmacie_1_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Pharmacie_1_container .project_display .project_description {
+    font-size: .7em;
+  }
+  .Pharmacie_1_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Pharmacie_1_container .project_display p {
+    width: 80vw;
+  }
+}
+
 .Immeuble_1_container {
   display: -ms-grid;
   display: grid;
@@ -3858,6 +4022,170 @@
     margin-bottom: 1em;
   }
   .MSAD_container .project_display p {
+    width: 80vw;
+  }
+}
+
+.Villa_A_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+
+.Villa_A_container .project_display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[10];
+      grid-template-rows: repeat(10, auto);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+
+.Villa_A_container .project_display .project_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: .2em;
+}
+
+.Villa_A_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.Villa_A_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+}
+
+.Villa_A_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .SmallHouse_1_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .SmallHouse_1_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .SmallHouse_1_container .project_display .project_description {
+    font-size: .7em;
+  }
+  .SmallHouse_1_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .SmallHouse_1_container .project_display p {
+    width: 80vw;
+  }
+}
+
+.Villa_B_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+
+.Villa_B_container .project_display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[10];
+      grid-template-rows: repeat(10, auto);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+
+.Villa_B_container .project_display .project_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: .2em;
+}
+
+.Villa_B_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.Villa_B_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+}
+
+.Villa_B_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .SmallHouse_1_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .SmallHouse_1_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .SmallHouse_1_container .project_display .project_description {
+    font-size: .7em;
+  }
+  .SmallHouse_1_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .SmallHouse_1_container .project_display p {
     width: 80vw;
   }
 }
