@@ -16,7 +16,6 @@ function SmallHouse1({ }) {
 
     useEffect(() => {
 
-
         let Page_slider = document.querySelector('.page_title_slider')
         Page_slider.style.opacity = `0`
 
@@ -61,7 +60,6 @@ function SmallHouse1({ }) {
             }
 
             <div className='Villa_B_container'>
-
                 <div className='project_display'>
                     <h1 className='project_title'>
                         Villa Fatou

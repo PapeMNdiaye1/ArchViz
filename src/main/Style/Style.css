@@ -1962,7 +1962,6 @@
 #Traveaux .AccueilBigProjectsSection {
   width: 100%;
   min-height: 50em;
-  background-color: salmon;
 }
 
 #Traveaux .AccueilBigProjectsSection .One_Project_In_Home {
@@ -3697,21 +3696,21 @@
 }
 
 @media all and (max-width: 1000px) {
-  .Pharmacie_1_container {
+  .Pharmacie_2_container {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .Pharmacie_1_container .project_display .project_title {
+  .Pharmacie_2_container .project_display .project_title {
     font-size: 1.5em;
   }
-  .Pharmacie_1_container .project_display .project_description {
+  .Pharmacie_2_container .project_display .project_description {
     font-size: .7em;
   }
-  .Pharmacie_1_container .project_display .TheImageContainer {
+  .Pharmacie_2_container .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .Pharmacie_1_container .project_display p {
+  .Pharmacie_2_container .project_display p {
     width: 80vw;
   }
 }
@@ -3779,21 +3778,21 @@
 }
 
 @media all and (max-width: 1000px) {
-  .Pharmacie_1_container {
+  .Pharmacie_3_container {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .Pharmacie_1_container .project_display .project_title {
+  .Pharmacie_3_container .project_display .project_title {
     font-size: 1.5em;
   }
-  .Pharmacie_1_container .project_display .project_description {
+  .Pharmacie_3_container .project_display .project_description {
     font-size: .7em;
   }
-  .Pharmacie_1_container .project_display .TheImageContainer {
+  .Pharmacie_3_container .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .Pharmacie_1_container .project_display p {
+  .Pharmacie_3_container .project_display p {
     width: 80vw;
   }
 }
@@ -4089,21 +4088,21 @@
 }
 
 @media all and (max-width: 1000px) {
-  .SmallHouse_1_container {
+  .Villa_A_container {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .SmallHouse_1_container .project_display .project_title {
+  .Villa_A_container .project_display .project_title {
     font-size: 1.5em;
   }
-  .SmallHouse_1_container .project_display .project_description {
+  .Villa_A_container .project_display .project_description {
     font-size: .7em;
   }
-  .SmallHouse_1_container .project_display .TheImageContainer {
+  .Villa_A_container .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .SmallHouse_1_container .project_display p {
+  .Villa_A_container .project_display p {
     width: 80vw;
   }
 }
@@ -4171,21 +4170,21 @@
 }
 
 @media all and (max-width: 1000px) {
-  .SmallHouse_1_container {
+  .Villa_B_container {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .SmallHouse_1_container .project_display .project_title {
+  .Villa_B_container .project_display .project_title {
     font-size: 1.5em;
   }
-  .SmallHouse_1_container .project_display .project_description {
+  .Villa_B_container .project_display .project_description {
     font-size: .7em;
   }
-  .SmallHouse_1_container .project_display .TheImageContainer {
+  .Villa_B_container .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .SmallHouse_1_container .project_display p {
+  .Villa_B_container .project_display p {
     width: 80vw;
   }
 }
